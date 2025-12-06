@@ -2,7 +2,7 @@
 # Command-line arguments override these settings
 
 [eval]
-# source = "hud-evals/SheetBench-50"
+# source = "transmission_benchmark.json"
 # agent = "claude"
 # model = ""
 # full = false

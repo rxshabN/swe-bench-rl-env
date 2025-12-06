@@ -27,7 +27,7 @@ for task in tasks:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     \"\"\",
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",

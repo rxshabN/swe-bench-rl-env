@@ -115,6 +115,7 @@ def setup_codebase(
     # before the agent starts. This prevents the linker errors you saw.
     logger.info("🏗️ Running initial build (compiling dependencies)...")
     subprocess_run(["ninja"], cwd=str(build_dir))
+    subprocess_run(["chown", "-R", "ubuntu:ubuntu", str(build_dir)])
 
 def start_dinit_script():
     """Entry point for the start_dinit script."""
