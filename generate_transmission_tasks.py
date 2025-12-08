@@ -51,4 +51,4 @@ os.makedirs(os.path.dirname(output_path), exist_ok=True)
 with open(output_path, "w") as f:
     f.write(output_code)
 
-print(f"✅ Generated {len(tasks)} tasks in {output_path}")
+print(f"Generated {len(tasks)} tasks in {output_path}")

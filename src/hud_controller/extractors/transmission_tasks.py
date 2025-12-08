@@ -32,34 +32,6 @@ def transmission_05aef3e(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-1cb24a7",
-    description="""
-    feat: new JSON-RPC 2.0 RPC API (#7269)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="d64a1a5699b4a3dd70aaf4cf28070ee9e3759d29",
-    test="1cb24a701b437a992203da91a2694fdea97ca5f3", 
-    golden="1cb24a701b437a992203da91a2694fdea97ca5f3",
-)
-def transmission_1cb24a7(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="d64a1a5699b4a3dd70aaf4cf28070ee9e3759d29",
-            test="1cb24a701b437a992203da91a2694fdea97ca5f3", 
-            golden="1cb24a701b437a992203da91a2694fdea97ca5f3",
-            jest_test_files=["docs/rpc-spec.md", "libtransmission/quark.cc", "libtransmission/quark.h", "libtransmission/rpc-server.cc", "libtransmission/rpcimpl.cc", "libtransmission/rpcimpl.h", "libtransmission/torrent.cc", "libtransmission/torrent.h", "libtransmission/transmission.h", "tests/libtransmission/rpc-test.cc", "web/src/open-dialog.js", "web/src/prefs-dialog.js", "web/src/remote.js", "web/src/rename-dialog.js", "web/src/statistics-dialog.js", "web/src/transmission.js"], 
-        )
-    ])
-
-@problem(
     id="transmission-25d2ebf",
     description="""
     refactor: overhaul `tr_address` special address checks (#7818)
@@ -116,62 +88,6 @@ def transmission_4318a6f(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-0f7f460",
-    description="""
-    feat: allow downloading sequentially from a specific piece (#7502)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="af92dc5d80155fe15ced85d6c9306cb122a15e18",
-    test="0f7f460c5589c5511c18140c321df5f85c0b7233", 
-    golden="0f7f460c5589c5511c18140c321df5f85c0b7233",
-)
-def transmission_0f7f460(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="af92dc5d80155fe15ced85d6c9306cb122a15e18",
-            test="0f7f460c5589c5511c18140c321df5f85c0b7233", 
-            golden="0f7f460c5589c5511c18140c321df5f85c0b7233",
-            jest_test_files=["docs/rpc-spec.md", "libtransmission/peer-mgr-wishlist.cc", "libtransmission/peer-mgr-wishlist.h", "libtransmission/peer-mgr.cc", "libtransmission/quark.cc", "libtransmission/quark.h", "libtransmission/resume.cc", "libtransmission/resume.h", "libtransmission/rpcimpl.cc", "libtransmission/torrent-ctor.h", "libtransmission/torrent.h", "tests/libtransmission/peer-mgr-wishlist-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-2a3a8ea",
-    description="""
-    perf: even faster wishlist (#7744)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="50e0ffb910df5caff8b0851da7bf46edff133e8b",
-    test="2a3a8ea3643d1ecb654f6ff38fa03b7e6683a8b1", 
-    golden="2a3a8ea3643d1ecb654f6ff38fa03b7e6683a8b1",
-)
-def transmission_2a3a8ea(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="50e0ffb910df5caff8b0851da7bf46edff133e8b",
-            test="2a3a8ea3643d1ecb654f6ff38fa03b7e6683a8b1", 
-            golden="2a3a8ea3643d1ecb654f6ff38fa03b7e6683a8b1",
-            jest_test_files=["libtransmission/peer-mgr-wishlist.cc", "libtransmission/peer-mgr-wishlist.h", "libtransmission/peer-mgr.cc", "libtransmission/peer-msgs.cc", "tests/libtransmission/peer-mgr-wishlist-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-41dd2cf",
     description="""
     fix: accept either one of udp announce response (#7583)
@@ -196,62 +112,6 @@ def transmission_41dd2cf(state: EnvironmentState) -> Grade:
             test="41dd2cfd530e9eba666485709f20b91be46f64ee", 
             golden="41dd2cfd530e9eba666485709f20b91be46f64ee",
             jest_test_files=["libtransmission/announcer-common.h", "libtransmission/announcer-udp.cc", "tests/libtransmission/announcer-udp-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-454b810",
-    description="""
-    fix: performance-for-range-copy warning in tr-peer-info-test.cc (#7741)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="d31e77a494eaac4c03376680ad453365f2c8db0a",
-    test="454b810698a94ee6d5b643fc143f9b2c22521cb7", 
-    golden="454b810698a94ee6d5b643fc143f9b2c22521cb7",
-)
-def transmission_454b810(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="d31e77a494eaac4c03376680ad453365f2c8db0a",
-            test="454b810698a94ee6d5b643fc143f9b2c22521cb7", 
-            golden="454b810698a94ee6d5b643fc143f9b2c22521cb7",
-            jest_test_files=["tests/libtransmission/tr-peer-info-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-0715897",
-    description="""
-    feat: use canonical peer priority to decide which peers to keep (#6981)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="e7d4a69107059eef19225300af309e81abdd992b",
-    test="0715897fc8a998db0f9a6cbb25f9119b1d9b41f3", 
-    golden="0715897fc8a998db0f9a6cbb25f9119b1d9b41f3",
-)
-def transmission_0715897(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="e7d4a69107059eef19225300af309e81abdd992b",
-            test="0715897fc8a998db0f9a6cbb25f9119b1d9b41f3", 
-            golden="0715897fc8a998db0f9a6cbb25f9119b1d9b41f3",
-            jest_test_files=[".github/workflows/actions.yml", ".gitmodules", "CMakeLists.txt", "Transmission.xcodeproj/project.pbxproj", "cmake/FindCRC32C.cmake", "libtransmission/CMakeLists.txt", "libtransmission/crypto-utils.cc", "libtransmission/crypto-utils.h", "libtransmission/peer-mgr.cc", "libtransmission/peer-mgr.h", "libtransmission/peer-msgs.cc", "tests/libtransmission/tr-peer-info-test.cc", "third-party/crc32c", "third-party/macosx-crc32c-config.h"], 
         )
     ])
 
@@ -284,34 +144,6 @@ def transmission_e7d4a69(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-894c085",
-    description="""
-    ci: run clang-tidy for tests (#7526)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="58c4386dddb8c63cd0a63ab3a476a2446b85b1fe",
-    test="894c0859aa3e4e5ee2425d856b7a5315add3bd12", 
-    golden="894c0859aa3e4e5ee2425d856b7a5315add3bd12",
-)
-def transmission_894c085(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="58c4386dddb8c63cd0a63ab3a476a2446b85b1fe",
-            test="894c0859aa3e4e5ee2425d856b7a5315add3bd12", 
-            golden="894c0859aa3e4e5ee2425d856b7a5315add3bd12",
-            jest_test_files=[".github/workflows/actions.yml", "tests/libtransmission/file-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-bf5507f",
     description="""
     fix: load `.torrent` then `.magnet` (#7585)
@@ -336,34 +168,6 @@ def transmission_bf5507f(state: EnvironmentState) -> Grade:
             test="bf5507ff2411ede230af098eac1fb0dd0d994262", 
             golden="bf5507ff2411ede230af098eac1fb0dd0d994262",
             jest_test_files=["libtransmission/session.cc", "tests/libtransmission/assets/archlinux-2025.05.01-x86_64.iso.magnet", "tests/libtransmission/assets/archlinux-2025.05.01-x86_64.iso.torrent", "tests/libtransmission/session-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-08ec7fb",
-    description="""
-    build: lint header files with clang-tidy (#7527)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="f0c8fd689aed98275c3c2ef5bd200271c8dd7204",
-    test="08ec7fb7c7b9c77ba52ff84d853833d70fd6f59b", 
-    golden="08ec7fb7c7b9c77ba52ff84d853833d70fd6f59b",
-)
-def transmission_08ec7fb(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="f0c8fd689aed98275c3c2ef5bd200271c8dd7204",
-            test="08ec7fb7c7b9c77ba52ff84d853833d70fd6f59b", 
-            golden="08ec7fb7c7b9c77ba52ff84d853833d70fd6f59b",
-            jest_test_files=[".gitattributes", "gtk/main.cc", "libtransmission/.clang-tidy", "libtransmission/announce-list.h", "libtransmission/announcer.h", "libtransmission/benc.h", "libtransmission/block-info.h", "libtransmission/completion.h", "libtransmission/crypto-utils.h", "libtransmission/error.h", "libtransmission/handshake.h", "libtransmission/interned-string.h", "libtransmission/log.cc", "libtransmission/log.h", "libtransmission/makemeta.h", "libtransmission/mime-types.h", "libtransmission/mime-types.js", "libtransmission/net.cc", "libtransmission/net.h", "libtransmission/observable.h", "libtransmission/peer-common.h", "libtransmission/peer-io.h", "libtransmission/peer-mgr.cc", "libtransmission/peer-mgr.h", "libtransmission/peer-mse.h", "libtransmission/peer-msgs.cc", "libtransmission/peer-msgs.h", "libtransmission/peer-socket.h", "libtransmission/platform.h", "libtransmission/port-forwarding-natpmp.h", "libtransmission/port-forwarding-upnp.cc", "libtransmission/port-forwarding-upnp.h", "libtransmission/port-forwarding.h", "libtransmission/quark.h", "libtransmission/rpc-server.h", "libtransmission/session-alt-speeds.h", "libtransmission/session-id.h", "libtransmission/session-thread.h", "libtransmission/session.h", "libtransmission/stats.h", "libtransmission/torrent-queue.h", "libtransmission/torrent.cc", "libtransmission/torrent.h", "libtransmission/tr-arc4.h", "libtransmission/tr-buffer.h", "libtransmission/tr-getopt.h", "libtransmission/tr-macros.h", "libtransmission/tr-popcount.h", "libtransmission/tr-strbuf.h", "libtransmission/transmission.h", "libtransmission/utils.cc", "libtransmission/values.h", "libtransmission/variant.h", "libtransmission/verify.h", "libtransmission/version.h.in", "libtransmission/watchdir-base.h", "libtransmission/watchdir.h", "libtransmission/web-utils.cc", "libtransmission/web-utils.h", "libtransmission/web.h", "libtransmission/webseed.h", "macosx/Controller.mm", "macosx/MessageWindowController.mm", "qt/.clang-tidy", "qt/Application.cc", "qt/Prefs.cc", "tests/libtransmission/.clang-tidy", "tests/libtransmission/announce-list-test.cc", "tests/libtransmission/makemeta-test.cc", "tests/libtransmission/move-test.cc", "tests/libtransmission/remove-test.cc", "tests/libtransmission/rename-test.cc", "tests/libtransmission/test-fixtures.h", "tests/libtransmission/torrent-metainfo-test.cc", "tests/libtransmission/utils-test.cc", "tests/libtransmission/variant-test.cc", "tests/libtransmission/watchdir-test.cc", "utils/remote.cc"], 
         )
     ])
 
@@ -396,34 +200,6 @@ def transmission_9e15394(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-03c2dbd",
-    description="""
-    feat: make `proxy_url` nullable (#7486)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="cf7ac07a6cef093127e3aaae00a79413e190ce7c",
-    test="03c2dbd63ccdf3e9051f98b6d0d6ded2adc803f8", 
-    golden="03c2dbd63ccdf3e9051f98b6d0d6ded2adc803f8",
-)
-def transmission_03c2dbd(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="cf7ac07a6cef093127e3aaae00a79413e190ce7c",
-            test="03c2dbd63ccdf3e9051f98b6d0d6ded2adc803f8", 
-            golden="03c2dbd63ccdf3e9051f98b6d0d6ded2adc803f8",
-            jest_test_files=["docs/Editing-Configuration-Files.md", "libtransmission/session.cc", "libtransmission/session.h", "libtransmission/settings.cc", "libtransmission/web.cc", "libtransmission/web.h", "tests/libtransmission/settings-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-76d854d",
     description="""
     fix: clang-tidy-20 warnings (#7479)
@@ -448,34 +224,6 @@ def transmission_76d854d(state: EnvironmentState) -> Grade:
             test="76d854dcc89f1fec252e678dc09ec73c4d776f24", 
             golden="76d854dcc89f1fec252e678dc09ec73c4d776f24",
             jest_test_files=["libtransmission/file-posix.cc", "qt/.clang-tidy", "qt/Application.cc", "tests/libtransmission/.clang-tidy", "tests/libtransmission/block-info-test.cc", "tests/libtransmission/completion-test.cc", "tests/libtransmission/dht-test.cc", "tests/libtransmission/file-piece-map-test.cc", "tests/libtransmission/ip-cache-test.cc", "tests/libtransmission/session-test.cc", "tests/libtransmission/subprocess-test.cc", "tests/libtransmission/timer-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-24f58f7",
-    description="""
-    feat: sequential download in `settings.json` `torrent-add` and `sesssion-*` RPC methods (#7047)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="04769d998619d59a99b9e25e0cf2c398e61547ef",
-    test="24f58f70ee2bf96bfb93fe9c3f9e8d6c90cb2bd9", 
-    golden="24f58f70ee2bf96bfb93fe9c3f9e8d6c90cb2bd9",
-)
-def transmission_24f58f7(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="04769d998619d59a99b9e25e0cf2c398e61547ef",
-            test="24f58f70ee2bf96bfb93fe9c3f9e8d6c90cb2bd9", 
-            golden="24f58f70ee2bf96bfb93fe9c3f9e8d6c90cb2bd9",
-            jest_test_files=["docs/Editing-Configuration-Files.md", "docs/rpc-spec.md", "libtransmission/resume.cc", "libtransmission/rpcimpl.cc", "libtransmission/session.h", "libtransmission/torrent-ctor.h", "libtransmission/torrent.cc", "tests/libtransmission/rpc-test.cc"], 
         )
     ])
 
@@ -592,62 +340,6 @@ def transmission_50eacf6(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-b3912fa",
-    description="""
-    feat: download first and last piece first in sequential mode (#6893)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="b4bbc8744e06ab921a5a837fcd35b87795c0eb7d",
-    test="b3912fa1a5a4c68f412eb65ebf5fde437df71d03", 
-    golden="b3912fa1a5a4c68f412eb65ebf5fde437df71d03",
-)
-def transmission_b3912fa(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="b4bbc8744e06ab921a5a837fcd35b87795c0eb7d",
-            test="b3912fa1a5a4c68f412eb65ebf5fde437df71d03", 
-            golden="b3912fa1a5a4c68f412eb65ebf5fde437df71d03",
-            jest_test_files=["libtransmission/peer-mgr-wishlist.cc", "tests/libtransmission/peer-mgr-wishlist-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-90859fe",
-    description="""
-    test: use new `tr_variant` API (#7268)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="510286f419c991706569f5aa5894a4ca89b1537f",
-    test="90859fe115c2f6d8e019bd918972e4966f34c1e5", 
-    golden="90859fe115c2f6d8e019bd918972e4966f34c1e5",
-)
-def transmission_90859fe(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="510286f419c991706569f5aa5894a4ca89b1537f",
-            test="90859fe115c2f6d8e019bd918972e4966f34c1e5", 
-            golden="90859fe115c2f6d8e019bd918972e4966f34c1e5",
-            jest_test_files=["libtransmission/variant.h", "tests/libtransmission/dht-test.cc", "tests/libtransmission/json-test.cc", "tests/libtransmission/makemeta-test.cc", "tests/libtransmission/move-test.cc", "tests/libtransmission/rpc-test.cc", "tests/libtransmission/session-test.cc", "tests/libtransmission/settings-test.cc", "tests/libtransmission/test-fixtures.h", "tests/libtransmission/variant-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-60e5d98",
     description="""
     fix: handle nullptr in json serde (#7258)
@@ -728,62 +420,6 @@ def transmission_7e4b4f1(state: EnvironmentState) -> Grade:
             test="7e4b4f10a1f90885c0bebb168eedffe153f1cf53", 
             golden="7e4b4f10a1f90885c0bebb168eedffe153f1cf53",
             jest_test_files=["Transmission.xcodeproj/project.pbxproj", "libtransmission/CMakeLists.txt", "libtransmission/peer-common.h", "libtransmission/peer-io.cc", "libtransmission/peer-io.h", "libtransmission/peer-mgr-active-requests.cc", "libtransmission/peer-mgr-active-requests.h", "libtransmission/peer-mgr-wishlist.cc", "libtransmission/peer-mgr-wishlist.h", "libtransmission/peer-mgr.cc", "libtransmission/peer-mgr.h", "libtransmission/peer-msgs.cc", "libtransmission/torrent.h", "libtransmission/webseed.cc", "tests/libtransmission/CMakeLists.txt", "tests/libtransmission/peer-mgr-active-requests-test.cc", "tests/libtransmission/peer-mgr-wishlist-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-6224039",
-    description="""
-    feat: configurable client `reqq` (#7030)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="b0a6bf964c0fa8e5fe0006e3c9dafc7ba236d22d",
-    test="62240393ed056099a6a2ee60d778ac19928ef451", 
-    golden="62240393ed056099a6a2ee60d778ac19928ef451",
-)
-def transmission_6224039(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="b0a6bf964c0fa8e5fe0006e3c9dafc7ba236d22d",
-            test="62240393ed056099a6a2ee60d778ac19928ef451", 
-            golden="62240393ed056099a6a2ee60d778ac19928ef451",
-            jest_test_files=["docs/Editing-Configuration-Files.md", "docs/rpc-spec.md", "libtransmission/peer-mgr.cc", "libtransmission/peer-msgs.cc", "libtransmission/rpcimpl.cc", "libtransmission/session.h", "tests/libtransmission/rpc-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-b0a6bf9",
-    description="""
-    perf: lazy initialise Diffie-Hellman in handshake (#6949)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="b5b7d7abdec6ca2e59ea8deb0d4435342805f83a",
-    test="b0a6bf964c0fa8e5fe0006e3c9dafc7ba236d22d", 
-    golden="b0a6bf964c0fa8e5fe0006e3c9dafc7ba236d22d",
-)
-def transmission_b0a6bf9(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="b5b7d7abdec6ca2e59ea8deb0d4435342805f83a",
-            test="b0a6bf964c0fa8e5fe0006e3c9dafc7ba236d22d", 
-            golden="b0a6bf964c0fa8e5fe0006e3c9dafc7ba236d22d",
-            jest_test_files=["libtransmission/handshake.cc", "libtransmission/handshake.h", "libtransmission/peer-mse.cc", "libtransmission/peer-mse.h", "tests/libtransmission/crypto-test.cc"], 
         )
     ])
 
@@ -872,34 +508,6 @@ def transmission_fa8be1b(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-a76a07a",
-    description="""
-    chore: misc code cleanups (#6927)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="7f79cb16ee194d58ce665f9319524bc5e6e4f91d",
-    test="a76a07ae992eb7a31435b7087c8ecfba50c1c33c", 
-    golden="a76a07ae992eb7a31435b7087c8ecfba50c1c33c",
-)
-def transmission_a76a07a(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="7f79cb16ee194d58ce665f9319524bc5e6e4f91d",
-            test="a76a07ae992eb7a31435b7087c8ecfba50c1c33c", 
-            golden="a76a07ae992eb7a31435b7087c8ecfba50c1c33c",
-            jest_test_files=["Transmission.xcodeproj/project.pbxproj", "libtransmission/CMakeLists.txt", "libtransmission/announcer-udp.cc", "libtransmission/global-ip-cache.cc", "libtransmission/global-ip-cache.h", "libtransmission/ip-cache.cc", "libtransmission/ip-cache.h", "libtransmission/session.cc", "libtransmission/session.h", "tests/libtransmission/CMakeLists.txt", "tests/libtransmission/global-ip-cache-test.cc", "tests/libtransmission/ip-cache-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-2c2011d",
     description="""
     fix: update partial file suffix after verifying torrent (#6871)
@@ -924,62 +532,6 @@ def transmission_2c2011d(state: EnvironmentState) -> Grade:
             test="2c2011d40f36e4fbc1ed487b7a5ebd42097bb9a1", 
             golden="2c2011d40f36e4fbc1ed487b7a5ebd42097bb9a1",
             jest_test_files=["libtransmission/torrent.cc", "libtransmission/torrent.h", "tests/libtransmission/move-test.cc", "tests/libtransmission/rename-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-4657d21",
-    description="""
-    feat: dual stack udp tracker support (#6687)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="3677e7a591cbf629bf330542ea0da2ff6ae3aa45",
-    test="4657d210bae56aeb492dd28803013398b36f12ba", 
-    golden="4657d210bae56aeb492dd28803013398b36f12ba",
-)
-def transmission_4657d21(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="3677e7a591cbf629bf330542ea0da2ff6ae3aa45",
-            test="4657d210bae56aeb492dd28803013398b36f12ba", 
-            golden="4657d210bae56aeb492dd28803013398b36f12ba",
-            jest_test_files=["libtransmission/announcer-common.h", "libtransmission/announcer-http.cc", "libtransmission/announcer-udp.cc", "libtransmission/announcer.cc", "libtransmission/announcer.h", "libtransmission/net.cc", "libtransmission/net.h", "libtransmission/tr-udp.cc", "libtransmission/web-utils.cc", "libtransmission/web-utils.h", "tests/libtransmission/announcer-udp-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-d6f5e60",
-    description="""
-    feat: ipv6 lpd (#6700)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="5f091fac189b8bba498dff23b3aa4ed172c1e324",
-    test="d6f5e60a355a1866f2c0ee5635fd8f64b65de1ac", 
-    golden="d6f5e60a355a1866f2c0ee5635fd8f64b65de1ac",
-)
-def transmission_d6f5e60(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="5f091fac189b8bba498dff23b3aa4ed172c1e324",
-            test="d6f5e60a355a1866f2c0ee5635fd8f64b65de1ac", 
-            golden="d6f5e60a355a1866f2c0ee5635fd8f64b65de1ac",
-            jest_test_files=["libtransmission/net.cc", "libtransmission/net.h", "libtransmission/tr-lpd.cc", "tests/libtransmission/lpd-test.cc"], 
         )
     ])
 
@@ -1096,34 +648,6 @@ def transmission_2ff3ae0(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-1568659",
-    description="""
-    fix: mismatched `class` forward declaration for `struct tr_peer` (#6725)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="c223c70644dd056d3b5970eb0dd193b9f6dd7846",
-    test="1568659f95b2c881f03bb3c669fa8ba6f9cf52b8", 
-    golden="1568659f95b2c881f03bb3c669fa8ba6f9cf52b8",
-)
-def transmission_1568659(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="c223c70644dd056d3b5970eb0dd193b9f6dd7846",
-            test="1568659f95b2c881f03bb3c669fa8ba6f9cf52b8", 
-            golden="1568659f95b2c881f03bb3c669fa8ba6f9cf52b8",
-            jest_test_files=["tests/libtransmission/peer-mgr-active-requests-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-152f3e9",
     description="""
     refactor: convert `tr_peerMsgsImpl` helper functions to class methods (#6580)
@@ -1204,62 +728,6 @@ def transmission_7c11809(state: EnvironmentState) -> Grade:
             test="7c118096720f10bba0eefe570a58111eaa91b3b1", 
             golden="7c118096720f10bba0eefe570a58111eaa91b3b1",
             jest_test_files=["gtk/.clang-tidy", "gtk/DetailsDialog.cc", "gtk/DynamicPropertyStore.h", "gtk/FilterBar.cc", "gtk/FilterListModel.hh", "gtk/HigWorkarea.h", "gtk/MessageLogWindow.cc", "gtk/PrefsDialog.h", "gtk/Session.cc", "gtk/StatsDialog.cc", "gtk/Torrent.cc", "gtk/Utils.h", "qt/Application.cc", "qt/DetailsDialog.cc", "qt/FileTreeItem.cc", "qt/FileTreeView.cc", "qt/FilterBar.cc", "qt/InteropObject.cc", "qt/MakeDialog.cc", "qt/Prefs.cc", "qt/PrefsDialog.cc", "qt/Session.cc", "qt/Torrent.cc", "qt/TorrentFilter.cc", "qt/TrackerDelegate.cc", "qt/VariantHelpers.cc", "tests/libtransmission/handshake-test.cc", "tests/libtransmission/move-test.cc", "tests/libtransmission/torrent-magnet-test.cc", "tests/libtransmission/variant-test.cc", "tests/libtransmission/watchdir-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-f06cb37",
-    description="""
-    feat: added `sleep-per-seconds-during-verify` to settings.json (#6572)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="cf84afda8c68aa5fa6058df7845d426453c5c290",
-    test="f06cb37c06900911178961ef4af897549a427fa3", 
-    golden="f06cb37c06900911178961ef4af897549a427fa3",
-)
-def transmission_f06cb37(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="cf84afda8c68aa5fa6058df7845d426453c5c290",
-            test="f06cb37c06900911178961ef4af897549a427fa3", 
-            golden="f06cb37c06900911178961ef4af897549a427fa3",
-            jest_test_files=["docs/Editing-Configuration-Files.md", "libtransmission/quark.cc", "libtransmission/quark.h", "libtransmission/session-settings.h", "libtransmission/session.cc", "libtransmission/variant-converters.cc", "libtransmission/verify.cc", "libtransmission/verify.h", "tests/libtransmission/settings-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-168d56c",
-    description="""
-    perf: restore `3.00` wishlist with cached candidates (#6549)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="ca11c33d0510cf6d870e47cd5ef6812135e97ea2",
-    test="168d56cefc61871ab40425f23d14ef9163006410", 
-    golden="168d56cefc61871ab40425f23d14ef9163006410",
-)
-def transmission_168d56c(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="ca11c33d0510cf6d870e47cd5ef6812135e97ea2",
-            test="168d56cefc61871ab40425f23d14ef9163006410", 
-            golden="168d56cefc61871ab40425f23d14ef9163006410",
-            jest_test_files=["libtransmission/peer-mgr-wishlist.cc", "libtransmission/peer-mgr-wishlist.h", "libtransmission/peer-mgr.cc", "libtransmission/torrent.cc", "libtransmission/torrent.h", "tests/libtransmission/peer-mgr-wishlist-test.cc"], 
         )
     ])
 
@@ -1488,34 +956,6 @@ def transmission_5e51fda(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-45298e5",
-    description="""
-    fix: don't create all 0-byte files in `MakemetaTest::makeRandomFiles()` (#6394)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="bfa5da9705faedcf72799841e48b37675652e478",
-    test="45298e5a4e38b43c146735d4b44d5aba50ffa033", 
-    golden="45298e5a4e38b43c146735d4b44d5aba50ffa033",
-)
-def transmission_45298e5(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="bfa5da9705faedcf72799841e48b37675652e478",
-            test="45298e5a4e38b43c146735d4b44d5aba50ffa033", 
-            golden="45298e5a4e38b43c146735d4b44d5aba50ffa033",
-            jest_test_files=["tests/libtransmission/makemeta-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-581d9c3",
     description="""
     fix: gcc-13 warnings pt. 2 (#6404)
@@ -1628,34 +1068,6 @@ def transmission_2e46bad(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-64d9d57",
-    description="""
-    chore: fix minor clang-tidy warnings (#6275)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="65d8ae53577428c07c9740f38dcce6d4b97adbef",
-    test="64d9d573637e4a2212e7b0f09720af6e5784d21b", 
-    golden="64d9d573637e4a2212e7b0f09720af6e5784d21b",
-)
-def transmission_64d9d57(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="65d8ae53577428c07c9740f38dcce6d4b97adbef",
-            test="64d9d573637e4a2212e7b0f09720af6e5784d21b", 
-            golden="64d9d573637e4a2212e7b0f09720af6e5784d21b",
-            jest_test_files=["gtk/Actions.cc", "gtk/Application.cc", "gtk/IconCache.cc", "libtransmission/announcer-http.cc", "libtransmission/announcer-udp.cc", "libtransmission/announcer.cc", "libtransmission/bandwidth.cc", "libtransmission/bandwidth.h", "libtransmission/bitfield.cc", "libtransmission/block-info.cc", "libtransmission/blocklist.cc", "libtransmission/cache.cc", "libtransmission/clients.cc", "libtransmission/completion.cc", "libtransmission/crypto-utils-openssl.cc", "libtransmission/crypto-utils.cc", "libtransmission/file-piece-map.cc", "libtransmission/file-piece-map.h", "libtransmission/global-ip-cache.cc", "libtransmission/handshake.cc", "libtransmission/inout.cc", "libtransmission/log.cc", "libtransmission/magnet-metainfo.cc", "libtransmission/net.cc", "libtransmission/peer-mgr.cc", "libtransmission/peer-mse.cc", "libtransmission/peer-msgs.cc", "libtransmission/peer-socket.cc", "libtransmission/platform.cc", "libtransmission/port-forwarding-upnp.cc", "libtransmission/quark.cc", "libtransmission/resume.cc", "libtransmission/rpc-server.cc", "libtransmission/rpcimpl.cc", "libtransmission/session-alt-speeds.cc", "libtransmission/session-id.cc", "libtransmission/session-settings.cc", "libtransmission/session.cc", "libtransmission/session.h", "libtransmission/subprocess-posix.cc", "libtransmission/torrent-files.cc", "libtransmission/torrent-magnet.cc", "libtransmission/torrent-metainfo.cc", "libtransmission/torrents.cc", "libtransmission/tr-dht.cc", "libtransmission/tr-getopt.cc", "libtransmission/tr-lpd.cc", "libtransmission/tr-udp.cc", "libtransmission/tr-utp.cc", "libtransmission/utils.cc", "libtransmission/utils.h", "libtransmission/values.h", "libtransmission/variant-benc.cc", "libtransmission/variant-json.cc", "libtransmission/variant.cc", "libtransmission/verify.cc", "libtransmission/watchdir-inotify.cc", "libtransmission/watchdir-win32.cc", "libtransmission/web-utils.cc", "libtransmission/web.cc", "libtransmission/webseed.cc", "qt/AboutDialog.cc", "qt/AddData.cc", "qt/Application.cc", "qt/BaseDialog.h", "qt/ComInteropHelper.cc", "qt/DBusInteropHelper.cc", "qt/DetailsDialog.cc", "qt/DetailsDialog.h", "qt/FileTreeItem.h", "qt/FileTreeModel.cc", "qt/FileTreeView.cc", "qt/FilterBar.cc", "qt/FilterBarComboBox.cc", "qt/FilterBarComboBoxDelegate.cc", "qt/Filters.h", "qt/FreeSpaceLabel.cc", "qt/IconCache.cc", "qt/IconToolButton.cc", "qt/InteropObject.cc", "qt/LicenseDialog.cc", "qt/MainWindow.cc", "qt/MakeDialog.cc", "qt/OptionsDialog.cc", "qt/PathButton.cc", "qt/Prefs.cc", "qt/PrefsDialog.cc", "qt/RpcClient.cc", "qt/RpcQueue.cc", "qt/Session.cc", "qt/Torrent.cc", "qt/TorrentDelegate.cc", "qt/TorrentDelegateMin.cc", "qt/TorrentDelegateMin.h", "qt/TorrentFilter.cc", "qt/TorrentModel.cc", "qt/TorrentView.cc", "qt/TrackerDelegate.cc", "qt/TrackerDelegate.h", "qt/TrackerModel.cc", "qt/TrackerModelFilter.cc", "qt/VariantHelpers.cc", "qt/WatchDir.cc", "tests/libtransmission/announcer-test.cc", "tests/libtransmission/benc-test.cc", "tests/libtransmission/buffer-test.cc", "tests/libtransmission/dht-test.cc", "tests/libtransmission/global-ip-cache-test.cc", "tests/libtransmission/handshake-test.cc", "tests/libtransmission/move-test.cc", "tests/libtransmission/strbuf-test.cc", "tests/libtransmission/torrent-metainfo-test.cc", "tests/libtransmission/values-test.cc", "tests/libtransmission/variant-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-36f33c0",
     description="""
     fix: recent clang-tidy warnings (#6233)
@@ -1712,34 +1124,6 @@ def transmission_a952a07(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-424a9b5",
-    description="""
-    chore: cleanup timespans in remaining headers (#6199)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="2e7448c9bcc17b722ea26a209fb5b2ab86a0554c",
-    test="424a9b5e17998d201948ab916e83f5d68d6d997f", 
-    golden="424a9b5e17998d201948ab916e83f5d68d6d997f",
-)
-def transmission_424a9b5(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="2e7448c9bcc17b722ea26a209fb5b2ab86a0554c",
-            test="424a9b5e17998d201948ab916e83f5d68d6d997f", 
-            golden="424a9b5e17998d201948ab916e83f5d68d6d997f",
-            jest_test_files=["gtk/DynamicPropertyStore.h", "libtransmission/favicon-cache.h", "libtransmission/global-ip-cache.cc", "libtransmission/global-ip-cache.h", "libtransmission/observable.h", "libtransmission/tr-lpd.cc", "libtransmission/utils.mm", "macosx/DefaultAppHelper.h", "macosx/DefaultAppHelper.mm", "macosx/GroupCell.h", "macosx/GroupCell.mm", "macosx/ProgressBarView.h", "macosx/ProgressBarView.mm", "macosx/SmallTorrentCell.h", "macosx/SmallTorrentCell.mm", "macosx/TorrentCellActionButton.h", "macosx/TorrentCellActionButton.mm", "macosx/TorrentCellControlButton.h", "macosx/TorrentCellControlButton.mm", "macosx/TorrentCellRevealButton.h", "macosx/TorrentCellRevealButton.mm", "macosx/VDKQueue/VDKQueue.h", "macosx/VDKQueue/VDKQueue.mm", "tests/libtransmission/global-ip-cache-test.cc", "tests/libtransmission/tr-peer-info-test.cc", "web/src/force-verify-dialog.js"], 
-        )
-    ])
-
-@problem(
     id="transmission-2e7448c",
     description="""
     fix: appendSanitizedComponent is too aggressive on non-WIN32 (and not enough aggressive on WIN32) (#6187)
@@ -1768,34 +1152,6 @@ def transmission_2e7448c(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-1c421d6",
-    description="""
-    Minor CMake maintainability improvements (#6186)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="c697d95ad352be74638169fac8280bada8b4c54b",
-    test="1c421d6d23044398c69e4b8965d7ca30c2189ec3", 
-    golden="1c421d6d23044398c69e4b8965d7ca30c2189ec3",
-)
-def transmission_1c421d6(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="c697d95ad352be74638169fac8280bada8b4c54b",
-            test="1c421d6d23044398c69e4b8965d7ca30c2189ec3", 
-            golden="1c421d6d23044398c69e4b8965d7ca30c2189ec3",
-            jest_test_files=[".gitmodules", "CMakeLists.txt", "cmake/FindFastFloat.cmake", "cmake/FindFmt.cmake", "cmake/FindRapidJSON.cmake", "cmake/FindSmall.cmake", "cmake/FindUtfCpp.cmake", "cmake/FindWideInteger.cmake", "cmake/TrMacros.cmake", "dist/msi/CMakeLists.txt", "macosx/CMakeLists.txt", "macosx/QuickLookPlugin/CMakeLists.txt", "macosx/VDKQueue/CMakeLists.txt", "tests/gtest/CMakeLists.txt", "tests/libtransmission/CMakeLists.txt", "tests/libtransmission/subprocess-test-program.cc", "third-party/rapavlik-cmake-modules", "third-party/rpavlik-cmake-modules"], 
-        )
-    ])
-
-@problem(
     id="transmission-c697d95",
     description="""
     fix: crash after nullptr dereference in rpcimpl (#6177)
@@ -1820,34 +1176,6 @@ def transmission_c697d95(state: EnvironmentState) -> Grade:
             test="c697d95ad352be74638169fac8280bada8b4c54b", 
             golden="c697d95ad352be74638169fac8280bada8b4c54b",
             jest_test_files=["libtransmission/rpcimpl.cc", "tests/libtransmission/rpc-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-eb58996",
-    description="""
-    chore: remove unused tr_announce_list::announce_to_scrape(tr_quark) (#6157)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="6d958bd5fc2b43983b9475d3af3e434a2153081e",
-    test="eb58996c9fde36e33e96197a6410227f99084c24", 
-    golden="eb58996c9fde36e33e96197a6410227f99084c24",
-)
-def transmission_eb58996(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="6d958bd5fc2b43983b9475d3af3e434a2153081e",
-            test="eb58996c9fde36e33e96197a6410227f99084c24", 
-            golden="eb58996c9fde36e33e96197a6410227f99084c24",
-            jest_test_files=["libtransmission/announce-list.cc", "libtransmission/announce-list.h", "tests/libtransmission/announce-list-test.cc"], 
         )
     ])
 
@@ -2188,90 +1516,6 @@ def transmission_2cf9678(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-ea500ec",
-    description="""
-    fixup! feat: add global IP cache, fix UDP connection failure warnings (#5506)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="cb6358048db10e77280e8dd820d52ed9c8213cff",
-    test="ea500ecdcdb4df6a03db55f75cd47d38fad5f14b", 
-    golden="ea500ecdcdb4df6a03db55f75cd47d38fad5f14b",
-)
-def transmission_ea500ec(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="cb6358048db10e77280e8dd820d52ed9c8213cff",
-            test="ea500ecdcdb4df6a03db55f75cd47d38fad5f14b", 
-            golden="ea500ecdcdb4df6a03db55f75cd47d38fad5f14b",
-            jest_test_files=["tests/libtransmission/global-ip-cache-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-474a30a",
-    description="""
-    feat: add global IP cache, fix UDP connection failure warnings
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="bd8b50ef7b5e5fc030e2947c4ca46f3ca642c299",
-    test="474a30ab2dcadd909f076c24407481cd4d07e60e", 
-    golden="474a30ab2dcadd909f076c24407481cd4d07e60e",
-)
-def transmission_474a30a(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="bd8b50ef7b5e5fc030e2947c4ca46f3ca642c299",
-            test="474a30ab2dcadd909f076c24407481cd4d07e60e", 
-            golden="474a30ab2dcadd909f076c24407481cd4d07e60e",
-            jest_test_files=["Transmission.xcodeproj/project.pbxproj", "docs/Editing-Configuration-Files.md", "libtransmission/CMakeLists.txt", "libtransmission/announcer.cc", "libtransmission/global-ip-cache.cc", "libtransmission/global-ip-cache.h", "libtransmission/net.cc", "libtransmission/net.h", "libtransmission/session.cc", "libtransmission/session.h", "libtransmission/tr-udp.cc", "tests/libtransmission/CMakeLists.txt", "tests/libtransmission/global-ip-cache-test.cc", "tests/libtransmission/net-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-2999e71",
-    description="""
-    fix: typos in libtransmission tests (#5468)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="f34b1e624c53cdac9aa2bbf694e356d2d069d940",
-    test="2999e71e765ded8dcde2df175e4da2ce7eaa49ca", 
-    golden="2999e71e765ded8dcde2df175e4da2ce7eaa49ca",
-)
-def transmission_2999e71(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="f34b1e624c53cdac9aa2bbf694e356d2d069d940",
-            test="2999e71e765ded8dcde2df175e4da2ce7eaa49ca", 
-            golden="2999e71e765ded8dcde2df175e4da2ce7eaa49ca",
-            jest_test_files=["tests/libtransmission/announcer-udp-test.cc", "tests/libtransmission/dht-test.cc", "tests/libtransmission/session-alt-speeds-test.cc", "tests/libtransmission/utils-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-e8fcb02",
     description="""
     fix: use user-preferred locale (#5444)
@@ -2324,34 +1568,6 @@ def transmission_9f8a7a6(state: EnvironmentState) -> Grade:
             test="9f8a7a656eb4fc17156b4dee1843b1ed0bb87341", 
             golden="9f8a7a656eb4fc17156b4dee1843b1ed0bb87341",
             jest_test_files=["libtransmission/tr-buffer.h", "tests/libtransmission/buffer-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-d63165e",
-    description="""
-    perf: fix wishlist cpu load regression, pt. 2 (#5273)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="25f38d5ff358802ad1d7bfc0dc477b5e5db853e6",
-    test="d63165e8a4cbcf98c487d04b7272b87afe108d1d", 
-    golden="d63165e8a4cbcf98c487d04b7272b87afe108d1d",
-)
-def transmission_d63165e(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="25f38d5ff358802ad1d7bfc0dc477b5e5db853e6",
-            test="d63165e8a4cbcf98c487d04b7272b87afe108d1d", 
-            golden="d63165e8a4cbcf98c487d04b7272b87afe108d1d",
-            jest_test_files=["libtransmission/file-piece-map.cc", "libtransmission/file-piece-map.h", "libtransmission/peer-mgr-wishlist.cc", "libtransmission/peer-mgr-wishlist.h", "libtransmission/peer-mgr.cc", "tests/libtransmission/peer-mgr-wishlist-test.cc"], 
         )
     ])
 
@@ -2608,34 +1824,6 @@ def transmission_e0753fe(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-42a0106",
-    description="""
-    chore: disable flaky unit tests (#4808)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="b64e65cf2eab097d112c28bdf0b16e88f3b36c40",
-    test="42a01068c6118b56014c7f63fb777a9e7119fd9a", 
-    golden="42a01068c6118b56014c7f63fb777a9e7119fd9a",
-)
-def transmission_42a0106(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="b64e65cf2eab097d112c28bdf0b16e88f3b36c40",
-            test="42a01068c6118b56014c7f63fb777a9e7119fd9a", 
-            golden="42a01068c6118b56014c7f63fb777a9e7119fd9a",
-            jest_test_files=["tests/libtransmission/lpd-test.cc", "tests/libtransmission/timer-test.cc", "tests/libtransmission/watchdir-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-0e5f7f8",
     description="""
     fix: coverity warnings (#4687)
@@ -2664,34 +1852,6 @@ def transmission_0e5f7f8(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-862abe9",
-    description="""
-    fix: bugprone-unchecked-optional-access warnings in tests (#4672)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="331e1699bc3141e37128e7ee96d3f0ee4dd7840a",
-    test="862abe909cc7162581e4bb17b22e05fb1c2775c1", 
-    golden="862abe909cc7162581e4bb17b22e05fb1c2775c1",
-)
-def transmission_862abe9(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="331e1699bc3141e37128e7ee96d3f0ee4dd7840a",
-            test="862abe909cc7162581e4bb17b22e05fb1c2775c1", 
-            golden="862abe909cc7162581e4bb17b22e05fb1c2775c1",
-            jest_test_files=["tests/libtransmission/announcer-test.cc", "tests/libtransmission/announcer-udp-test.cc", "tests/libtransmission/crypto-test.cc", "tests/libtransmission/dht-test.cc", "tests/libtransmission/file-test.cc", "tests/libtransmission/handshake-test.cc", "tests/libtransmission/net-test.cc", "tests/libtransmission/open-files-test.cc", "tests/libtransmission/quark-test.cc", "tests/libtransmission/torrent-files-test.cc", "tests/libtransmission/variant-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-977a190",
     description="""
     fix: msvc warnings (#4651)
@@ -2716,34 +1876,6 @@ def transmission_977a190(state: EnvironmentState) -> Grade:
             test="977a190646785d50ab41b5a171a58aa3fb48bf07", 
             golden="977a190646785d50ab41b5a171a58aa3fb48bf07",
             jest_test_files=["libtransmission/net.cc", "qt/Application.cc", "qt/FileTreeDelegate.cc", "tests/libtransmission/announcer-udp-test.cc", "utils/remote.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-68f6f49",
-    description="""
-    test: fix a couple of recurring CI flakes in TimerTest
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="bc4acc6814c44acae96bbe01d257de3a79c00eab",
-    test="68f6f49c6d3f3c004458d31e29b5d3862298cf67", 
-    golden="68f6f49c6d3f3c004458d31e29b5d3862298cf67",
-)
-def transmission_68f6f49(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="bc4acc6814c44acae96bbe01d257de3a79c00eab",
-            test="68f6f49c6d3f3c004458d31e29b5d3862298cf67", 
-            golden="68f6f49c6d3f3c004458d31e29b5d3862298cf67",
-            jest_test_files=["tests/libtransmission/timer-test.cc"], 
         )
     ])
 
@@ -2800,34 +1932,6 @@ def transmission_9a5d9a0(state: EnvironmentState) -> Grade:
             test="9a5d9a0ba2203bee54ec82212c5077210881a6fb", 
             golden="9a5d9a0ba2203bee54ec82212c5077210881a6fb",
             jest_test_files=["Transmission.xcodeproj/project.pbxproj", "libtransmission/CMakeLists.txt", "libtransmission/handshake.cc", "libtransmission/net.cc", "libtransmission/peer-io.cc", "libtransmission/peer-io.h", "libtransmission/peer-mgr.cc", "libtransmission/peer-msgs.cc", "libtransmission/peer-socket.cc", "libtransmission/peer-socket.h", "libtransmission/session.cc", "libtransmission/tr-utp.cc", "tests/libtransmission/handshake-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-8085ef6",
-    description="""
-    fix: flaky subprocess tests (#4266)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="af9f1b4e42e9ae71428ae37d68662212a7ace587",
-    test="8085ef6acb6412618f69f1f7ad605702e7b9fa9c", 
-    golden="8085ef6acb6412618f69f1f7ad605702e7b9fa9c",
-)
-def transmission_8085ef6(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="af9f1b4e42e9ae71428ae37d68662212a7ace587",
-            test="8085ef6acb6412618f69f1f7ad605702e7b9fa9c", 
-            golden="8085ef6acb6412618f69f1f7ad605702e7b9fa9c",
-            jest_test_files=["tests/libtransmission/subprocess-test.cc"], 
         )
     ])
 
@@ -3000,34 +2104,6 @@ def transmission_250e055(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-2d2270c",
-    description="""
-    fix: thread-sanitizer warnings in SandboxedTests (#4131)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="7e817b5a43292d9d579dd6b1f5c196a73070cdc1",
-    test="2d2270c7d9015a6eeac5a7d5cf2ec4335aa7bf69", 
-    golden="2d2270c7d9015a6eeac5a7d5cf2ec4335aa7bf69",
-)
-def transmission_2d2270c(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="7e817b5a43292d9d579dd6b1f5c196a73070cdc1",
-            test="2d2270c7d9015a6eeac5a7d5cf2ec4335aa7bf69", 
-            golden="2d2270c7d9015a6eeac5a7d5cf2ec4335aa7bf69",
-            jest_test_files=["tests/libtransmission/test-fixtures.h"], 
-        )
-    ])
-
-@problem(
     id="transmission-4ea9c87",
     description="""
     fix: some typos (#3904)
@@ -3052,90 +2128,6 @@ def transmission_4ea9c87(state: EnvironmentState) -> Grade:
             test="4ea9c87feac9ae62f48b2180b153926e1a16c89d", 
             golden="4ea9c87feac9ae62f48b2180b153926e1a16c89d",
             jest_test_files=["AUTHORS", "docs/Port-Forwarding-Guide.md", "docs/README.md", "docs/Release-Notes.md", "extras/encryption.txt", "gtk/ui/gtk3/PrefsDialog.ui", "gtk/ui/gtk4/PrefsDialog.ui", "libtransmission/handshake.cc", "libtransmission/jsonsl.c", "libtransmission/peer-mgr.cc", "libtransmission/transmission.h", "macosx/Controller.mm", "macosx/CreatorWindowController.mm", "macosx/Credits.rtf", "macosx/Torrent.mm", "macosx/TransmissionHelp/html/usingt.html", "news/news-2.42-and-older.md", "news/news-4.0.0-beta-1.md", "tests/libtransmission/handshake-test.cc", "web/src/formatter.js", "web/src/torrent.js"], 
-        )
-    ])
-
-@problem(
-    id="transmission-ecc7c18",
-    description="""
-    tests: Fix SubprocessTest on macOS Monterey and later. (#3812)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="f8fdc6a8286e8429c8dfbb6b662864aa2d67ec0a",
-    test="ecc7c185a4a7801b83bff35d9c5e848dc58f925a", 
-    golden="ecc7c185a4a7801b83bff35d9c5e848dc58f925a",
-)
-def transmission_ecc7c18(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="f8fdc6a8286e8429c8dfbb6b662864aa2d67ec0a",
-            test="ecc7c185a4a7801b83bff35d9c5e848dc58f925a", 
-            golden="ecc7c185a4a7801b83bff35d9c5e848dc58f925a",
-            jest_test_files=["tests/libtransmission/test-fixtures.h"], 
-        )
-    ])
-
-@problem(
-    id="transmission-89d6533",
-    description="""
-    build: support semver versioning (#3867)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="fff4c877407ff3d281c08938a6161cdcacfc0191",
-    test="89d6533cd743519e566153326bca107a4514376b", 
-    golden="89d6533cd743519e566153326bca107a4514376b",
-)
-def transmission_89d6533(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="fff4c877407ff3d281c08938a6161cdcacfc0191",
-            test="89d6533cd743519e566153326bca107a4514376b", 
-            golden="89d6533cd743519e566153326bca107a4514376b",
-            jest_test_files=["CMakeLists.txt", "cmake/Transmission.rc.in", "dist/msi/CMakeLists.txt", "libtransmission/clients.cc", "libtransmission/version.h.in", "tests/libtransmission/clients-test.cc", "update-version-h.sh"], 
-        )
-    ])
-
-@problem(
-    id="transmission-76fc42b",
-    description="""
-    test: fix watchdir CI flake (#3839)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="228efa16e3299ede3f6419e628c6decb1f67baf3",
-    test="76fc42b6599dc9daa2b2d8a24c66ec1ec57c1888", 
-    golden="76fc42b6599dc9daa2b2d8a24c66ec1ec57c1888",
-)
-def transmission_76fc42b(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="228efa16e3299ede3f6419e628c6decb1f67baf3",
-            test="76fc42b6599dc9daa2b2d8a24c66ec1ec57c1888", 
-            golden="76fc42b6599dc9daa2b2d8a24c66ec1ec57c1888",
-            jest_test_files=["tests/libtransmission/watchdir-test.cc"], 
         )
     ])
 
@@ -3196,34 +2188,6 @@ def transmission_dde626d(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-988d8ff",
-    description="""
-    test: possibly fix rename-test flakes (#3653)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="6278ea7017e7cb6525cfe7165b169e15059dde7f",
-    test="988d8ff9ace1018f2ba5fbedb7c5532ed392658a", 
-    golden="988d8ff9ace1018f2ba5fbedb7c5532ed392658a",
-)
-def transmission_988d8ff(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="6278ea7017e7cb6525cfe7165b169e15059dde7f",
-            test="988d8ff9ace1018f2ba5fbedb7c5532ed392658a", 
-            golden="988d8ff9ace1018f2ba5fbedb7c5532ed392658a",
-            jest_test_files=[".github/workflows/actions.yml", "tests/libtransmission/rename-test.cc", "tests/libtransmission/test-fixtures.h"], 
-        )
-    ])
-
-@problem(
     id="transmission-c7466b3",
     description="""
     fix: coverity warnings (#3632)
@@ -3280,34 +2244,6 @@ def transmission_b1cc968(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-83ffa6b",
-    description="""
-    chore: fix spdx abbreviations (#3602)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="31a733fab769302202ea24053680a1372f334c22",
-    test="83ffa6bf1b3408bc33f419890442da7898b45c02", 
-    golden="83ffa6bf1b3408bc33f419890442da7898b45c02",
-)
-def transmission_83ffa6b(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="31a733fab769302202ea24053680a1372f334c22",
-            test="83ffa6bf1b3408bc33f419890442da7898b45c02", 
-            golden="83ffa6bf1b3408bc33f419890442da7898b45c02",
-            jest_test_files=["daemon/daemon.h", "gtk/Actions.h", "gtk/DetailsDialog.h", "gtk/FaviconCache.h", "gtk/FileList.h", "gtk/FilterBar.h", "gtk/FreeSpaceLabel.h", "gtk/HigWorkarea.h", "gtk/MakeDialog.h", "gtk/MessageLogWindow.h", "gtk/Notify.h", "gtk/OptionsDialog.h", "gtk/PrefsDialog.h", "gtk/RelocateDialog.h", "gtk/StatsDialog.h", "gtk/SystemTrayIcon.h", "gtk/TorrentCellRenderer.h", "gtk/Utils.h", "libtransmission/announce-list.h", "libtransmission/announcer-common.h", "libtransmission/announcer.h", "libtransmission/bandwidth.h", "libtransmission/benc.h", "libtransmission/bitfield.h", "libtransmission/block-info.h", "libtransmission/blocklist.h", "libtransmission/cache.h", "libtransmission/clients.h", "libtransmission/completion.h", "libtransmission/crypto-utils.h", "libtransmission/error-types.h", "libtransmission/error.h", "libtransmission/file-piece-map.h", "libtransmission/file.h", "libtransmission/handshake.h", "libtransmission/history.h", "libtransmission/inout.h", "libtransmission/interned-string.h", "libtransmission/log.h", "libtransmission/lru-cache.h", "libtransmission/magnet-metainfo.h", "libtransmission/makemeta.h", "libtransmission/mime-types.h", "libtransmission/mime-types.js", "libtransmission/natpmp_local.h", "libtransmission/open-files.h", "libtransmission/peer-common.h", "libtransmission/peer-io.h", "libtransmission/peer-mgr-active-requests.h", "libtransmission/peer-mgr-wishlist.h", "libtransmission/peer-mgr.h", "libtransmission/peer-mse.h", "libtransmission/peer-msgs.h", "libtransmission/peer-socket.h", "libtransmission/platform-quota.h", "libtransmission/platform.h", "libtransmission/port-forwarding.h", "libtransmission/quark.h", "libtransmission/resume.h", "libtransmission/rpc-server.h", "libtransmission/rpcimpl.h", "libtransmission/session-id.h", "libtransmission/session.h", "libtransmission/stats.cc", "libtransmission/stats.h", "libtransmission/subprocess.h", "libtransmission/torrent-files.cc", "libtransmission/torrent-files.h", "libtransmission/torrent-magnet.h", "libtransmission/torrent-metainfo.h", "libtransmission/torrent.h", "libtransmission/torrents.cc", "libtransmission/torrents.h", "libtransmission/tr-assert.h", "libtransmission/tr-assert.mm", "libtransmission/tr-getopt.h", "libtransmission/tr-macros.h", "libtransmission/tr-strbuf.h", "libtransmission/trevent.h", "libtransmission/upnp.h", "libtransmission/utils.h", "libtransmission/variant-common.h", "libtransmission/variant.h", "libtransmission/verify.h", "libtransmission/watchdir-common.h", "libtransmission/watchdir.h", "libtransmission/web-utils.h", "libtransmission/web.h", "libtransmission/webseed.h", "qt/AboutDialog.h", "qt/AddData.h", "qt/Application.h", "qt/BaseDialog.h", "qt/ColumnResizer.h", "qt/ComInteropHelper.h", "qt/CustomVariantType.h", "qt/DBusInteropHelper.h", "qt/DetailsDialog.h", "qt/FaviconCache.h", "qt/FileTreeDelegate.h", "qt/FileTreeItem.h", "qt/FileTreeModel.h", "qt/FileTreeView.h", "qt/FilterBar.h", "qt/FilterBarComboBox.h", "qt/FilterBarComboBoxDelegate.h", "qt/Filters.h", "qt/Formatter.h", "qt/FreeSpaceLabel.h", "qt/IconCache.h", "qt/IconToolButton.h", "qt/InteropHelper.h", "qt/InteropObject.h", "qt/LicenseDialog.h", "qt/MainWindow.h", "qt/MakeDialog.h", "qt/OptionsDialog.h", "qt/PathButton.h", "qt/Prefs.h", "qt/PrefsDialog.h", "qt/RelocateDialog.h", "qt/RpcClient.h", "qt/RpcQueue.h", "qt/Session.h", "qt/SessionDialog.h", "qt/Speed.h", "qt/StatsDialog.h", "qt/StyleHelper.h", "qt/Torrent.h", "qt/TorrentDelegate.h", "qt/TorrentDelegateMin.h", "qt/TorrentFilter.h", "qt/TorrentModel.h", "qt/TorrentView.h", "qt/TrackerDelegate.h", "qt/TrackerModel.h", "qt/TrackerModelFilter.h", "qt/Utils.h", "qt/VariantHelpers.h", "qt/WatchDir.h", "tests/libtransmission/announce-list-test.cc", "tests/libtransmission/announcer-test.cc", "tests/libtransmission/benc-test.cc", "tests/libtransmission/bitfield-test.cc", "tests/libtransmission/block-info-test.cc", "tests/libtransmission/blocklist-test.cc", "tests/libtransmission/clients-test.cc", "tests/libtransmission/completion-test.cc", "tests/libtransmission/copy-test.cc", "tests/libtransmission/crypto-test-ref.h", "tests/libtransmission/crypto-test.cc", "tests/libtransmission/error-test.cc", "tests/libtransmission/file-piece-map-test.cc", "tests/libtransmission/file-test.cc", "tests/libtransmission/getopt-test.cc", "tests/libtransmission/handshake-test.cc", "tests/libtransmission/history-test.cc", "tests/libtransmission/json-test.cc", "tests/libtransmission/magnet-metainfo-test.cc", "tests/libtransmission/makemeta-test.cc", "tests/libtransmission/move-test.cc", "tests/libtransmission/open-files-test.cc", "tests/libtransmission/peer-mgr-active-requests-test.cc", "tests/libtransmission/peer-mgr-wishlist-test.cc", "tests/libtransmission/peer-msgs-test.cc", "tests/libtransmission/platform-test.cc", "tests/libtransmission/quark-test.cc", "tests/libtransmission/remove-test.cc", "tests/libtransmission/rename-test.cc", "tests/libtransmission/rpc-test.cc", "tests/libtransmission/session-test.cc", "tests/libtransmission/strbuf-test.cc", "tests/libtransmission/subprocess-test-program.cc", "tests/libtransmission/subprocess-test.cc", "tests/libtransmission/test-fixtures.h", "tests/libtransmission/torrent-files-test.cc", "tests/libtransmission/torrent-metainfo-test.cc", "tests/libtransmission/torrents-test.cc", "tests/libtransmission/utils-test.cc", "tests/libtransmission/variant-test.cc", "tests/libtransmission/watchdir-test.cc", "tests/libtransmission/web-utils-test.cc", "utils/show.cc", "utils/units.h"], 
-        )
-    ])
-
-@problem(
     id="transmission-8b983b3",
     description="""
     refactor: tr_sys_path_resolve() returns a std::string (#3587)
@@ -3360,34 +2296,6 @@ def transmission_ec79a2a(state: EnvironmentState) -> Grade:
             test="ec79a2a888d1564df03b9b3ee08128ae042c2c20", 
             golden="ec79a2a888d1564df03b9b3ee08128ae042c2c20",
             jest_test_files=["libtransmission/announcer-http.cc", "libtransmission/announcer.cc", "libtransmission/bitfield.cc", "libtransmission/crypto-utils.cc", "libtransmission/file-posix.cc", "libtransmission/handshake.cc", "libtransmission/magnet-metainfo.cc", "libtransmission/peer-io.cc", "libtransmission/peer-mgr.cc", "libtransmission/rpcimpl.cc", "libtransmission/session.cc", "libtransmission/torrent-magnet.cc", "libtransmission/tr-dht.cc", "libtransmission/tr-lpd.cc", "libtransmission/tr-udp.cc", "libtransmission/upnp.cc", "libtransmission/utils.cc", "qt/Application.cc", "qt/DetailsDialog.cc", "qt/FaviconCache.cc", "qt/FileTreeModel.cc", "qt/FileTreeView.cc", "qt/FilterBarComboBox.cc", "qt/IconCache.cc", "qt/MainWindow.cc", "qt/MakeDialog.cc", "qt/Prefs.cc", "qt/PrefsDialog.cc", "qt/RpcClient.cc", "qt/RpcQueue.cc", "qt/SqueezeLabel.cc", "qt/Torrent.cc", "qt/TorrentDelegate.cc", "qt/TorrentFilter.cc", "qt/TrackerDelegate.cc", "qt/TrackerModel.cc", "qt/TrackerModelFilter.cc", "tests/libtransmission/bitfield-test.cc", "tests/libtransmission/copy-test.cc", "tests/libtransmission/file-piece-map-test.cc", "tests/libtransmission/makemeta-test.cc", "tests/libtransmission/utils-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-445aad5",
-    description="""
-    test: add platform tests (#3514)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="9bf2918ad09ee6c89e105adfb865d9130f987bed",
-    test="445aad56a0054b7b1e5c0fc995e161db6531f1ff", 
-    golden="445aad56a0054b7b1e5c0fc995e161db6531f1ff",
-)
-def transmission_445aad5(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="9bf2918ad09ee6c89e105adfb865d9130f987bed",
-            test="445aad56a0054b7b1e5c0fc995e161db6531f1ff", 
-            golden="445aad56a0054b7b1e5c0fc995e161db6531f1ff",
-            jest_test_files=["cli/cli.cc", "gtk/Prefs.cc", "gtk/main.cc", "libtransmission/platform.cc", "libtransmission/platform.h", "libtransmission/rpc-server.cc", "libtransmission/rpc-server.h", "libtransmission/session.cc", "libtransmission/transmission.h", "macosx/Controller.mm", "qt/Application.cc", "qt/Prefs.cc", "tests/libtransmission/CMakeLists.txt", "tests/libtransmission/assets/user-dirs.dirs", "tests/libtransmission/platform-test.cc"], 
         )
     ])
 
@@ -3840,118 +2748,6 @@ def transmission_a28b07b(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-bdac708",
-    description="""
-    docs: fix various typos and misspellings (#2955)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="0eb1857c6ce3250b6d906668cd785382f69c5f7c",
-    test="bdac708762993d16a45dcdf966f906f00351cc60", 
-    golden="bdac708762993d16a45dcdf966f906f00351cc60",
-)
-def transmission_bdac708(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="0eb1857c6ce3250b6d906668cd785382f69c5f7c",
-            test="bdac708762993d16a45dcdf966f906f00351cc60", 
-            golden="bdac708762993d16a45dcdf966f906f00351cc60",
-            jest_test_files=["CONTRIBUTING.md", "NEWS.md", "daemon/daemon-posix.cc", "docs/Port-Forwarding-Guide.md", "docs/Release-Notes.md", "extras/encryption.txt", "extras/extended-messaging.txt", "gtk/Application.cc", "libtransmission/announcer.cc", "libtransmission/announcer.h", "libtransmission/bitfield.cc", "libtransmission/bitfield.h", "libtransmission/blocklist.cc", "libtransmission/crypto-utils-ccrypto.cc", "libtransmission/handshake.cc", "libtransmission/jsonsl.c", "libtransmission/jsonsl.h", "libtransmission/libt.dox", "libtransmission/peer-io.cc", "libtransmission/peer-mgr.cc", "libtransmission/peer-msgs.cc", "libtransmission/resume.cc", "libtransmission/rpc-server.cc", "libtransmission/rpcimpl.cc", "libtransmission/rpcimpl.h", "libtransmission/session.cc", "libtransmission/torrent-files.cc", "libtransmission/torrent-metainfo.cc", "libtransmission/tr-dht.cc", "libtransmission/tr-lpd.cc", "libtransmission/tr-strbuf.h", "libtransmission/transmission.h", "libtransmission/utils.cc", "libtransmission/utils.h", "libtransmission/web.h", "macosx/BlocklistDownloader.h", "macosx/Controller.h", "macosx/Controller.mm", "macosx/FileNameCell.mm", "macosx/InfoTrackersViewController.mm", "macosx/NSStringAdditions.mm", "macosx/PiecesView.mm", "macosx/PrefsController.mm", "macosx/TrackerCell.mm", "macosx/TransmissionHelp/html/gettingstarted.html", "macosx/TransmissionHelp/html/network.html", "macosx/TransmissionHelp/html/peers.html", "po/fr_CA.po", "qt/MainWindow.h", "qt/PrefsDialog.ui", "tests/libtransmission/crypto-test.cc", "tests/libtransmission/peer-mgr-active-requests-test.cc", "tests/libtransmission/utils-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-c1faebc",
-    description="""
-    fix: new MSVC warning in file-piece-map-test.cc (#2936)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="3ec7e1933e6779e6039aca6d3aa201216b72a9e5",
-    test="c1faebca6ea0dd3a4c5c18660dae88d70a990d9c", 
-    golden="c1faebca6ea0dd3a4c5c18660dae88d70a990d9c",
-)
-def transmission_c1faebc(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="3ec7e1933e6779e6039aca6d3aa201216b72a9e5",
-            test="c1faebca6ea0dd3a4c5c18660dae88d70a990d9c", 
-            golden="c1faebca6ea0dd3a4c5c18660dae88d70a990d9c",
-            jest_test_files=["tests/libtransmission/file-piece-map-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-f79a75c",
-    description="""
-    test: fuzz test tr_variantFromBuf() (#2892)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="a134445caa34904b491f8fdb5750223e237481e0",
-    test="f79a75cb2114150b1fd9d7c80bdc02c5a512c808", 
-    golden="f79a75cb2114150b1fd9d7c80bdc02c5a512c808",
-)
-def transmission_f79a75c(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="a134445caa34904b491f8fdb5750223e237481e0",
-            test="f79a75cb2114150b1fd9d7c80bdc02c5a512c808", 
-            golden="f79a75cb2114150b1fd9d7c80bdc02c5a512c808",
-            jest_test_files=["libtransmission/benc.h", "libtransmission/variant-benc.cc", "libtransmission/variant-common.h", "libtransmission/variant-json.cc", "libtransmission/variant.cc", "tests/libtransmission/variant-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-a134445",
-    description="""
-    test: fuzz test tr_torrent_metainfo.parseBenc() (#2891)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="e88ebbc3e5d566ca2d5f226ec208e23c99d7d601",
-    test="a134445caa34904b491f8fdb5750223e237481e0", 
-    golden="a134445caa34904b491f8fdb5750223e237481e0",
-)
-def transmission_a134445(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="e88ebbc3e5d566ca2d5f226ec208e23c99d7d601",
-            test="a134445caa34904b491f8fdb5750223e237481e0", 
-            golden="a134445caa34904b491f8fdb5750223e237481e0",
-            jest_test_files=["libtransmission/variant-benc.cc", "tests/libtransmission/torrent-metainfo-test.cc", "tests/libtransmission/web-utils-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-eb33b2f",
     description="""
     fix: tr_clientForId() (#2887)
@@ -4148,62 +2944,6 @@ def transmission_4dd25d8(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-66638cc",
-    description="""
-    test: fix race condition in move-test (#2841)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="3dadeae700811372b4e9d1d298841111e1f33339",
-    test="66638cc80cc1f45c5c3614b46f97d048bb30393e", 
-    golden="66638cc80cc1f45c5c3614b46f97d048bb30393e",
-)
-def transmission_66638cc(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="3dadeae700811372b4e9d1d298841111e1f33339",
-            test="66638cc80cc1f45c5c3614b46f97d048bb30393e", 
-            golden="66638cc80cc1f45c5c3614b46f97d048bb30393e",
-            jest_test_files=["libtransmission/torrent-metainfo.h", "tests/libtransmission/move-test.cc", "tests/libtransmission/rename-test.cc", "tests/libtransmission/rpc-test.cc", "tests/libtransmission/test-fixtures.h"], 
-        )
-    ])
-
-@problem(
-    id="transmission-bd895b5",
-    description="""
-    test: fix file-info test edge case (#2811)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="6e8f9f3ff08d1878ec272339384c8c6a8e0449b1",
-    test="bd895b50526665c4c379a5670105cafe017d2ad1", 
-    golden="bd895b50526665c4c379a5670105cafe017d2ad1",
-)
-def transmission_bd895b5(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="6e8f9f3ff08d1878ec272339384c8c6a8e0449b1",
-            test="bd895b50526665c4c379a5670105cafe017d2ad1", 
-            golden="bd895b50526665c4c379a5670105cafe017d2ad1",
-            jest_test_files=["tests/libtransmission/file-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-9c3acc7",
     description="""
     fixup: handle unhandled scrape/announce responses (#2701)
@@ -4256,34 +2996,6 @@ def transmission_13ad2b5(state: EnvironmentState) -> Grade:
             test="13ad2b58dcb4b4c3e1af446dfe28c843e02b1827", 
             golden="13ad2b58dcb4b4c3e1af446dfe28c843e02b1827",
             jest_test_files=["libtransmission/block-info.cc", "libtransmission/block-info.h", "libtransmission/completion.cc", "libtransmission/inout.cc", "libtransmission/peer-mgr.cc", "libtransmission/peer-msgs.cc", "libtransmission/torrent-metainfo.h", "libtransmission/torrent.h", "tests/libtransmission/block-info-test.cc", "tests/libtransmission/completion-test.cc", "tests/libtransmission/file-piece-map-test.cc", "tests/libtransmission/move-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-cddd400",
-    description="""
-    test: fix race condition in rename-test (#2612)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="2410ad2fa69c097284df6ac8c73b3f2095a92fc1",
-    test="cddd400f7e0d01a32fbaed889e9b39e7750d1ee9", 
-    golden="cddd400f7e0d01a32fbaed889e9b39e7750d1ee9",
-)
-def transmission_cddd400(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="2410ad2fa69c097284df6ac8c73b3f2095a92fc1",
-            test="cddd400f7e0d01a32fbaed889e9b39e7750d1ee9", 
-            golden="cddd400f7e0d01a32fbaed889e9b39e7750d1ee9",
-            jest_test_files=["libtransmission/verify.cc", "tests/libtransmission/test-fixtures.h"], 
         )
     ])
 
@@ -4512,62 +3224,6 @@ def transmission_e2be142(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-b61b1e2",
-    description="""
-    test: add regression tests for transmission-show (#2255)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="ee83859bdc1cb2128b7c0d40aeda26b408ec3e8e",
-    test="b61b1e2c1631f32a0372999e13fd366fa54da8dc", 
-    golden="b61b1e2c1631f32a0372999e13fd366fa54da8dc",
-)
-def transmission_b61b1e2(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="ee83859bdc1cb2128b7c0d40aeda26b408ec3e8e",
-            test="b61b1e2c1631f32a0372999e13fd366fa54da8dc", 
-            golden="b61b1e2c1631f32a0372999e13fd366fa54da8dc",
-            jest_test_files=["tests/CMakeLists.txt", "tests/utils/CMakeLists.txt", "tests/utils/assets/Inner_Sanctum_movie_archive.show", "tests/utils/assets/Inner_Sanctum_movie_archive.torrent", "tests/utils/assets/Thor_and_the_Amazon_Women.avi.show", "tests/utils/assets/Thor_and_the_Amazon_Women.avi.torrent", "tests/utils/assets/ubuntu-20.04.3-desktop-amd64.iso.show", "tests/utils/assets/ubuntu-20.04.3-desktop-amd64.iso.torrent", "tests/utils/run_transmission_show.cmake", "utils/show.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-3d2fa18",
-    description="""
-    test: improve tr_bitfield and tr_block_info coverage (#2226)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="de169c7ec37e017e0a8dfb1422b599e08e40f527",
-    test="3d2fa18c613bb0ce912280ad95f486d69a4078ae", 
-    golden="3d2fa18c613bb0ce912280ad95f486d69a4078ae",
-)
-def transmission_3d2fa18(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="de169c7ec37e017e0a8dfb1422b599e08e40f527",
-            test="3d2fa18c613bb0ce912280ad95f486d69a4078ae", 
-            golden="3d2fa18c613bb0ce912280ad95f486d69a4078ae",
-            jest_test_files=["libtransmission/bitfield.cc", "libtransmission/block-info.cc", "tests/libtransmission/bitfield-test.cc", "tests/libtransmission/block-info-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-dbd9130",
     description="""
     fix: env var leak in tr_spawn_async() (#2212)
@@ -4592,34 +3248,6 @@ def transmission_dbd9130(state: EnvironmentState) -> Grade:
             test="dbd9130d9df3b2b0ebf4e7e003fc0e1f0f8d9263", 
             golden="dbd9130d9df3b2b0ebf4e7e003fc0e1f0f8d9263",
             jest_test_files=["libtransmission/subprocess-posix.cc", "libtransmission/subprocess-win32.cc", "libtransmission/subprocess.h", "libtransmission/torrent.cc", "tests/libtransmission/subprocess-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-617df25",
-    description="""
-    fix: coverity regression reported on 2021-11-17
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="f14e741052068b00305f4baf088934cad9b6e683",
-    test="617df25ba184defb9541dccfe1cd3bc9dd107985", 
-    golden="617df25ba184defb9541dccfe1cd3bc9dd107985",
-)
-def transmission_617df25(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="f14e741052068b00305f4baf088934cad9b6e683",
-            test="617df25ba184defb9541dccfe1cd3bc9dd107985", 
-            golden="617df25ba184defb9541dccfe1cd3bc9dd107985",
-            jest_test_files=["tests/libtransmission/metainfo-test.cc"], 
         )
     ])
 
@@ -4764,34 +3392,6 @@ def transmission_3008a99(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-8c40fd8",
-    description="""
-    Fix testing against reference crypto impl
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="1413346fa2634c7ba21bd15d8f86f6fa66f480c8",
-    test="8c40fd8b39f7591705f461b18b87df051461177b", 
-    golden="8c40fd8b39f7591705f461b18b87df051461177b",
-)
-def transmission_8c40fd8(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="1413346fa2634c7ba21bd15d8f86f6fa66f480c8",
-            test="8c40fd8b39f7591705f461b18b87df051461177b", 
-            golden="8c40fd8b39f7591705f461b18b87df051461177b",
-            jest_test_files=["tests/libtransmission/crypto-test-ref.h"], 
-        )
-    ])
-
-@problem(
     id="transmission-94ee81f",
     description="""
     fixup! refactor: add tr_peer_id_t (#2004) (#2016)
@@ -4904,34 +3504,6 @@ def transmission_fb39c46(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-916d418",
-    description="""
-    fix: some Coverity regressions reported on 2021-09-16 (#1870)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="b546fd423fd3af7ad061d0cdc39b5e03a487509b",
-    test="916d418824586fd4f11d57356410492f779547b4", 
-    golden="916d418824586fd4f11d57356410492f779547b4",
-)
-def transmission_916d418(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="b546fd423fd3af7ad061d0cdc39b5e03a487509b",
-            test="916d418824586fd4f11d57356410492f779547b4", 
-            golden="916d418824586fd4f11d57356410492f779547b4",
-            jest_test_files=["tests/libtransmission/blocklist-test.cc", "tests/libtransmission/copy-test.cc", "tests/libtransmission/file-test.cc", "tests/libtransmission/subprocess-test.cc", "tests/libtransmission/utils-test.cc"], 
-        )
-    ])
-
-@problem(
     id="transmission-312d182",
     description="""
     C++ modernize: Replace MIN/MAX with type safe std::min/std::max (#1806)
@@ -5016,34 +3588,6 @@ def transmission_a459e5e(state: EnvironmentState) -> Grade:
     ])
 
 @problem(
-    id="transmission-c0ed825",
-    description="""
-    perf: lookup tables for faster torrent searching. (#1778)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="696b0bcab95a17a83ea2ebc31044ea5ff1755d9c",
-    test="c0ed82533cf8f48c79c4efe86988c81c930b46a1", 
-    golden="c0ed82533cf8f48c79c4efe86988c81c930b46a1",
-)
-def transmission_c0ed825(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="696b0bcab95a17a83ea2ebc31044ea5ff1755d9c",
-            test="c0ed82533cf8f48c79c4efe86988c81c930b46a1", 
-            golden="c0ed82533cf8f48c79c4efe86988c81c930b46a1",
-            jest_test_files=["libtransmission/session.c", "libtransmission/session.h", "libtransmission/torrent.c", "tests/libtransmission/.clang-tidy"], 
-        )
-    ])
-
-@problem(
     id="transmission-0155252",
     description="""
     Add in-kernel file copying for several platforms. (#1092)
@@ -5068,117 +3612,5 @@ def transmission_0155252(state: EnvironmentState) -> Grade:
             test="0155252823d71576f2d1bdcbc301d2e6006cf7f5", 
             golden="0155252823d71576f2d1bdcbc301d2e6006cf7f5",
             jest_test_files=["CMakeLists.txt", "libtransmission/file-posix.c", "libtransmission/file-win32.c", "libtransmission/file.h", "libtransmission/utils.c", "tests/libtransmission/CMakeLists.txt", "tests/libtransmission/copy-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-f59118d",
-    description="""
-    feat: add torrent-get 'primary-mime-type' to RPC. (#1464)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="4c7153fa48d86627af3a0ec4e1369632c81484d0",
-    test="f59118d1fe6a320d797b151a6f235f739ef3b487", 
-    golden="f59118d1fe6a320d797b151a6f235f739ef3b487",
-)
-def transmission_f59118d(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="4c7153fa48d86627af3a0ec4e1369632c81484d0",
-            test="f59118d1fe6a320d797b151a6f235f739ef3b487", 
-            golden="f59118d1fe6a320d797b151a6f235f739ef3b487",
-            jest_test_files=["Transmission.xcodeproj/project.pbxproj", "extras/rpc-spec.txt", "libtransmission/CMakeLists.txt", "libtransmission/mime-types.c", "libtransmission/mime-types.h", "libtransmission/mime-types.js", "libtransmission/quark.c", "libtransmission/quark.h", "libtransmission/rpcimpl.c", "libtransmission/torrent.c", "libtransmission/torrent.h", "libtransmission/utils.c", "libtransmission/utils.h", "qt/IconCache.cc", "qt/IconCache.h", "qt/Session.cc", "qt/Torrent.cc", "qt/Torrent.h", "tests/libtransmission/utils-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-c2fb393",
-    description="""
-    chore: fix clang-tidy-11 warnings (#1436)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="bda60c5a18a885cfc3543cc596a0b4756e3936b4",
-    test="c2fb3933905e36f63b963f06095719ac2059bb7d", 
-    golden="c2fb3933905e36f63b963f06095719ac2059bb7d",
-)
-def transmission_c2fb393(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="bda60c5a18a885cfc3543cc596a0b4756e3936b4",
-            test="c2fb3933905e36f63b963f06095719ac2059bb7d", 
-            golden="c2fb3933905e36f63b963f06095719ac2059bb7d",
-            jest_test_files=["qt/Application.h", "qt/DetailsDialog.h", "qt/FileTreeModel.h", "qt/Formatter.cc", "qt/IconCache.cc", "qt/OptionsDialog.h", "qt/Prefs.cc", "qt/Prefs.h", "qt/RelocateDialog.cc", "qt/RpcClient.cc", "qt/RpcQueue.cc", "qt/RpcQueue.h", "qt/Session.h", "qt/TorrentDelegate.cc", "qt/TorrentDelegate.h", "qt/TorrentModel.h", "qt/TrackerDelegate.cc", "tests/libtransmission/.clang-tidy"], 
-        )
-    ])
-
-@problem(
-    id="transmission-ce51f1a",
-    description="""
-    refactor: work around msvc constxpr std::array bug (#1429)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="9f7c8654549e8deeb434c9f653e31d6900acdc00",
-    test="ce51f1adbfa97e026801efacaadd520a6e792c7d", 
-    golden="ce51f1adbfa97e026801efacaadd520a6e792c7d",
-)
-def transmission_ce51f1a(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="9f7c8654549e8deeb434c9f653e31d6900acdc00",
-            test="ce51f1adbfa97e026801efacaadd520a6e792c7d", 
-            golden="ce51f1adbfa97e026801efacaadd520a6e792c7d",
-            jest_test_files=["tests/libtransmission/clients-test.cc", "tests/libtransmission/crypto-test.cc", "tests/libtransmission/getopt-test.cc", "tests/libtransmission/magnet-test.cc", "tests/libtransmission/metainfo-test.cc", "tests/libtransmission/rename-test.cc", "tests/libtransmission/rpc-test.cc", "tests/libtransmission/utils-test.cc"], 
-        )
-    ])
-
-@problem(
-    id="transmission-8445e09",
-    description="""
-    Fix: Test structure shadowing Google Test suite one (#1417)
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
-    """,
-    hints=[],
-    difficulty="hard",
-    task_type="coding",
-    review_level="no-review",
-    base="90ce7efc09c5d7fb562d74e66da61f606f610f12",
-    test="8445e090a72cc5e1cd63002d46b3e24ddceed583", 
-    golden="8445e090a72cc5e1cd63002d46b3e24ddceed583",
-)
-def transmission_8445e09(state: EnvironmentState) -> Grade:
-    return Grade.from_subscores([
-        AgentPatchGrader.grade(
-            state=state,
-            weight=1.0,
-            base="90ce7efc09c5d7fb562d74e66da61f606f610f12",
-            test="8445e090a72cc5e1cd63002d46b3e24ddceed583", 
-            golden="8445e090a72cc5e1cd63002d46b3e24ddceed583",
-            jest_test_files=["tests/libtransmission/clients-test.cc", "tests/libtransmission/crypto-test.cc", "tests/libtransmission/file-test.cc", "tests/libtransmission/metainfo-test.cc", "tests/libtransmission/variant-test.cc"], 
         )
     ])

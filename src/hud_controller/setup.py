@@ -120,4 +120,4 @@ async def default_setup(template: dict[str, Any]) -> None:
         golden=template["golden"],
     )
     
-    logger.info("✅ Environment Setup Complete.")
+    logger.info("Environment Setup Complete.")
