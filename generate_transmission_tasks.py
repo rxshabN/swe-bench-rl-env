@@ -17,28 +17,32 @@ for task in tasks:
     files_list = "\\n".join([f"- {f}" for f in task.get('files', [])])
     
     description = f"""Task: {task['task_id']}
-    Problem: {safe_msg}
+                        Problem: {safe_msg}
 
-    Issue
-    GitHub Issue: {safe_msg}
+                        Issue
+                        GitHub Issue: {safe_msg}
 
-    Files to Modify
-    {files_list}
+                        Environment Notes
+                        - Project is PRE-COMPILED. DO NOT clean the build directory.
+                        - Use 'ninja' for fast incremental builds.
 
-    Instructions
-    1. Build the project: cd /home/ubuntu/repo/build && ninja
-    2. Run tests to see what's failing: ctest --output-on-failure
-    3. Analyze the failing tests (look at assertions and test names).
-    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
-    5. Implement the fix.
-    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+                        Files to Modify
+                        {files_list}
 
-    IMPORTANT: Evaluation Rules
-    - The tests define the expected behavior - use them as your specification
-    - Write your fix based on understanding the code and tests
-    - Do NOT search for solutions outside the codebase
-    - The repository is available at: /home/ubuntu/repo
-    """
+                        Instructions
+                        1. Verify the build: cd /home/ubuntu/repo/build && ninja
+                        2. Run tests to see what's failing: ctest --output-on-failure
+                        3. Analyze the failing tests (look at assertions and test names).
+                        4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+                        5. Implement the fix.
+                        6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+                        IMPORTANT: Evaluation Rules
+                        - The tests define the expected behavior - use them as your specification
+                        - Write your fix based on understanding the code and tests
+                        - Do NOT search for solutions outside the codebase
+                        - The repository is available at: /home/ubuntu/repo
+                        """
 
     task_code = f"""
 @problem(

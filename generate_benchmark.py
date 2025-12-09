@@ -5,7 +5,7 @@ from pathlib import Path
 
 def create_rich_prompt(task):
     files = task.get("files", [])
-    files_list = "\n".join([f"{f}" for f in files]) if files else "See repository"
+    files_list = "\n".join([f"- {f}" for f in files]) if files else "See repository"
     
     return f"""Task: {task['task_id']}
             Problem: {task['message']}
@@ -16,11 +16,16 @@ def create_rich_prompt(task):
             Bug Description
             The codebase has one or more bugs and requires fixes. Tests have been written that define the expected behavior. Currently these tests FAIL. You must write code to make the tests pass.
 
+            ENVIRONMENT NOTES (IMPORTANT):
+            - The project is PRE-COMPILED. You do NOT need to run a full build.
+            - DO NOT delete the 'build' directory or run 'make clean'. This will cause a timeout/OOM.
+            - The build system is 'Ninja'. It handles incremental builds automatically.
+
             Files to Modify
             {files_list}
 
             Instructions
-            1. Build the project: cd /home/ubuntu/repo/build && ninja
+            1. Verify the build (Incremental): cd /home/ubuntu/repo/build && ninja
             2. Run tests to see what's failing: ctest --output-on-failure
             3. Analyze the failing tests (look at assertions and test names).
             4. Find relevant source files in /home/ubuntu/repo/libtransmission/

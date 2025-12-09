@@ -112,7 +112,8 @@ async def default_setup(template: dict[str, Any]) -> None:
 
     await start_dinit()
 
-    setup_codebase(
+    await asyncio.to_thread(
+        setup_codebase,
         base=template["base"],
         test=template["test"],
         golden=template["golden"],
