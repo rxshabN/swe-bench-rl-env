@@ -78,9 +78,9 @@ def setup_codebase(
 
     build_dir = Path(project_dir) / "build"
     
-    if build_dir.exists():
-        logger.info("🧹 Cleaning old build directory...")
-        shutil.rmtree(build_dir)
+    # if build_dir.exists():
+    #     logger.info("🧹 Cleaning old build directory...")
+    #     shutil.rmtree(build_dir)
     
     build_dir.mkdir(parents=True, exist_ok=True)
 
@@ -99,8 +99,6 @@ def setup_codebase(
         cwd=str(build_dir)
     )
     
-    logger.info("🏗️ Running initial build (compiling dependencies)...")
-    subprocess_run(["ninja"], cwd=str(build_dir))
     subprocess_run(["chown", "-R", "ubuntu:ubuntu", str(build_dir)])
 
 def start_dinit_script():

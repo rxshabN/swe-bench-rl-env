@@ -30,7 +30,8 @@ RUN mkdir -p build && cd build && \
     -DENABLE_GTK=OFF -DENABLE_QT=OFF -DENABLE_MAC=OFF \
     -DENABLE_TESTS=ON \
     -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
-    -DCMAKE_C_COMPILER_LAUNCHER=ccache ..
+    -DCMAKE_C_COMPILER_LAUNCHER=ccache .. && \
+    ninja
 
 RUN chown -R ubuntu:ubuntu /home/ubuntu
 

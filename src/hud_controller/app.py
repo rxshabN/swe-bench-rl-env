@@ -64,7 +64,7 @@ async def setup_problem(problem_id: str = Field(description="Task ID")) -> str:
     """Initialize the environment (Time Travel + Build Config)."""
     spec = _get_spec(problem_id)
     logger.info(f"Setting up problem: {problem_id}")
-    setup_codebase(spec.base, spec.test, spec.golden)
+    await asyncio.to_thread(setup_codebase, spec.base, spec.test, spec.golden)
     return spec_to_statement(spec)
 
 @mcp.tool()

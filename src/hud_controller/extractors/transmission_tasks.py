@@ -6,10 +6,29 @@ from hud_controller.graders import AgentPatchGrader
 @problem(
     id="transmission-05aef3e",
     description="""
-    refactor: unify quarks and strings to snake_case (#7108)
+Task: transmission-05aef3e
+    Problem: refactor: unify quarks and strings to snake_case (#7108)
+
+    Issue
+    GitHub Issue: refactor: unify quarks and strings to snake_case (#7108)
+
+    Files to Modify
+    - cli/cli.cc\n- docs/Blocklists.md\n- docs/Editing-Configuration-Files.md\n- docs/Headless-Usage.md\n- docs/Transmission-Resume-Files.md\n- docs/rpc-spec.md\n- gtk/Actions.cc\n- gtk/DetailsDialog.cc\n- gtk/PrefsDialog.cc\n- gtk/Session.cc\n- gtk/transmission-ui.xml\n- libtransmission/quark.cc\n- libtransmission/quark.h\n- libtransmission/resume.cc\n- libtransmission/rpc-server.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/stats.cc\n- libtransmission/transmission.h\n- libtransmission/variant.cc\n- libtransmission/variant.h\n- news/news-5.0.0-draft.md\n- qt/DetailsDialog.cc\n- qt/FreeSpaceLabel.cc\n- qt/OptionsDialog.cc\n- qt/Prefs.cc\n- qt/PrefsDialog.cc\n- qt/Session.cc\n- qt/Torrent.cc\n- qt/VariantHelpers.cc\n- tests/libtransmission/completion-test.cc\n- tests/libtransmission/json-test.cc\n- tests/libtransmission/rpc-test.cc\n- utils/remote.cc\n- web/src/file-row.js\n- web/src/inspector.js\n- web/src/open-dialog.js\n- web/src/prefs-dialog.js\n- web/src/remote.js\n- web/src/statistics-dialog.js\n- web/src/torrent.js\n- web/src/transmission.js
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -34,10 +53,29 @@ def transmission_05aef3e(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-25d2ebf",
     description="""
-    refactor: overhaul `tr_address` special address checks (#7818)
+Task: transmission-25d2ebf
+    Problem: refactor: overhaul `tr_address` special address checks (#7818)
+
+    Issue
+    GitHub Issue: refactor: overhaul `tr_address` special address checks (#7818)
+
+    Files to Modify
+    - libtransmission/announcer-udp.cc\n- libtransmission/ip-cache.cc\n- libtransmission/net.cc\n- libtransmission/net.h\n- libtransmission/peer-msgs.cc\n- libtransmission/session.cc\n- libtransmission/tr-udp.cc\n- tests/libtransmission/ip-cache-test.cc\n- tests/libtransmission/net-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -62,10 +100,29 @@ def transmission_25d2ebf(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-4318a6f",
     description="""
-    fix: caching a source address doesn't imply public internet connectivity (#7520)
+Task: transmission-4318a6f
+    Problem: fix: caching a source address doesn't imply public internet connectivity (#7520)
+
+    Issue
+    GitHub Issue: fix: caching a source address doesn't imply public internet connectivity (#7520)
+
+    Files to Modify
+    - libtransmission/ip-cache.cc\n- libtransmission/ip-cache.h\n- libtransmission/net.h\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/tr-udp.cc\n- tests/libtransmission/ip-cache-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -90,10 +147,29 @@ def transmission_4318a6f(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-41dd2cf",
     description="""
-    fix: accept either one of udp announce response (#7583)
+Task: transmission-41dd2cf
+    Problem: fix: accept either one of udp announce response (#7583)
+
+    Issue
+    GitHub Issue: fix: accept either one of udp announce response (#7583)
+
+    Files to Modify
+    - libtransmission/announcer-common.h\n- libtransmission/announcer-udp.cc\n- tests/libtransmission/announcer-udp-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -118,10 +194,29 @@ def transmission_41dd2cf(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-e7d4a69",
     description="""
-    fix: update wishlist when files wanted changed (#7733)
+Task: transmission-e7d4a69
+    Problem: fix: update wishlist when files wanted changed (#7733)
+
+    Issue
+    GitHub Issue: fix: update wishlist when files wanted changed (#7733)
+
+    Files to Modify
+    - libtransmission/peer-mgr-wishlist.cc\n- libtransmission/peer-mgr-wishlist.h\n- libtransmission/peer-mgr.cc\n- libtransmission/torrent.h\n- tests/libtransmission/peer-mgr-wishlist-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -146,10 +241,29 @@ def transmission_e7d4a69(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-bf5507f",
     description="""
-    fix: load `.torrent` then `.magnet` (#7585)
+Task: transmission-bf5507f
+    Problem: fix: load `.torrent` then `.magnet` (#7585)
+
+    Issue
+    GitHub Issue: fix: load `.torrent` then `.magnet` (#7585)
+
+    Files to Modify
+    - libtransmission/session.cc\n- tests/libtransmission/assets/archlinux-2025.05.01-x86_64.iso.magnet\n- tests/libtransmission/assets/archlinux-2025.05.01-x86_64.iso.torrent\n- tests/libtransmission/session-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -174,10 +288,29 @@ def transmission_bf5507f(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9e15394",
     description="""
-    refactor: announcer code housekeeping (#7496)
+Task: transmission-9e15394
+    Problem: refactor: announcer code housekeeping (#7496)
+
+    Issue
+    GitHub Issue: refactor: announcer code housekeeping (#7496)
+
+    Files to Modify
+    - libtransmission/announcer-common.h\n- libtransmission/announcer-http.cc\n- libtransmission/announcer-udp.cc\n- libtransmission/announcer.cc\n- tests/libtransmission/announcer-test.cc\n- tests/libtransmission/announcer-udp-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -202,10 +335,29 @@ def transmission_9e15394(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-76d854d",
     description="""
-    fix: clang-tidy-20 warnings (#7479)
+Task: transmission-76d854d
+    Problem: fix: clang-tidy-20 warnings (#7479)
+
+    Issue
+    GitHub Issue: fix: clang-tidy-20 warnings (#7479)
+
+    Files to Modify
+    - libtransmission/file-posix.cc\n- qt/.clang-tidy\n- qt/Application.cc\n- tests/libtransmission/.clang-tidy\n- tests/libtransmission/block-info-test.cc\n- tests/libtransmission/completion-test.cc\n- tests/libtransmission/dht-test.cc\n- tests/libtransmission/file-piece-map-test.cc\n- tests/libtransmission/ip-cache-test.cc\n- tests/libtransmission/session-test.cc\n- tests/libtransmission/subprocess-test.cc\n- tests/libtransmission/timer-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -230,10 +382,29 @@ def transmission_76d854d(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-088232f",
     description="""
-    fix: abort handshake if the torrent is stopped (#6947)
+Task: transmission-088232f
+    Problem: fix: abort handshake if the torrent is stopped (#6947)
+
+    Issue
+    GitHub Issue: fix: abort handshake if the torrent is stopped (#6947)
+
+    Files to Modify
+    - libtransmission/handshake.cc\n- libtransmission/handshake.h\n- libtransmission/peer-mgr.cc\n- tests/libtransmission/handshake-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -258,10 +429,29 @@ def transmission_088232f(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-47eb4ee",
     description="""
-    refactor: dedicated class for torrent queue (#7332)
+Task: transmission-47eb4ee
+    Problem: refactor: dedicated class for torrent queue (#7332)
+
+    Issue
+    GitHub Issue: refactor: dedicated class for torrent queue (#7332)
+
+    Files to Modify
+    - Transmission.xcodeproj/project.pbxproj\n- libtransmission/CMakeLists.txt\n- libtransmission/quark.cc\n- libtransmission/quark.h\n- libtransmission/resume.cc\n- libtransmission/resume.h\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent-metainfo.h\n- libtransmission/torrent-queue.cc\n- libtransmission/torrent-queue.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- tests/libtransmission/CMakeLists.txt\n- tests/libtransmission/torrent-queue-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -286,10 +476,29 @@ def transmission_47eb4ee(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-cbd65ae",
     description="""
-    refactor: fix modernize-use-nodiscard warnings by adding [[nodiscard]] (#7351)
+Task: transmission-cbd65ae
+    Problem: refactor: fix modernize-use-nodiscard warnings by adding [[nodiscard]] (#7351)
+
+    Issue
+    GitHub Issue: refactor: fix modernize-use-nodiscard warnings by adding [[nodiscard]] (#7351)
+
+    Files to Modify
+    - libtransmission/benc.h\n- qt/AddData.h\n- qt/DBusInteropHelper.h\n- qt/FileTreeDelegate.h\n- qt/FileTreeModel.h\n- qt/FileTreeView.h\n- qt/FilterBarComboBox.h\n- qt/FilterBarComboBoxDelegate.h\n- qt/Filters.h\n- qt/IconToolButton.h\n- qt/InteropHelper.h\n- qt/InteropObject.h\n- qt/MainWindow.h\n- qt/MakeDialog.h\n- qt/PathButton.h\n- qt/Torrent.h\n- qt/TorrentFilter.h\n- qt/TrackerDelegate.h\n- qt/TrackerModel.h\n- qt/TrackerModelFilter.h\n- qt/WatchDir.h\n- tests/libtransmission/test-fixtures.h
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -314,10 +523,29 @@ def transmission_cbd65ae(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-50eacf6",
     description="""
-    Consume early pad a/b, improve handshake tests (#6987)
+Task: transmission-50eacf6
+    Problem: Consume early pad a/b, improve handshake tests (#6987)
+
+    Issue
+    GitHub Issue: Consume early pad a/b, improve handshake tests (#6987)
+
+    Files to Modify
+    - libtransmission/handshake.cc\n- libtransmission/handshake.h\n- tests/libtransmission/handshake-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -342,10 +570,29 @@ def transmission_50eacf6(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-60e5d98",
     description="""
-    fix: handle nullptr in json serde (#7258)
+Task: transmission-60e5d98
+    Problem: fix: handle nullptr in json serde (#7258)
+
+    Issue
+    GitHub Issue: fix: handle nullptr in json serde (#7258)
+
+    Files to Modify
+    - libtransmission/variant-json.cc\n- tests/libtransmission/json-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -370,10 +617,29 @@ def transmission_60e5d98(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-affb03a",
     description="""
-    refactor: remove `tr_torrent::do_magnet_idle_work()` (#7271)
+Task: transmission-affb03a
+    Problem: refactor: remove `tr_torrent::do_magnet_idle_work()` (#7271)
+
+    Issue
+    GitHub Issue: refactor: remove `tr_torrent::do_magnet_idle_work()` (#7271)
+
+    Files to Modify
+    - libtransmission/torrent-magnet.cc\n- libtransmission/torrent-magnet.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- tests/libtransmission/torrent-magnet-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -398,10 +664,29 @@ def transmission_affb03a(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-7e4b4f1",
     description="""
-    refactor: faster wishlist (#7027)
+Task: transmission-7e4b4f1
+    Problem: refactor: faster wishlist (#7027)
+
+    Issue
+    GitHub Issue: refactor: faster wishlist (#7027)
+
+    Files to Modify
+    - Transmission.xcodeproj/project.pbxproj\n- libtransmission/CMakeLists.txt\n- libtransmission/peer-common.h\n- libtransmission/peer-io.cc\n- libtransmission/peer-io.h\n- libtransmission/peer-mgr-active-requests.cc\n- libtransmission/peer-mgr-active-requests.h\n- libtransmission/peer-mgr-wishlist.cc\n- libtransmission/peer-mgr-wishlist.h\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-mgr.h\n- libtransmission/peer-msgs.cc\n- libtransmission/torrent.h\n- libtransmission/webseed.cc\n- tests/libtransmission/CMakeLists.txt\n- tests/libtransmission/peer-mgr-active-requests-test.cc\n- tests/libtransmission/peer-mgr-wishlist-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -426,10 +711,29 @@ def transmission_7e4b4f1(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-3e5a77d",
     description="""
-    refactor: remove last byte special case in `tr_block_info::byte_loc()` (#7064)
+Task: transmission-3e5a77d
+    Problem: refactor: remove last byte special case in `tr_block_info::byte_loc()` (#7064)
+
+    Issue
+    GitHub Issue: refactor: remove last byte special case in `tr_block_info::byte_loc()` (#7064)
+
+    Files to Modify
+    - libtransmission/block-info.h\n- libtransmission/file-piece-map.cc\n- libtransmission/torrent.cc\n- tests/libtransmission/file-piece-map-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -454,10 +758,29 @@ def transmission_3e5a77d(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9fc9daf",
     description="""
-    Fails with an error if data removal was not possible (#6055)
+Task: transmission-9fc9daf
+    Problem: Fails with an error if data removal was not possible (#6055)
+
+    Issue
+    GitHub Issue: Fails with an error if data removal was not possible (#6055)
+
+    Files to Modify
+    - gtk/OptionsDialog.cc\n- gtk/Session.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/torrent-files.cc\n- libtransmission/torrent-files.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/transmission.h\n- libtransmission/utils.cc\n- libtransmission/utils.h\n- macosx/Torrent.mm\n- tests/libtransmission/move-test.cc\n- tests/libtransmission/rename-test.cc\n- tests/libtransmission/rpc-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -482,10 +805,29 @@ def transmission_9fc9daf(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-fa8be1b",
     description="""
-    fix: `tr_variant_serde::parse_json()` bug fixes (#6901)
+Task: transmission-fa8be1b
+    Problem: fix: `tr_variant_serde::parse_json()` bug fixes (#6901)
+
+    Issue
+    GitHub Issue: fix: `tr_variant_serde::parse_json()` bug fixes (#6901)
+
+    Files to Modify
+    - libtransmission/variant-json.cc\n- tests/libtransmission/variant-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -510,10 +852,29 @@ def transmission_fa8be1b(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2c2011d",
     description="""
-    fix: update partial file suffix after verifying torrent (#6871)
+Task: transmission-2c2011d
+    Problem: fix: update partial file suffix after verifying torrent (#6871)
+
+    Issue
+    GitHub Issue: fix: update partial file suffix after verifying torrent (#6871)
+
+    Files to Modify
+    - libtransmission/torrent.cc\n- libtransmission/torrent.h\n- tests/libtransmission/move-test.cc\n- tests/libtransmission/rename-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -538,10 +899,29 @@ def transmission_2c2011d(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9748f42",
     description="""
-    fix: restore portable file path check (#6853)
+Task: transmission-9748f42
+    Problem: fix: restore portable file path check (#6853)
+
+    Issue
+    GitHub Issue: fix: restore portable file path check (#6853)
+
+    Files to Modify
+    - libtransmission/makemeta.cc\n- libtransmission/makemeta.h\n- libtransmission/resume.cc\n- libtransmission/torrent-files.cc\n- libtransmission/torrent-files.h\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent-metainfo.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- macosx/QuickLookPlugin/GeneratePreviewForURL.mm\n- tests/libtransmission/makemeta-test.cc\n- tests/libtransmission/remove-test.cc\n- tests/libtransmission/torrent-files-test.cc\n- utils/create.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -566,10 +946,29 @@ def transmission_9748f42(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-09b67c8",
     description="""
-    fix: possible heap-use-after-free with magnet links (#6815)
+Task: transmission-09b67c8
+    Problem: fix: possible heap-use-after-free with magnet links (#6815)
+
+    Issue
+    GitHub Issue: fix: possible heap-use-after-free with magnet links (#6815)
+
+    Files to Modify
+    - libtransmission/torrent-magnet.cc\n- libtransmission/torrent-magnet.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- tests/libtransmission/torrent-magnet-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -594,10 +993,29 @@ def transmission_09b67c8(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-d935d36",
     description="""
-    refactor: remove torrent_view virtual class (#6738)
+Task: transmission-d935d36
+    Problem: refactor: remove torrent_view virtual class (#6738)
+
+    Issue
+    GitHub Issue: refactor: remove torrent_view virtual class (#6738)
+
+    Files to Modify
+    - libtransmission/completion.cc\n- libtransmission/completion.h\n- libtransmission/torrent.h\n- tests/libtransmission/completion-test.cc\n- tests/libtransmission/lpd-test.cc\n- tests/libtransmission/watchdir-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -622,10 +1040,29 @@ def transmission_d935d36(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2ff3ae0",
     description="""
-    fix: more misc `net.cc` fixes (#6735)
+Task: transmission-2ff3ae0
+    Problem: fix: more misc `net.cc` fixes (#6735)
+
+    Issue
+    GitHub Issue: fix: more misc `net.cc` fixes (#6735)
+
+    Files to Modify
+    - libtransmission/net.cc\n- libtransmission/tr-udp.cc\n- libtransmission/web-utils.cc\n- tests/libtransmission/announcer-test.cc\n- tests/libtransmission/net-test.cc\n- tests/libtransmission/web-utils-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -650,10 +1087,29 @@ def transmission_2ff3ae0(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-152f3e9",
     description="""
-    refactor: convert `tr_peerMsgsImpl` helper functions to class methods (#6580)
+Task: transmission-152f3e9
+    Problem: refactor: convert `tr_peerMsgsImpl` helper functions to class methods (#6580)
+
+    Issue
+    GitHub Issue: refactor: convert `tr_peerMsgsImpl` helper functions to class methods (#6580)
+
+    Files to Modify
+    - libtransmission/handshake.cc\n- libtransmission/magnet-metainfo.cc\n- libtransmission/net.cc\n- libtransmission/net.h\n- libtransmission/peer-common.h\n- libtransmission/peer-mgr-active-requests.cc\n- libtransmission/peer-mgr-active-requests.h\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-mgr.h\n- libtransmission/peer-msgs.cc\n- libtransmission/peer-msgs.h\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent-metainfo.h\n- libtransmission/webseed.cc\n- libtransmission/webseed.h\n- tests/libtransmission/completion-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -678,10 +1134,29 @@ def transmission_152f3e9(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-edc59ba",
     description="""
-    fix compatibility with clang-format 18 (#6690)
+Task: transmission-edc59ba
+    Problem: fix compatibility with clang-format 18 (#6690)
+
+    Issue
+    GitHub Issue: fix compatibility with clang-format 18 (#6690)
+
+    Files to Modify
+    - libtransmission/favicon-cache.h\n- qt/RpcClient.cc\n- tests/libtransmission/dht-test.cc\n- tests/libtransmission/timer-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -706,10 +1181,29 @@ def transmission_edc59ba(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-7c11809",
     description="""
-    fix: more clang-tidy warnings (#6608)
+Task: transmission-7c11809
+    Problem: fix: more clang-tidy warnings (#6608)
+
+    Issue
+    GitHub Issue: fix: more clang-tidy warnings (#6608)
+
+    Files to Modify
+    - gtk/.clang-tidy\n- gtk/DetailsDialog.cc\n- gtk/DynamicPropertyStore.h\n- gtk/FilterBar.cc\n- gtk/FilterListModel.hh\n- gtk/HigWorkarea.h\n- gtk/MessageLogWindow.cc\n- gtk/PrefsDialog.h\n- gtk/Session.cc\n- gtk/StatsDialog.cc\n- gtk/Torrent.cc\n- gtk/Utils.h\n- qt/Application.cc\n- qt/DetailsDialog.cc\n- qt/FileTreeItem.cc\n- qt/FileTreeView.cc\n- qt/FilterBar.cc\n- qt/InteropObject.cc\n- qt/MakeDialog.cc\n- qt/Prefs.cc\n- qt/PrefsDialog.cc\n- qt/Session.cc\n- qt/Torrent.cc\n- qt/TorrentFilter.cc\n- qt/TrackerDelegate.cc\n- qt/VariantHelpers.cc\n- tests/libtransmission/handshake-test.cc\n- tests/libtransmission/move-test.cc\n- tests/libtransmission/torrent-magnet-test.cc\n- tests/libtransmission/variant-test.cc\n- tests/libtransmission/watchdir-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -734,10 +1228,29 @@ def transmission_7c11809(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-ca11c33",
     description="""
-    fix: various DHT bugs (#6569)
+Task: transmission-ca11c33
+    Problem: fix: various DHT bugs (#6569)
+
+    Issue
+    GitHub Issue: fix: various DHT bugs (#6569)
+
+    Files to Modify
+    - docs/Editing-Configuration-Files.md\n- libtransmission/peer-msgs.cc\n- libtransmission/session-settings.h\n- libtransmission/session.h\n- libtransmission/tr-dht.cc\n- libtransmission/tr-dht.h\n- tests/libtransmission/dht-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -762,10 +1275,29 @@ def transmission_ca11c33(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-468de87",
     description="""
-    refactor: fix cppcoreguidelines-avoid-do-while warnings (#6527)
+Task: transmission-468de87
+    Problem: refactor: fix cppcoreguidelines-avoid-do-while warnings (#6527)
+
+    Issue
+    GitHub Issue: refactor: fix cppcoreguidelines-avoid-do-while warnings (#6527)
+
+    Files to Modify
+    - gtk/.clang-tidy\n- gtk/FileList.cc\n- libtransmission/file-posix.cc\n- libtransmission/subprocess-posix.cc\n- qt/.clang-tidy\n- tests/libtransmission/.clang-tidy\n- tests/libtransmission/bitfield-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -790,10 +1322,29 @@ def transmission_468de87(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2394789",
     description="""
-    fix: performance-enum-size warnings (#6504)
+Task: transmission-2394789
+    Problem: fix: performance-enum-size warnings (#6504)
+
+    Issue
+    GitHub Issue: fix: performance-enum-size warnings (#6504)
+
+    Files to Modify
+    - gtk/FileList.cc\n- gtk/FilterBar.cc\n- gtk/FilterBase.h\n- gtk/ListModelAdapter.h\n- gtk/Session.h\n- gtk/SorterBase.h\n- gtk/Torrent.h\n- gtk/TorrentFilter.h\n- gtk/Utils.h\n- libtransmission/announcer-udp.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/port-forwarding-upnp.cc\n- libtransmission/rpc-server.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/torrent-metainfo.cc\n- libtransmission/tr-dht.cc\n- tests/libtransmission/watchdir-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -818,10 +1369,29 @@ def transmission_2394789(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9d433ff",
     description="""
-    fix: misc-include-cleaner clang-tidy warnings (#6502)
+Task: transmission-9d433ff
+    Problem: fix: misc-include-cleaner clang-tidy warnings (#6502)
+
+    Issue
+    GitHub Issue: fix: misc-include-cleaner clang-tidy warnings (#6502)
+
+    Files to Modify
+    - gtk/.clang-tidy\n- gtk/Actions.cc\n- gtk/Application.cc\n- gtk/FileList.cc\n- gtk/MessageLogWindow.cc\n- gtk/PathButton.cc\n- gtk/Percents.cc\n- gtk/PrefsDialog.cc\n- gtk/Session.cc\n- gtk/TorrentCellRenderer.cc\n- gtk/Utils.cc\n- libtransmission/.clang-tidy\n- libtransmission/announce-list.cc\n- libtransmission/cache.cc\n- libtransmission/inout.cc\n- libtransmission/tr-utp.cc\n- qt/.clang-tidy\n- qt/Application.cc\n- qt/Formatter.cc\n- qt/IconCache.cc\n- qt/Prefs.cc\n- qt/Session.cc\n- qt/TorrentDelegateMin.cc\n- qt/Utils.cc\n- qt/VariantHelpers.cc\n- tests/libtransmission/.clang-tidy\n- tests/libtransmission/utils-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -846,10 +1416,29 @@ def transmission_9d433ff(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-df1dc58",
     description="""
-    fix: restore the `tag` key in RPC response (#6492)
+Task: transmission-df1dc58
+    Problem: fix: restore the `tag` key in RPC response (#6492)
+
+    Issue
+    GitHub Issue: fix: restore the `tag` key in RPC response (#6492)
+
+    Files to Modify
+    - libtransmission/rpcimpl.cc\n- tests/libtransmission/rpc-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -874,10 +1463,29 @@ def transmission_df1dc58(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-22cde5d",
     description="""
-    refactor: use new tr_variant API in rpcimpl (#6456)
+Task: transmission-22cde5d
+    Problem: refactor: use new tr_variant API in rpcimpl (#6456)
+
+    Issue
+    GitHub Issue: refactor: use new tr_variant API in rpcimpl (#6456)
+
+    Files to Modify
+    - gtk/Application.cc\n- gtk/DetailsDialog.cc\n- gtk/Session.cc\n- gtk/Session.h\n- libtransmission/rpc-server.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/rpcimpl.h\n- qt/RpcClient.cc\n- qt/RpcClient.h\n- tests/libtransmission/rpc-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -902,10 +1510,29 @@ def transmission_22cde5d(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-10d0470",
     description="""
-    refactor: convert `tr_incomplete_metadata` to c++ class (#6383)
+Task: transmission-10d0470
+    Problem: refactor: convert `tr_incomplete_metadata` to c++ class (#6383)
+
+    Issue
+    GitHub Issue: refactor: convert `tr_incomplete_metadata` to c++ class (#6383)
+
+    Files to Modify
+    - libtransmission/peer-mgr.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/torrent-magnet.cc\n- libtransmission/torrent-magnet.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- tests/libtransmission/test-fixtures.h\n- tests/libtransmission/torrent-magnet-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -930,10 +1557,29 @@ def transmission_10d0470(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-5e51fda",
     description="""
-    refactor: remove tr_strlcpy() (#6433)
+Task: transmission-5e51fda
+    Problem: refactor: remove tr_strlcpy() (#6433)
+
+    Issue
+    GitHub Issue: refactor: remove tr_strlcpy() (#6433)
+
+    Files to Modify
+    - Transmission.xcodeproj/project.pbxproj\n- libtransmission/announcer.cc\n- libtransmission/rpc-server.cc\n- libtransmission/utils.cc\n- libtransmission/utils.h\n- tests/libtransmission/utils-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -958,10 +1604,29 @@ def transmission_5e51fda(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-581d9c3",
     description="""
-    fix: gcc-13 warnings pt. 2 (#6404)
+Task: transmission-581d9c3
+    Problem: fix: gcc-13 warnings pt. 2 (#6404)
+
+    Issue
+    GitHub Issue: fix: gcc-13 warnings pt. 2 (#6404)
+
+    Files to Modify
+    - gtk/FileList.cc\n- gtk/OptionsDialog.cc\n- libtransmission/net.h\n- libtransmission/resume.cc\n- libtransmission/subprocess-posix.cc\n- libtransmission/transmission.h\n- macosx/FilePriorityCell.mm\n- tests/gtest/CMakeLists.txt\n- tests/libtransmission/net-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -986,10 +1651,29 @@ def transmission_581d9c3(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-a494da4",
     description="""
-    fix: fill random buffer in chunks with mbedtls crypto backend (#6379)
+Task: transmission-a494da4
+    Problem: fix: fill random buffer in chunks with mbedtls crypto backend (#6379)
+
+    Issue
+    GitHub Issue: fix: fill random buffer in chunks with mbedtls crypto backend (#6379)
+
+    Files to Modify
+    - libtransmission/crypto-utils-mbedtls.cc\n- tests/libtransmission/crypto-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1014,10 +1698,29 @@ def transmission_a494da4(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-5683751",
     description="""
-    refactor: tr_block_info cleanup (#6342)
+Task: transmission-5683751
+    Problem: refactor: tr_block_info cleanup (#6342)
+
+    Issue
+    GitHub Issue: refactor: tr_block_info cleanup (#6342)
+
+    Files to Modify
+    - libtransmission/block-info.cc\n- libtransmission/block-info.h\n- libtransmission/file-piece-map.cc\n- libtransmission/file-piece-map.h\n- libtransmission/resume.cc\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- tests/libtransmission/block-info-test.cc\n- tests/libtransmission/file-piece-map-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1042,10 +1745,29 @@ def transmission_5683751(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2e46bad",
     description="""
-    refactor: constify the inout module (#6328)
+Task: transmission-2e46bad
+    Problem: refactor: constify the inout module (#6328)
+
+    Issue
+    GitHub Issue: refactor: constify the inout module (#6328)
+
+    Files to Modify
+    - libtransmission/cache.cc\n- libtransmission/cache.h\n- libtransmission/inout.cc\n- libtransmission/inout.h\n- libtransmission/open-files.cc\n- libtransmission/open-files.h\n- libtransmission/peer-msgs.cc\n- libtransmission/session-settings.h\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/transmission.h\n- libtransmission/variant-converters.cc\n- tests/libtransmission/open-files-test.cc\n- tests/libtransmission/settings-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1070,10 +1792,29 @@ def transmission_2e46bad(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-36f33c0",
     description="""
-    fix: recent clang-tidy warnings (#6233)
+Task: transmission-36f33c0
+    Problem: fix: recent clang-tidy warnings (#6233)
+
+    Issue
+    GitHub Issue: fix: recent clang-tidy warnings (#6233)
+
+    Files to Modify
+    - libtransmission/peer-mgr.cc\n- tests/libtransmission/file-piece-map-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1098,10 +1839,29 @@ def transmission_36f33c0(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-a952a07",
     description="""
-    refactor: remove the tr_error** idiom (#6198)
+Task: transmission-a952a07
+    Problem: refactor: remove the tr_error** idiom (#6198)
+
+    Issue
+    GitHub Issue: refactor: remove the tr_error** idiom (#6198)
+
+    Files to Modify
+    - cli/cli.cc\n- daemon/daemon-posix.cc\n- daemon/daemon-win32.cc\n- daemon/daemon.cc\n- daemon/daemon.h\n- gtk/MakeDialog.cc\n- gtk/Session.cc\n- gtk/Utils.cc\n- gtk/Utils.h\n- libtransmission/announce-list.cc\n- libtransmission/announce-list.h\n- libtransmission/announcer-http.cc\n- libtransmission/benc.h\n- libtransmission/blocklist.cc\n- libtransmission/error.cc\n- libtransmission/error.h\n- libtransmission/file-capacity.cc\n- libtransmission/file-posix.cc\n- libtransmission/file-win32.cc\n- libtransmission/file.cc\n- libtransmission/file.h\n- libtransmission/handshake.cc\n- libtransmission/inout.cc\n- libtransmission/magnet-metainfo.cc\n- libtransmission/magnet-metainfo.h\n- libtransmission/makemeta.cc\n- libtransmission/makemeta.h\n- libtransmission/open-files.cc\n- libtransmission/peer-io.cc\n- libtransmission/peer-socket.cc\n- libtransmission/peer-socket.h\n- libtransmission/resume.cc\n- libtransmission/rpc-server.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session-id.cc\n- libtransmission/subprocess-posix.cc\n- libtransmission/subprocess-win32.cc\n- libtransmission/subprocess.h\n- libtransmission/torrent-ctor.cc\n- libtransmission/torrent-files.cc\n- libtransmission/torrent-files.h\n- libtransmission/torrent-magnet.cc\n- libtransmission/torrent-magnet.h\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent-metainfo.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/tr-buffer.h\n- libtransmission/transmission.h\n- libtransmission/utils.cc\n- libtransmission/utils.h\n- libtransmission/variant-json.cc\n- libtransmission/variant.cc\n- libtransmission/variant.h\n- libtransmission/watchdir.cc\n- macosx/CreatorWindowController.mm\n- macosx/Torrent.mm\n- qt/MakeDialog.cc\n- tests/libtransmission/announce-list-test.cc\n- tests/libtransmission/benc-test.cc\n- tests/libtransmission/copy-test.cc\n- tests/libtransmission/error-test.cc\n- tests/libtransmission/file-test.cc\n- tests/libtransmission/makemeta-test.cc\n- tests/libtransmission/open-files-test.cc\n- tests/libtransmission/rename-test.cc\n- tests/libtransmission/subprocess-test.cc\n- tests/libtransmission/test-fixtures.h\n- tests/libtransmission/torrent-magnet-test.cc\n- tests/libtransmission/torrent-metainfo-test.cc\n- tests/libtransmission/utils-test.cc\n- tests/libtransmission/variant-test.cc\n- utils/create.cc\n- utils/edit.cc\n- utils/show.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1126,10 +1886,29 @@ def transmission_a952a07(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2e7448c",
     description="""
-    fix: appendSanitizedComponent is too aggressive on non-WIN32 (and not enough aggressive on WIN32) (#6187)
+Task: transmission-2e7448c
+    Problem: fix: appendSanitizedComponent is too aggressive on non-WIN32 (and not enough aggressive on WIN32) (#6187)
+
+    Issue
+    GitHub Issue: fix: appendSanitizedComponent is too aggressive on non-WIN32 (and not enough aggressive on WIN32) (#6187)
+
+    Files to Modify
+    - libtransmission/torrent-files.cc\n- tests/libtransmission/torrent-files-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1154,10 +1933,29 @@ def transmission_2e7448c(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-c697d95",
     description="""
-    fix: crash after nullptr dereference in rpcimpl (#6177)
+Task: transmission-c697d95
+    Problem: fix: crash after nullptr dereference in rpcimpl (#6177)
+
+    Issue
+    GitHub Issue: fix: crash after nullptr dereference in rpcimpl (#6177)
+
+    Files to Modify
+    - libtransmission/rpcimpl.cc\n- tests/libtransmission/rpc-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1182,10 +1980,29 @@ def transmission_c697d95(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-0259edb",
     description="""
-    fix: json string serializer improperly escaping characters (#6005)
+Task: transmission-0259edb
+    Problem: fix: json string serializer improperly escaping characters (#6005)
+
+    Issue
+    GitHub Issue: fix: json string serializer improperly escaping characters (#6005)
+
+    Files to Modify
+    - libtransmission/utils.cc\n- libtransmission/utils.h\n- libtransmission/variant-json.cc\n- tests/libtransmission/json-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1210,10 +2027,29 @@ def transmission_0259edb(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-fbfbfac",
     description="""
-    fix: minor coverity warnings (#5916)
+Task: transmission-fbfbfac
+    Problem: fix: minor coverity warnings (#5916)
+
+    Issue
+    GitHub Issue: fix: minor coverity warnings (#5916)
+
+    Files to Modify
+    - gtk/Application.cc\n- gtk/FilterBar.cc\n- gtk/Utils.h\n- libtransmission/announcer.cc\n- libtransmission/file-capacity.cc\n- libtransmission/session.cc\n- libtransmission/tr-udp.cc\n- libtransmission/utils.h\n- tests/libtransmission/announce-list-test.cc\n- tests/libtransmission/file-test.cc\n- utils/remote.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1238,10 +2074,29 @@ def transmission_fbfbfac(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-449549c",
     description="""
-    fix: do not mark peer as not connectable when we are currently connected (#5889)
+Task: transmission-449549c
+    Problem: fix: do not mark peer as not connectable when we are currently connected (#5889)
+
+    Issue
+    GitHub Issue: fix: do not mark peer as not connectable when we are currently connected (#5889)
+
+    Files to Modify
+    - libtransmission/peer-mgr.cc\n- tests/libtransmission/CMakeLists.txt\n- tests/libtransmission/tr-peer-info-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1266,10 +2121,29 @@ def transmission_449549c(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-8873f2a",
     description="""
-    fix: announce with query replace bug (#5871)
+Task: transmission-8873f2a
+    Problem: fix: announce with query replace bug (#5871)
+
+    Issue
+    GitHub Issue: fix: announce with query replace bug (#5871)
+
+    Files to Modify
+    - libtransmission/announce-list.cc\n- libtransmission/announce-list.h\n- tests/libtransmission/announce-list-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1294,10 +2168,29 @@ def transmission_8873f2a(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-27f3a5b",
     description="""
-    fix: announce LDP on listening interface (#5875)
+Task: transmission-27f3a5b
+    Problem: fix: announce LDP on listening interface (#5875)
+
+    Issue
+    GitHub Issue: fix: announce LDP on listening interface (#5875)
+
+    Files to Modify
+    - libtransmission/session.h\n- libtransmission/tr-lpd.cc\n- libtransmission/tr-lpd.h\n- tests/libtransmission/lpd-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1322,10 +2215,29 @@ def transmission_27f3a5b(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-97da2ad",
     description="""
-    fix: spelling mistake in `net.h` function call (#5739)
+Task: transmission-97da2ad
+    Problem: fix: spelling mistake in `net.h` function call (#5739)
+
+    Issue
+    GitHub Issue: fix: spelling mistake in `net.h` function call (#5739)
+
+    Files to Modify
+    - libtransmission/net.h\n- tests/libtransmission/net-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1350,10 +2262,29 @@ def transmission_97da2ad(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2211086",
     description="""
-    fix: conform to libcurl requirements to avoid memory leak (#5702)
+Task: transmission-2211086
+    Problem: fix: conform to libcurl requirements to avoid memory leak (#5702)
+
+    Issue
+    GitHub Issue: fix: conform to libcurl requirements to avoid memory leak (#5702)
+
+    Files to Modify
+    - cli/cli.cc\n- daemon/daemon.cc\n- gtk/main.cc\n- libtransmission/session-thread.cc\n- libtransmission/tr-lpd.cc\n- libtransmission/utils.cc\n- libtransmission/utils.h\n- libtransmission/watchdir-win32.cc\n- libtransmission/web.cc\n- macosx/main.mm\n- qt/Application.cc\n- tests/libtransmission/announcer-udp-test.cc\n- tests/libtransmission/dht-test.cc\n- tests/libtransmission/test-fixtures.h\n- tests/libtransmission/watchdir-test.cc\n- utils/remote.cc\n- utils/show.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1378,10 +2309,29 @@ def transmission_2211086(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9c17463",
     description="""
-    fix: revert 'perf: improve IPv4 `tr_address` comparison' (#5709)
+Task: transmission-9c17463
+    Problem: fix: revert 'perf: improve IPv4 `tr_address` comparison' (#5709)
+
+    Issue
+    GitHub Issue: fix: revert 'perf: improve IPv4 `tr_address` comparison' (#5709)
+
+    Files to Modify
+    - libtransmission/net.cc\n- tests/libtransmission/net-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1406,10 +2356,29 @@ def transmission_9c17463(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-6426168",
     description="""
-    fix: use both address + port together as a key for peer lookup (#5619)
+Task: transmission-6426168
+    Problem: fix: use both address + port together as a key for peer lookup (#5619)
+
+    Issue
+    GitHub Issue: fix: use both address + port together as a key for peer lookup (#5619)
+
+    Files to Modify
+    - code_style.sh\n- libtransmission/handshake.cc\n- libtransmission/handshake.h\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-mgr.h\n- libtransmission/peer-msgs.cc\n- tests/libtransmission/handshake-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1434,10 +2403,29 @@ def transmission_6426168(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-ddac059",
     description="""
-    fix: return error when renaming into existing file (#5563)
+Task: transmission-ddac059
+    Problem: fix: return error when renaming into existing file (#5563)
+
+    Issue
+    GitHub Issue: fix: return error when renaming into existing file (#5563)
+
+    Files to Modify
+    - libtransmission/torrent.cc\n- tests/libtransmission/rename-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1462,10 +2450,29 @@ def transmission_ddac059(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-802619e",
     description="""
-    fix: fixes and improvements to global IP query (#5510)
+Task: transmission-802619e
+    Problem: fix: fixes and improvements to global IP query (#5510)
+
+    Issue
+    GitHub Issue: fix: fixes and improvements to global IP query (#5510)
+
+    Files to Modify
+    - libtransmission/global-ip-cache.cc\n- libtransmission/global-ip-cache.h\n- libtransmission/session.cc\n- libtransmission/session.h\n- tests/libtransmission/global-ip-cache-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1490,10 +2497,29 @@ def transmission_802619e(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2cf9678",
     description="""
-    fix: revert buffer reserve space (#5528)
+Task: transmission-2cf9678
+    Problem: fix: revert buffer reserve space (#5528)
+
+    Issue
+    GitHub Issue: fix: revert buffer reserve space (#5528)
+
+    Files to Modify
+    - libtransmission/announcer-udp.cc\n- libtransmission/peer-io.cc\n- libtransmission/peer-io.h\n- libtransmission/peer-mse.h\n- libtransmission/peer-msgs.cc\n- libtransmission/peer-socket.cc\n- libtransmission/peer-socket.h\n- libtransmission/tr-buffer.h\n- libtransmission/variant-benc.cc\n- libtransmission/variant-json.cc\n- libtransmission/variant.cc\n- tests/libtransmission/announcer-udp-test.cc\n- tests/libtransmission/buffer-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1518,10 +2544,29 @@ def transmission_2cf9678(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-e8fcb02",
     description="""
-    fix: use user-preferred locale (#5444)
+Task: transmission-e8fcb02
+    Problem: fix: use user-preferred locale (#5444)
+
+    Issue
+    GitHub Issue: fix: use user-preferred locale (#5444)
+
+    Files to Modify
+    - cli/cli.cc\n- daemon/daemon.cc\n- gtk/main.cc\n- libtransmission/utils.cc\n- libtransmission/utils.h\n- macosx/main.mm\n- qt/Application.cc\n- tests/libtransmission/json-test.cc\n- tests/utils/run_transmission_show.cmake\n- utils/create.cc\n- utils/edit.cc\n- utils/remote.cc\n- utils/show.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1546,10 +2591,29 @@ def transmission_e8fcb02(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9f8a7a6",
     description="""
-    fix: Buffer::Buffer(Buffer&&) bug  (#5435)
+Task: transmission-9f8a7a6
+    Problem: fix: Buffer::Buffer(Buffer&&) bug  (#5435)
+
+    Issue
+    GitHub Issue: fix: Buffer::Buffer(Buffer&&) bug  (#5435)
+
+    Files to Modify
+    - libtransmission/tr-buffer.h\n- tests/libtransmission/buffer-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1574,10 +2638,29 @@ def transmission_9f8a7a6(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-c60bb5b",
     description="""
-    fix: crash when magnet dn isn't utf-8 (#5244)
+Task: transmission-c60bb5b
+    Problem: fix: crash when magnet dn isn't utf-8 (#5244)
+
+    Issue
+    GitHub Issue: fix: crash when magnet dn isn't utf-8 (#5244)
+
+    Files to Modify
+    - Transmission.xcodeproj/project.pbxproj\n- libtransmission/CMakeLists.txt\n- libtransmission/magnet-metainfo.h\n- libtransmission/torrent-metainfo.cc\n- libtransmission/utils.cc\n- libtransmission/utils.h\n- libtransmission/utils.mm\n- tests/libtransmission/utils-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1602,10 +2685,29 @@ def transmission_c60bb5b(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-033d698",
     description="""
-    fix: parsing of ipv6 tracker announce URLs (#5174)
+Task: transmission-033d698
+    Problem: fix: parsing of ipv6 tracker announce URLs (#5174)
+
+    Issue
+    GitHub Issue: fix: parsing of ipv6 tracker announce URLs (#5174)
+
+    Files to Modify
+    - libtransmission/web-utils.cc\n- tests/libtransmission/web-utils-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1630,10 +2732,29 @@ def transmission_033d698(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-39e3e1d",
     description="""
-    fix: increase priority of first and last piece of each file (#5167)
+Task: transmission-39e3e1d
+    Problem: fix: increase priority of first and last piece of each file (#5167)
+
+    Issue
+    GitHub Issue: fix: increase priority of first and last piece of each file (#5167)
+
+    Files to Modify
+    - libtransmission/file-piece-map.cc\n- libtransmission/file-piece-map.h\n- tests/libtransmission/file-piece-map-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1658,10 +2779,29 @@ def transmission_39e3e1d(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-848212e",
     description="""
-    fix: escaped representation of non-BMP characters when generating JSON (#5096)
+Task: transmission-848212e
+    Problem: fix: escaped representation of non-BMP characters when generating JSON (#5096)
+
+    Issue
+    GitHub Issue: fix: escaped representation of non-BMP characters when generating JSON (#5096)
+
+    Files to Modify
+    - libtransmission/variant-json.cc\n- tests/libtransmission/json-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1686,10 +2826,29 @@ def transmission_848212e(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-d327350",
     description="""
-    fix: 5053 old torrent files keep appearing (#5117)
+Task: transmission-d327350
+    Problem: fix: 5053 old torrent files keep appearing (#5117)
+
+    Issue
+    GitHub Issue: fix: 5053 old torrent files keep appearing (#5117)
+
+    Files to Modify
+    - libtransmission/resume.cc\n- libtransmission/resume.h\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent.cc\n- tests/libtransmission/rename-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1714,10 +2873,29 @@ def transmission_d327350(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-211e3fc",
     description="""
-    fix: always add `announce` key even when including announce-list (#5106)
+Task: transmission-211e3fc
+    Problem: fix: always add `announce` key even when including announce-list (#5106)
+
+    Issue
+    GitHub Issue: fix: always add `announce` key even when including announce-list (#5106)
+
+    Files to Modify
+    - libtransmission/makemeta.cc\n- tests/libtransmission/makemeta-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1742,10 +2920,29 @@ def transmission_211e3fc(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-4461aa6",
     description="""
-    fix: handle block fragments that arrive from peers out-of-order (#4890)
+Task: transmission-4461aa6
+    Problem: fix: handle block fragments that arrive from peers out-of-order (#4890)
+
+    Issue
+    GitHub Issue: fix: handle block fragments that arrive from peers out-of-order (#4890)
+
+    Files to Modify
+    - libtransmission/cache.cc\n- libtransmission/cache.h\n- libtransmission/peer-msgs.cc\n- libtransmission/torrent.cc\n- libtransmission/webseed.cc\n- tests/libtransmission/move-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1770,10 +2967,29 @@ def transmission_4461aa6(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-649fd4d",
     description="""
-    fix: do not lose magnet links when upgrading from tr3 to 4 (#4840)
+Task: transmission-649fd4d
+    Problem: fix: do not lose magnet links when upgrading from tr3 to 4 (#4840)
+
+    Issue
+    GitHub Issue: fix: do not lose magnet links when upgrading from tr3 to 4 (#4840)
+
+    Files to Modify
+    - libtransmission/torrent-metainfo.cc\n- libtransmission/torrent-metainfo.h\n- tests/libtransmission/assets/gimp-2.10.32-1-arm64.dmg.torrent\n- tests/libtransmission/torrent-metainfo-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1798,10 +3014,29 @@ def transmission_649fd4d(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-e0753fe",
     description="""
-    fix: put 'private' and 'source' inside the metadata 'info' key (#4809)
+Task: transmission-e0753fe
+    Problem: fix: put 'private' and 'source' inside the metadata 'info' key (#4809)
+
+    Issue
+    GitHub Issue: fix: put 'private' and 'source' inside the metadata 'info' key (#4809)
+
+    Files to Modify
+    - libtransmission/makemeta.cc\n- tests/libtransmission/makemeta-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1826,10 +3061,29 @@ def transmission_e0753fe(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-0e5f7f8",
     description="""
-    fix: coverity warnings (#4687)
+Task: transmission-0e5f7f8
+    Problem: fix: coverity warnings (#4687)
+
+    Issue
+    GitHub Issue: fix: coverity warnings (#4687)
+
+    Files to Modify
+    - libtransmission/net.cc\n- tests/libtransmission/file-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1854,10 +3108,29 @@ def transmission_0e5f7f8(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-977a190",
     description="""
-    fix: msvc warnings (#4651)
+Task: transmission-977a190
+    Problem: fix: msvc warnings (#4651)
+
+    Issue
+    GitHub Issue: fix: msvc warnings (#4651)
+
+    Files to Modify
+    - libtransmission/net.cc\n- qt/Application.cc\n- qt/FileTreeDelegate.cc\n- tests/libtransmission/announcer-udp-test.cc\n- utils/remote.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1882,10 +3155,29 @@ def transmission_977a190(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2b90a5f",
     description="""
-    refactor: possible FTBFS fix on arm7 (#4492)
+Task: transmission-2b90a5f
+    Problem: refactor: possible FTBFS fix on arm7 (#4492)
+
+    Issue
+    GitHub Issue: refactor: possible FTBFS fix on arm7 (#4492)
+
+    Files to Modify
+    - libtransmission/crypto-utils.cc\n- libtransmission/crypto-utils.h\n- tests/libtransmission/crypto-test-ref.h
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1910,10 +3202,29 @@ def transmission_2b90a5f(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9a5d9a0",
     description="""
-    refactor: tr_peer_socket (#4325)
+Task: transmission-9a5d9a0
+    Problem: refactor: tr_peer_socket (#4325)
+
+    Issue
+    GitHub Issue: refactor: tr_peer_socket (#4325)
+
+    Files to Modify
+    - Transmission.xcodeproj/project.pbxproj\n- libtransmission/CMakeLists.txt\n- libtransmission/handshake.cc\n- libtransmission/net.cc\n- libtransmission/peer-io.cc\n- libtransmission/peer-io.h\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/peer-socket.cc\n- libtransmission/peer-socket.h\n- libtransmission/session.cc\n- libtransmission/tr-utp.cc\n- tests/libtransmission/handshake-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1938,10 +3249,29 @@ def transmission_9a5d9a0(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-ec6cb67",
     description="""
-    fix GTK client message log window does not restore level selection (#4242)
+Task: transmission-ec6cb67
+    Problem: fix GTK client message log window does not restore level selection (#4242)
+
+    Issue
+    GitHub Issue: fix GTK client message log window does not restore level selection (#4242)
+
+    Files to Modify
+    - gtk/MessageLogWindow.cc\n- libtransmission/session.cc\n- libtransmission/variant-converters.cc\n- tests/libtransmission/settings-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1966,10 +3296,29 @@ def transmission_ec6cb67(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-8a35aa0",
     description="""
-    refactor: add tr_rand_obj() (#4238)
+Task: transmission-8a35aa0
+    Problem: refactor: add tr_rand_obj() (#4238)
+
+    Issue
+    GitHub Issue: refactor: add tr_rand_obj() (#4238)
+
+    Files to Modify
+    - libtransmission/announcer-udp.cc\n- libtransmission/announcer.cc\n- libtransmission/crypto-utils.cc\n- libtransmission/crypto-utils.h\n- libtransmission/peer-mgr-wishlist.cc\n- libtransmission/peer-mse.cc\n- libtransmission/rpc-server.cc\n- libtransmission/session-id.cc\n- libtransmission/tr-dht.cc\n- libtransmission/tr-lpd.cc\n- tests/libtransmission/announcer-udp-test.cc\n- tests/libtransmission/clients-test.cc\n- tests/libtransmission/completion-test.cc\n- tests/libtransmission/crypto-test-ref.h\n- tests/libtransmission/dht-test.cc\n- tests/libtransmission/handshake-test.cc\n- tests/libtransmission/lpd-test.cc\n- tests/libtransmission/magnet-metainfo-test.cc\n- tests/libtransmission/test-fixtures.h
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -1994,10 +3343,29 @@ def transmission_8a35aa0(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-554ba06",
     description="""
-    fix: coverity warnings, sonarcloud code smells (#4232)
+Task: transmission-554ba06
+    Problem: fix: coverity warnings, sonarcloud code smells (#4232)
+
+    Issue
+    GitHub Issue: fix: coverity warnings, sonarcloud code smells (#4232)
+
+    Files to Modify
+    - gtk/FaviconCache.cc\n- gtk/Session.cc\n- libtransmission/announcer-http.cc\n- libtransmission/handshake.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/rpc-server.cc\n- libtransmission/session.cc\n- libtransmission/verify.cc\n- libtransmission/verify.h\n- qt/FileTreeItem.cc\n- tests/libtransmission/file-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2022,10 +3390,29 @@ def transmission_554ba06(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-19bc155",
     description="""
-    fix: new sonarcloud, coverity, gcc warnings (#4229)
+Task: transmission-19bc155
+    Problem: fix: new sonarcloud, coverity, gcc warnings (#4229)
+
+    Issue
+    GitHub Issue: fix: new sonarcloud, coverity, gcc warnings (#4229)
+
+    Files to Modify
+    - gtk/DetailsDialog.cc\n- libtransmission/announcer-udp.cc\n- libtransmission/announcer.cc\n- libtransmission/bandwidth.cc\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-mse.h\n- libtransmission/session.cc\n- tests/libtransmission/bitfield-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2050,10 +3437,29 @@ def transmission_19bc155(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-42f26aa",
     description="""
-    fix: ftbfs on Windows (#4204)
+Task: transmission-42f26aa
+    Problem: fix: ftbfs on Windows (#4204)
+
+    Issue
+    GitHub Issue: fix: ftbfs on Windows (#4204)
+
+    Files to Modify
+    - libtransmission/announcer-udp.cc\n- libtransmission/handshake.cc\n- libtransmission/net.cc\n- libtransmission/peer-io.cc\n- libtransmission/torrent.cc\n- tests/libtransmission/announcer-udp-test.cc\n- tests/libtransmission/dht-test.cc\n- tests/libtransmission/net-test.cc\n- tests/libtransmission/settings-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2078,10 +3484,29 @@ def transmission_42f26aa(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-250e055",
     description="""
-    fix: warnings from clang tidy sonarcloud coverity (#4143)
+Task: transmission-250e055
+    Problem: fix: warnings from clang tidy sonarcloud coverity (#4143)
+
+    Issue
+    GitHub Issue: fix: warnings from clang tidy sonarcloud coverity (#4143)
+
+    Files to Modify
+    - libtransmission/announcer-udp.cc\n- libtransmission/blocklist.cc\n- libtransmission/handshake.cc\n- libtransmission/peer-io.cc\n- libtransmission/peer-io.h\n- libtransmission/peer-mgr.cc\n- libtransmission/session-thread.cc\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/utils-ev.h\n- libtransmission/utils.cc\n- qt/MakeDialog.cc\n- tests/libtransmission/dht-test.cc\n- tests/libtransmission/handshake-test.cc\n- tests/libtransmission/watchdir-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2106,10 +3531,29 @@ def transmission_250e055(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-4ea9c87",
     description="""
-    fix: some typos (#3904)
+Task: transmission-4ea9c87
+    Problem: fix: some typos (#3904)
+
+    Issue
+    GitHub Issue: fix: some typos (#3904)
+
+    Files to Modify
+    - AUTHORS\n- docs/Port-Forwarding-Guide.md\n- docs/README.md\n- docs/Release-Notes.md\n- extras/encryption.txt\n- gtk/ui/gtk3/PrefsDialog.ui\n- gtk/ui/gtk4/PrefsDialog.ui\n- libtransmission/handshake.cc\n- libtransmission/jsonsl.c\n- libtransmission/peer-mgr.cc\n- libtransmission/transmission.h\n- macosx/Controller.mm\n- macosx/CreatorWindowController.mm\n- macosx/Credits.rtf\n- macosx/Torrent.mm\n- macosx/TransmissionHelp/html/usingt.html\n- news/news-2.42-and-older.md\n- news/news-4.0.0-beta-1.md\n- tests/libtransmission/handshake-test.cc\n- web/src/formatter.js\n- web/src/torrent.js
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2134,10 +3578,29 @@ def transmission_4ea9c87(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9fb590d",
     description="""
-    fix: recent coverity warnings (#3788)
+Task: transmission-9fb590d
+    Problem: fix: recent coverity warnings (#3788)
+
+    Issue
+    GitHub Issue: fix: recent coverity warnings (#3788)
+
+    Files to Modify
+    - libtransmission/peer-msgs.cc\n- libtransmission/verify.cc\n- tests/libtransmission/file-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2162,10 +3625,29 @@ def transmission_9fb590d(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-dde626d",
     description="""
-    refactor: remove unused (#3675)
+Task: transmission-dde626d
+    Problem: refactor: remove unused (#3675)
+
+    Issue
+    GitHub Issue: refactor: remove unused (#3675)
+
+    Files to Modify
+    - libtransmission/file-win32.cc\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/tr-macros.h\n- libtransmission/transmission.h\n- tests/libtransmission/session-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2190,10 +3672,29 @@ def transmission_dde626d(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-c7466b3",
     description="""
-    fix: coverity warnings (#3632)
+Task: transmission-c7466b3
+    Problem: fix: coverity warnings (#3632)
+
+    Issue
+    GitHub Issue: fix: coverity warnings (#3632)
+
+    Files to Modify
+    - gtk/Application.cc\n- gtk/FaviconCache.cc\n- libtransmission/.clang-tidy\n- libtransmission/bandwidth.cc\n- libtransmission/file-posix.cc\n- libtransmission/handshake.cc\n- libtransmission/makemeta.cc\n- libtransmission/natpmp_local.h\n- libtransmission/peer-mgr.cc\n- libtransmission/port-forwarding.cc\n- libtransmission/rpc-server.cc\n- libtransmission/session-id.h\n- libtransmission/session.h\n- libtransmission/timer-ev.cc\n- libtransmission/utils.cc\n- tests/libtransmission/announce-list-test.cc\n- tests/libtransmission/test-fixtures.h\n- tests/libtransmission/watchdir-test.cc\n- utils/create.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2218,10 +3719,29 @@ def transmission_c7466b3(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-b1cc968",
     description="""
-    Fix out-of-bounds read in torrent parsing (#3600)
+Task: transmission-b1cc968
+    Problem: Fix out-of-bounds read in torrent parsing (#3600)
+
+    Issue
+    GitHub Issue: Fix out-of-bounds read in torrent parsing (#3600)
+
+    Files to Modify
+    - libtransmission/torrent-metainfo.cc\n- tests/libtransmission/torrent-metainfo-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2246,10 +3766,29 @@ def transmission_b1cc968(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-8b983b3",
     description="""
-    refactor: tr_sys_path_resolve() returns a std::string (#3587)
+Task: transmission-8b983b3
+    Problem: refactor: tr_sys_path_resolve() returns a std::string (#3587)
+
+    Issue
+    GitHub Issue: refactor: tr_sys_path_resolve() returns a std::string (#3587)
+
+    Files to Modify
+    - CMakeLists.txt\n- libtransmission/file-posix.cc\n- libtransmission/file-win32.cc\n- libtransmission/file.h\n- libtransmission/utils.cc\n- libtransmission/utils.h\n- libtransmission/variant-benc.cc\n- tests/libtransmission/file-test.cc\n- tests/libtransmission/subprocess-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2274,10 +3813,29 @@ def transmission_8b983b3(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-ec79a2a",
     description="""
-    fix: clang-tidy misc-const-correctness warnings (#3529)
+Task: transmission-ec79a2a
+    Problem: fix: clang-tidy misc-const-correctness warnings (#3529)
+
+    Issue
+    GitHub Issue: fix: clang-tidy misc-const-correctness warnings (#3529)
+
+    Files to Modify
+    - libtransmission/announcer-http.cc\n- libtransmission/announcer.cc\n- libtransmission/bitfield.cc\n- libtransmission/crypto-utils.cc\n- libtransmission/file-posix.cc\n- libtransmission/handshake.cc\n- libtransmission/magnet-metainfo.cc\n- libtransmission/peer-io.cc\n- libtransmission/peer-mgr.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session.cc\n- libtransmission/torrent-magnet.cc\n- libtransmission/tr-dht.cc\n- libtransmission/tr-lpd.cc\n- libtransmission/tr-udp.cc\n- libtransmission/upnp.cc\n- libtransmission/utils.cc\n- qt/Application.cc\n- qt/DetailsDialog.cc\n- qt/FaviconCache.cc\n- qt/FileTreeModel.cc\n- qt/FileTreeView.cc\n- qt/FilterBarComboBox.cc\n- qt/IconCache.cc\n- qt/MainWindow.cc\n- qt/MakeDialog.cc\n- qt/Prefs.cc\n- qt/PrefsDialog.cc\n- qt/RpcClient.cc\n- qt/RpcQueue.cc\n- qt/SqueezeLabel.cc\n- qt/Torrent.cc\n- qt/TorrentDelegate.cc\n- qt/TorrentFilter.cc\n- qt/TrackerDelegate.cc\n- qt/TrackerModel.cc\n- qt/TrackerModelFilter.cc\n- tests/libtransmission/bitfield-test.cc\n- tests/libtransmission/copy-test.cc\n- tests/libtransmission/file-piece-map-test.cc\n- tests/libtransmission/makemeta-test.cc\n- tests/libtransmission/utils-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2302,10 +3860,29 @@ def transmission_ec79a2a(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-0da1cbb",
     description="""
-    fix: 3508 location invalidation (#3511)
+Task: transmission-0da1cbb
+    Problem: fix: 3508 location invalidation (#3511)
+
+    Issue
+    GitHub Issue: fix: 3508 location invalidation (#3511)
+
+    Files to Modify
+    - daemon/daemon.cc\n- gtk/Application.cc\n- gtk/Session.cc\n- gtk/Session.h\n- libtransmission/platform.cc\n- libtransmission/platform.h\n- libtransmission/resume.cc\n- libtransmission/rpc-server.cc\n- libtransmission/rpc-server.h\n- libtransmission/rpcimpl.cc\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/stats.cc\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/tr-dht.cc\n- libtransmission/transmission.h\n- tests/libtransmission/blocklist-test.cc\n- tests/libtransmission/file-test.cc\n- tests/libtransmission/move-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2330,10 +3907,29 @@ def transmission_0da1cbb(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-c50da43",
     description="""
-    refactor: remove tr_sessionGetConfigDir() (#3506)
+Task: transmission-c50da43
+    Problem: refactor: remove tr_sessionGetConfigDir() (#3506)
+
+    Issue
+    GitHub Issue: refactor: remove tr_sessionGetConfigDir() (#3506)
+
+    Files to Modify
+    - daemon/daemon.cc\n- gtk/Application.cc\n- gtk/Session.cc\n- gtk/Session.h\n- libtransmission/platform.cc\n- libtransmission/platform.h\n- libtransmission/resume.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/stats.cc\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/tr-dht.cc\n- libtransmission/transmission.h\n- tests/libtransmission/blocklist-test.cc\n- tests/libtransmission/file-test.cc\n- tests/libtransmission/move-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2358,10 +3954,29 @@ def transmission_c50da43(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-f8b3514",
     description="""
-    tr_makeMetaInfo: new anonymize option (closes #3420) (#3452)
+Task: transmission-f8b3514
+    Problem: tr_makeMetaInfo: new anonymize option (closes #3420) (#3452)
+
+    Issue
+    GitHub Issue: tr_makeMetaInfo: new anonymize option (closes #3420) (#3452)
+
+    Files to Modify
+    - gtk/MakeDialog.cc\n- libtransmission/makemeta.cc\n- libtransmission/makemeta.h\n- macosx/CreatorWindowController.mm\n- qt/MakeDialog.cc\n- tests/libtransmission/makemeta-test.cc\n- utils/create.cc\n- utils/transmission-create.1
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2386,10 +4001,29 @@ def transmission_f8b3514(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-41c0f88",
     description="""
-    fix: limit pad search during encrypted handshake (#3471)
+Task: transmission-41c0f88
+    Problem: fix: limit pad search during encrypted handshake (#3471)
+
+    Issue
+    GitHub Issue: fix: limit pad search during encrypted handshake (#3471)
+
+    Files to Modify
+    - libtransmission/handshake.cc\n- tests/libtransmission/handshake-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2414,10 +4048,29 @@ def transmission_41c0f88(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-c3db52e",
     description="""
-    Fix #3444, support single file hybrid torrents. (#3446)
+Task: transmission-c3db52e
+    Problem: Fix #3444, support single file hybrid torrents. (#3446)
+
+    Issue
+    GitHub Issue: Fix #3444, support single file hybrid torrents. (#3446)
+
+    Files to Modify
+    - libtransmission/torrent-metainfo.cc\n- tests/utils/CMakeLists.txt\n- tests/utils/assets/hybrid-single-ubuntu-20.04.3-desktop-amd64.iso.show\n- tests/utils/assets/hybrid-single-ubuntu-20.04.3-desktop-amd64.iso.torrent
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2442,10 +4095,29 @@ def transmission_c3db52e(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-e9a7ddf",
     description="""
-    fix: minor warnings (#3413)
+Task: transmission-e9a7ddf
+    Problem: fix: minor warnings (#3413)
+
+    Issue
+    GitHub Issue: fix: minor warnings (#3413)
+
+    Files to Modify
+    - libtransmission/torrent-magnet.cc\n- tests/libtransmission/blocklist-test.cc\n- tests/libtransmission/torrent-metainfo-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2470,10 +4142,29 @@ def transmission_e9a7ddf(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-513f4bc",
     description="""
-    fix: assertion failed 's->leftUntilDone <= s->sizeWhenDone' (#3406)
+Task: transmission-513f4bc
+    Problem: fix: assertion failed 's->leftUntilDone <= s->sizeWhenDone' (#3406)
+
+    Issue
+    GitHub Issue: fix: assertion failed 's->leftUntilDone <= s->sizeWhenDone' (#3406)
+
+    Files to Modify
+    - libtransmission/block-info.h\n- libtransmission/completion.cc\n- libtransmission/completion.h\n- tests/libtransmission/completion-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2498,10 +4189,29 @@ def transmission_513f4bc(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-142b2a0",
     description="""
-    Support wolfSSL 4.6+ (#3398)
+Task: transmission-142b2a0
+    Problem: Support wolfSSL 4.6+ (#3398)
+
+    Issue
+    GitHub Issue: Support wolfSSL 4.6+ (#3398)
+
+    Files to Modify
+    - libtransmission/crypto-utils-cyassl.cc\n- libtransmission/crypto.cc\n- tests/libtransmission/CMakeLists.txt
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2526,10 +4236,29 @@ def transmission_142b2a0(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-3237323",
     description="""
-    Add basic support for v2 hashes in transmission-show (#3380)
+Task: transmission-3237323
+    Problem: Add basic support for v2 hashes in transmission-show (#3380)
+
+    Issue
+    GitHub Issue: Add basic support for v2 hashes in transmission-show (#3380)
+
+    Files to Modify
+    - CMakeLists.txt\n- libtransmission/crypto-utils-ccrypto.cc\n- libtransmission/crypto-utils-cyassl.cc\n- libtransmission/crypto-utils-openssl.cc\n- libtransmission/crypto-utils-polarssl.cc\n- libtransmission/crypto-utils.cc\n- libtransmission/crypto-utils.h\n- libtransmission/magnet-metainfo.cc\n- libtransmission/magnet-metainfo.h\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent-metainfo.h\n- libtransmission/tr-macros.h\n- tests/libtransmission/crypto-test-ref.h\n- tests/libtransmission/crypto-test.cc\n- tests/utils/CMakeLists.txt\n- tests/utils/assets/Inner_Sanctum_movie_archive.show\n- tests/utils/assets/Thor_and_the_Amazon_Women.avi.show\n- tests/utils/assets/bittorrent-v2-hybrid-test.show\n- tests/utils/assets/bittorrent-v2-hybrid-test.torrent\n- tests/utils/assets/bittorrent-v2-test.show\n- tests/utils/assets/ubuntu-20.04.3-desktop-amd64.iso.show\n- utils/show.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2554,10 +4283,29 @@ def transmission_3237323(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-85c11b7",
     description="""
-    fix: requests across piece boundaries when piece is not a multiple of block_size
+Task: transmission-85c11b7
+    Problem: fix: requests across piece boundaries when piece is not a multiple of block_size
+
+    Issue
+    GitHub Issue: fix: requests across piece boundaries when piece is not a multiple of block_size
+
+    Files to Modify
+    - libtransmission/cache.cc\n- libtransmission/cache.h\n- libtransmission/peer-io.cc\n- libtransmission/peer-io.h\n- libtransmission/peer-mgr-wishlist.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/torrent.h\n- libtransmission/webseed.cc\n- tests/libtransmission/move-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2582,10 +4330,29 @@ def transmission_85c11b7(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-34cb56b",
     description="""
-    refactor: remove unused tr_ptrArray class (#3262)
+Task: transmission-34cb56b
+    Problem: refactor: remove unused tr_ptrArray class (#3262)
+
+    Issue
+    GitHub Issue: refactor: remove unused tr_ptrArray class (#3262)
+
+    Files to Modify
+    - .github/workflows/sanitizer-clang.yml\n- .github/workflows/sanitizer-gcc.yml\n- Transmission.xcodeproj/project.pbxproj\n- libtransmission/CMakeLists.txt\n- libtransmission/ptrarray.cc\n- libtransmission/ptrarray.h\n- tests/libtransmission/utils-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2610,10 +4377,29 @@ def transmission_34cb56b(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-256b436",
     description="""
-    fix: clang 15 warnings (#3172)
+Task: transmission-256b436
+    Problem: fix: clang 15 warnings (#3172)
+
+    Issue
+    GitHub Issue: fix: clang 15 warnings (#3172)
+
+    Files to Modify
+    - libtransmission/announcer.cc\n- libtransmission/clients.cc\n- libtransmission/completion.cc\n- libtransmission/crypto-utils.cc\n- libtransmission/crypto.cc\n- libtransmission/handshake.cc\n- libtransmission/inout.cc\n- libtransmission/peer-io.cc\n- libtransmission/peer-mgr.cc\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent.cc\n- libtransmission/tr-macros.h\n- libtransmission/tr-udp.cc\n- qt/.clang-tidy\n- tests/libtransmission/.clang-tidy
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2638,10 +4424,29 @@ def transmission_256b436(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-84d65d8",
     description="""
-    fix: coverity warnings (#3168)
+Task: transmission-84d65d8
+    Problem: fix: coverity warnings (#3168)
+
+    Issue
+    GitHub Issue: fix: coverity warnings (#3168)
+
+    Files to Modify
+    - gtk/FaviconCache.cc\n- libtransmission/handshake.cc\n- libtransmission/peer-mgr.cc\n- tests/libtransmission/open-files-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2666,10 +4471,29 @@ def transmission_84d65d8(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-67a0784",
     description="""
-    fix: compiler warnings (#3123)
+Task: transmission-67a0784
+    Problem: fix: compiler warnings (#3123)
+
+    Issue
+    GitHub Issue: fix: compiler warnings (#3123)
+
+    Files to Modify
+    - libtransmission/bitfield.cc\n- libtransmission/blocklist.cc\n- libtransmission/blocklist.h\n- libtransmission/rpc-server.cc\n- qt/DetailsDialog.cc\n- qt/MainWindow.cc\n- tests/libtransmission/blocklist-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2694,10 +4518,29 @@ def transmission_67a0784(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-c0bb2d4",
     description="""
-    refactor: add pathbuf and std::string-friendly helpers to tr_sys file and path funcs (#3118)
+Task: transmission-c0bb2d4
+    Problem: refactor: add pathbuf and std::string-friendly helpers to tr_sys file and path funcs (#3118)
+
+    Issue
+    GitHub Issue: refactor: add pathbuf and std::string-friendly helpers to tr_sys file and path funcs (#3118)
+
+    Files to Modify
+    - cli/cli.cc\n- daemon/daemon.cc\n- gtk/OptionsDialog.cc\n- libtransmission/file.h\n- libtransmission/makemeta.cc\n- libtransmission/open-files.cc\n- libtransmission/platform.cc\n- libtransmission/session-id.cc\n- libtransmission/torrent-metainfo.cc\n- libtransmission/torrent.cc\n- libtransmission/tr-strbuf.h\n- libtransmission/utils.cc\n- tests/libtransmission/blocklist-test.cc\n- tests/libtransmission/file-test.cc\n- tests/libtransmission/remove-test.cc\n- tests/libtransmission/rename-test.cc\n- tests/libtransmission/test-fixtures.h\n- tests/libtransmission/torrent-metainfo-test.cc\n- tests/libtransmission/utils-test.cc\n- tests/libtransmission/watchdir-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2722,10 +4565,29 @@ def transmission_c0bb2d4(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-a28b07b",
     description="""
-    Revert 'refactor: move tr_torrent callbacks to tr_session (#3003)' (#3104)
+Task: transmission-a28b07b
+    Problem: Revert 'refactor: move tr_torrent callbacks to tr_session (#3003)' (#3104)
+
+    Issue
+    GitHub Issue: Revert 'refactor: move tr_torrent callbacks to tr_session (#3003)' (#3104)
+
+    Files to Modify
+    - gtk/Session.cc\n- libtransmission/peer-mgr.cc\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/transmission.h\n- macosx/Torrent.mm\n- tests/libtransmission/move-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2750,10 +4612,29 @@ def transmission_a28b07b(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-eb33b2f",
     description="""
-    fix: tr_clientForId() (#2887)
+Task: transmission-eb33b2f
+    Problem: fix: tr_clientForId() (#2887)
+
+    Issue
+    GitHub Issue: fix: tr_clientForId() (#2887)
+
+    Files to Modify
+    - libtransmission/clients.cc\n- tests/libtransmission/clients-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2778,10 +4659,29 @@ def transmission_eb33b2f(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-7aeb5d8",
     description="""
-    Merge branch 'main' into nevack/mojave-infowindow-fix
+Task: transmission-7aeb5d8
+    Problem: Merge branch 'main' into nevack/mojave-infowindow-fix
+
+    Issue
+    GitHub Issue: Merge branch 'main' into nevack/mojave-infowindow-fix
+
+    Files to Modify
+    - README.md\n- cli/cli.cc\n- daemon/daemon.cc\n- gtk/Application.cc\n- gtk/DetailsDialog.cc\n- gtk/FileList.cc\n- gtk/IconCache.cc\n- gtk/OptionsDialog.cc\n- gtk/PrefsDialog.cc\n- gtk/Utils.cc\n- libtransmission/announcer.cc\n- libtransmission/makemeta.cc\n- libtransmission/net.cc\n- libtransmission/peer-mgr-active-requests.cc\n- libtransmission/peer-mgr.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/tr-dht.cc\n- libtransmission/tr-strbuf.h\n- libtransmission/upnp.cc\n- libtransmission/utils.cc\n- libtransmission/utils.h\n- libtransmission/variant-benc.cc\n- libtransmission/variant-json.cc\n- macosx/CMakeLists.txt\n- macosx/Images/Images.xcassets/BlueDotFlat.imageset/BlueDotFlat.png\n- macosx/Images/Images.xcassets/BlueDotFlat.imageset/BlueDotFlat@2x.png\n- macosx/Images/Images.xcassets/BlueDotFlat.imageset/Contents.json\n- macosx/Images/Images.xcassets/GreenDotFlat.imageset/Contents.json\n- macosx/Images/Images.xcassets/GreenDotFlat.imageset/GreenDotFlat.png\n- macosx/Images/Images.xcassets/GreenDotFlat.imageset/GreenDotFlat@2x.png\n- macosx/Images/Images.xcassets/OrangeDotFlat.imageset/Contents.json\n- macosx/Images/Images.xcassets/OrangeDotFlat.imageset/OrangeDotFlat.png\n- macosx/Images/Images.xcassets/OrangeDotFlat.imageset/OrangeDotFlat@2x.png\n- macosx/Images/Images.xcassets/PurpleDotFlat.imageset/PurpleDotFlat.png\n- macosx/Images/Images.xcassets/PurpleDotFlat.imageset/PurpleDotFlat@2x.png\n- macosx/Images/Images.xcassets/RedDotFlat.imageset/RedDotFlat.png\n- macosx/Images/Images.xcassets/RedDotFlat.imageset/RedDotFlat@2x.png\n- macosx/Images/Images.xcassets/YellowDotFlat.imageset/YellowDotFlat.png\n- macosx/Images/Images.xcassets/YellowDotFlat.imageset/YellowDotFlat@2x.png\n- macosx/MessageWindow.xib\n- macosx/MessageWindowController.mm\n- qt/DetailsDialog.cc\n- qt/FilterBar.cc\n- qt/FilterBarComboBox.cc\n- qt/FilterBarComboBoxDelegate.cc\n- qt/MainWindow.cc\n- qt/TorrentModel.cc\n- tests/libtransmission/copy-test.cc\n- tests/libtransmission/makemeta-test.cc\n- tests/libtransmission/move-test.cc\n- tests/libtransmission/test-fixtures.h\n- tests/libtransmission/utils-test.cc\n- tests/libtransmission/web-utils-test.cc\n- third-party/googletest\n- utils/edit.cc\n- utils/remote.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2806,10 +4706,29 @@ def transmission_7aeb5d8(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-76f44b4",
     description="""
-    fix: sonarcloud (#2868)
+Task: transmission-76f44b4
+    Problem: fix: sonarcloud (#2868)
+
+    Issue
+    GitHub Issue: fix: sonarcloud (#2868)
+
+    Files to Modify
+    - gtk/Application.cc\n- gtk/DetailsDialog.cc\n- gtk/FileList.cc\n- gtk/IconCache.cc\n- gtk/OptionsDialog.cc\n- gtk/PrefsDialog.cc\n- gtk/Utils.cc\n- libtransmission/announcer.cc\n- libtransmission/peer-mgr-active-requests.cc\n- libtransmission/peer-mgr.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/utils.cc\n- libtransmission/variant-json.cc\n- qt/DetailsDialog.cc\n- qt/FilterBar.cc\n- qt/FilterBarComboBox.cc\n- qt/FilterBarComboBoxDelegate.cc\n- qt/MainWindow.cc\n- qt/TorrentModel.cc\n- tests/libtransmission/copy-test.cc\n- tests/libtransmission/makemeta-test.cc\n- tests/libtransmission/move-test.cc\n- tests/libtransmission/test-fixtures.h\n- tests/libtransmission/utils-test.cc\n- tests/libtransmission/web-utils-test.cc\n- utils/edit.cc\n- utils/remote.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2834,10 +4753,29 @@ def transmission_76f44b4(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-1cc9da2",
     description="""
-    fix: sonarcloud (#2865)
+Task: transmission-1cc9da2
+    Problem: fix: sonarcloud (#2865)
+
+    Issue
+    GitHub Issue: fix: sonarcloud (#2865)
+
+    Files to Modify
+    - gtk/Application.cc\n- gtk/FaviconCache.cc\n- libtransmission/announcer-udp.cc\n- libtransmission/blocklist.cc\n- libtransmission/handshake.cc\n- libtransmission/log.cc\n- libtransmission/magnet-metainfo.h\n- libtransmission/peer-io.cc\n- libtransmission/peer-io.h\n- libtransmission/peer-msgs.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session.cc\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/trevent.h\n- qt/FileTreeItem.cc\n- qt/FileTreeItem.h\n- qt/InteropHelper.cc\n- qt/Prefs.cc\n- qt/Torrent.cc\n- tests/libtransmission/announce-list-test.cc\n- tests/libtransmission/announcer-test.cc\n- tests/libtransmission/assets/alice_in_wonderland_librivox_archive.torrent\n- tests/libtransmission/assets/debian-11.2.0-amd64-DVD-1.iso.torrent.added\n- tests/libtransmission/bitfield-test.cc\n- tests/libtransmission/block-info-test.cc\n- tests/libtransmission/completion-test.cc\n- tests/libtransmission/file-piece-map-test.cc\n- tests/libtransmission/history-test.cc\n- tests/libtransmission/json-test.cc\n- tests/libtransmission/magnet-metainfo-test.cc\n- tests/libtransmission/peer-mgr-active-requests-test.cc\n- tests/libtransmission/peer-mgr-wishlist-test.cc\n- tests/libtransmission/rename-test.cc\n- tests/libtransmission/rpc-test.cc\n- tests/libtransmission/session-test.cc\n- tests/libtransmission/strbuf-test.cc\n- tests/libtransmission/test-fixtures.h\n- tests/libtransmission/torrent-metainfo-test.cc\n- tests/libtransmission/utils-test.cc\n- utils/remote.cc\n- utils/show.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2862,10 +4800,29 @@ def transmission_1cc9da2(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-a250690",
     description="""
-    fix: sonarcloud (#2860)
+Task: transmission-a250690
+    Problem: fix: sonarcloud (#2860)
+
+    Issue
+    GitHub Issue: fix: sonarcloud (#2860)
+
+    Files to Modify
+    - cli/cli.cc\n- gtk/Application.cc\n- gtk/DetailsDialog.cc\n- gtk/FreeSpaceLabel.cc\n- gtk/FreeSpaceLabel.h\n- gtk/IconCache.cc\n- gtk/MainWindow.cc\n- gtk/Prefs.cc\n- gtk/Prefs.h\n- gtk/PrefsDialog.cc\n- gtk/Session.cc\n- gtk/Utils.cc\n- qt/DetailsDialog.cc\n- qt/FileTreeModel.cc\n- qt/TorrentModel.cc\n- tests/libtransmission/crypto-test.cc\n- tests/libtransmission/test-fixtures.h
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2890,10 +4847,29 @@ def transmission_a250690(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-6e91136",
     description="""
-    fix: three asan issues (#2851)
+Task: transmission-6e91136
+    Problem: fix: three asan issues (#2851)
+
+    Issue
+    GitHub Issue: fix: three asan issues (#2851)
+
+    Files to Modify
+    - libtransmission/magnet-metainfo.cc\n- tests/libtransmission/completion-test.cc\n- tests/libtransmission/torrents-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2918,10 +4894,29 @@ def transmission_6e91136(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-4dd25d8",
     description="""
-    fix: tr_strbuf move op loses zero-termination (#2843)
+Task: transmission-4dd25d8
+    Problem: fix: tr_strbuf move op loses zero-termination (#2843)
+
+    Issue
+    GitHub Issue: fix: tr_strbuf move op loses zero-termination (#2843)
+
+    Files to Modify
+    - libtransmission/tr-strbuf.h\n- tests/libtransmission/strbuf-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2946,10 +4941,29 @@ def transmission_4dd25d8(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-9c3acc7",
     description="""
-    fixup: handle unhandled scrape/announce responses (#2701)
+Task: transmission-9c3acc7
+    Problem: fixup: handle unhandled scrape/announce responses (#2701)
+
+    Issue
+    GitHub Issue: fixup: handle unhandled scrape/announce responses (#2701)
+
+    Files to Modify
+    - libtransmission/announcer-common.h\n- libtransmission/announcer-http.cc\n- libtransmission/announcer.cc\n- libtransmission/net.cc\n- libtransmission/net.h\n- libtransmission/session.h\n- tests/libtransmission/announcer-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -2974,10 +4988,29 @@ def transmission_9c3acc7(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-13ad2b5",
     description="""
-    refactor: always use a blocksize of 16 KB (#2694)
+Task: transmission-13ad2b5
+    Problem: refactor: always use a blocksize of 16 KB (#2694)
+
+    Issue
+    GitHub Issue: refactor: always use a blocksize of 16 KB (#2694)
+
+    Files to Modify
+    - libtransmission/block-info.cc\n- libtransmission/block-info.h\n- libtransmission/completion.cc\n- libtransmission/inout.cc\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/torrent-metainfo.h\n- libtransmission/torrent.h\n- tests/libtransmission/block-info-test.cc\n- tests/libtransmission/completion-test.cc\n- tests/libtransmission/file-piece-map-test.cc\n- tests/libtransmission/move-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3002,10 +5035,29 @@ def transmission_13ad2b5(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-318d60b",
     description="""
-    refactor: fix sonarcloud 'use enum class' code smells (#2590)
+Task: transmission-318d60b
+    Problem: refactor: fix sonarcloud 'use enum class' code smells (#2590)
+
+    Issue
+    GitHub Issue: refactor: fix sonarcloud 'use enum class' code smells (#2590)
+
+    Files to Modify
+    - gtk/Application.cc\n- gtk/HigWorkarea.h\n- gtk/MainWindow.cc\n- gtk/MakeDialog.cc\n- gtk/PrefsDialog.h\n- gtk/StatsDialog.cc\n- gtk/TorrentCellRenderer.cc\n- gtk/Utils.cc\n- gtk/Utils.h\n- libtransmission/announce-list.h\n- libtransmission/makemeta.cc\n- libtransmission/makemeta.h\n- libtransmission/peer-msgs.cc\n- libtransmission/resume.cc\n- libtransmission/resume.h\n- libtransmission/rpcimpl.cc\n- libtransmission/torrent.cc\n- macosx/CreatorWindowController.mm\n- qt/Application.cc\n- qt/FileTreeItem.cc\n- qt/FileTreeItem.h\n- qt/FileTreeModel.cc\n- qt/MakeDialog.cc\n- tests/libtransmission/rename-test.cc\n- utils/create.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3030,10 +5082,29 @@ def transmission_318d60b(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-6f9cba4",
     description="""
-    fixup! refactor: SAX-like benc parser pt. 1 (#2490) (#2544)
+Task: transmission-6f9cba4
+    Problem: fixup! refactor: SAX-like benc parser pt. 1 (#2490) (#2544)
+
+    Issue
+    GitHub Issue: fixup! refactor: SAX-like benc parser pt. 1 (#2490) (#2544)
+
+    Files to Modify
+    - libtransmission/benc.h\n- tests/libtransmission/benc-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3058,10 +5129,29 @@ def transmission_6f9cba4(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-8d75736",
     description="""
-    fix: empty torrent filename (#2435)
+Task: transmission-8d75736
+    Problem: fix: empty torrent filename (#2435)
+
+    Issue
+    GitHub Issue: fix: empty torrent filename (#2435)
+
+    Files to Modify
+    - libtransmission/resume.cc\n- libtransmission/torrent-ctor.cc\n- libtransmission/torrent-magnet.cc\n- libtransmission/torrent-metainfo.h\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/transmission.h\n- libtransmission/utils.cc\n- macosx/Torrent.mm\n- tests/libtransmission/rename-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3086,10 +5176,29 @@ def transmission_8d75736(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-2c09e99",
     description="""
-    fix: parse utorrent peer-id version components as hex (#2411)
+Task: transmission-2c09e99
+    Problem: fix: parse utorrent peer-id version components as hex (#2411)
+
+    Issue
+    GitHub Issue: fix: parse utorrent peer-id version components as hex (#2411)
+
+    Files to Modify
+    - libtransmission/clients.cc\n- tests/libtransmission/clients-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3114,10 +5223,29 @@ def transmission_2c09e99(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-41b2a80",
     description="""
-    Fix another integer overflow bug on 32-bit platforms with torrents > 4GB (#2391)
+Task: transmission-41b2a80
+    Problem: Fix another integer overflow bug on 32-bit platforms with torrents > 4GB (#2391)
+
+    Issue
+    GitHub Issue: Fix another integer overflow bug on 32-bit platforms with torrents > 4GB (#2391)
+
+    Files to Modify
+    - libtransmission/completion.cc\n- tests/libtransmission/completion-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3142,10 +5270,29 @@ def transmission_41b2a80(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-43b9d5c",
     description="""
-    fix: potential infinite loop when parsing benc (#2389)
+Task: transmission-43b9d5c
+    Problem: fix: potential infinite loop when parsing benc (#2389)
+
+    Issue
+    GitHub Issue: fix: potential infinite loop when parsing benc (#2389)
+
+    Files to Modify
+    - libtransmission/variant-benc.cc\n- tests/libtransmission/variant-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3170,10 +5317,29 @@ def transmission_43b9d5c(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-0e321c2",
     description="""
-    fix: clang warnings (#2339)
+Task: transmission-0e321c2
+    Problem: fix: clang warnings (#2339)
+
+    Issue
+    GitHub Issue: fix: clang warnings (#2339)
+
+    Files to Modify
+    - libtransmission/crypto.cc\n- libtransmission/crypto.h\n- libtransmission/interned-string.h\n- libtransmission/peer-io.cc\n- libtransmission/peer-io.h\n- tests/libtransmission/crypto-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3198,10 +5364,29 @@ def transmission_0e321c2(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-e2be142",
     description="""
-    fix: new warnings (#2270)
+Task: transmission-e2be142
+    Problem: fix: new warnings (#2270)
+
+    Issue
+    GitHub Issue: fix: new warnings (#2270)
+
+    Files to Modify
+    - libtransmission/block-info.h\n- libtransmission/torrent.h\n- libtransmission/tr-utp.cc\n- libtransmission/utils.cc\n- libtransmission/variant.cc\n- tests/libtransmission/metainfo-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3226,10 +5411,29 @@ def transmission_e2be142(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-dbd9130",
     description="""
-    fix: env var leak in tr_spawn_async() (#2212)
+Task: transmission-dbd9130
+    Problem: fix: env var leak in tr_spawn_async() (#2212)
+
+    Issue
+    GitHub Issue: fix: env var leak in tr_spawn_async() (#2212)
+
+    Files to Modify
+    - libtransmission/subprocess-posix.cc\n- libtransmission/subprocess-win32.cc\n- libtransmission/subprocess.h\n- libtransmission/torrent.cc\n- tests/libtransmission/subprocess-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3254,10 +5458,29 @@ def transmission_dbd9130(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-ec94c90",
     description="""
-    fix: coverity warnings (#2186)
+Task: transmission-ec94c90
+    Problem: fix: coverity warnings (#2186)
+
+    Issue
+    GitHub Issue: fix: coverity warnings (#2186)
+
+    Files to Modify
+    - gtk/Prefs.cc\n- libtransmission/rpc-server.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session.cc\n- tests/libtransmission/metainfo-test.cc\n- tests/libtransmission/subprocess-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3282,10 +5505,29 @@ def transmission_ec94c90(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-60b802a",
     description="""
-    refactor: fix some msvc compiler warnings (#2185)
+Task: transmission-60b802a
+    Problem: refactor: fix some msvc compiler warnings (#2185)
+
+    Issue
+    GitHub Issue: refactor: fix some msvc compiler warnings (#2185)
+
+    Files to Modify
+    - libtransmission/announcer.cc\n- libtransmission/utils.cc\n- tests/libtransmission/rename-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3310,10 +5552,29 @@ def transmission_60b802a(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-af8e9e6",
     description="""
-    fixup! refactor: rpc-server.cc (#2152) (#2164)
+Task: transmission-af8e9e6
+    Problem: fixup! refactor: rpc-server.cc (#2152) (#2164)
+
+    Issue
+    GitHub Issue: fixup! refactor: rpc-server.cc (#2152) (#2164)
+
+    Files to Modify
+    - libtransmission/crypto-utils.cc\n- libtransmission/crypto-utils.h\n- libtransmission/rpc-server.cc\n- libtransmission/rpc-server.h\n- libtransmission/transmission.h\n- tests/libtransmission/session-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3338,10 +5599,29 @@ def transmission_af8e9e6(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-af4a953",
     description="""
-    fixup! refactor: remove tr_piece struct (#2059) (#2115)
+Task: transmission-af4a953
+    Problem: fixup! refactor: remove tr_piece struct (#2059) (#2115)
+
+    Issue
+    GitHub Issue: fixup! refactor: remove tr_piece struct (#2059) (#2115)
+
+    Files to Modify
+    - libtransmission/bitfield.cc\n- libtransmission/bitfield.h\n- libtransmission/peer-msgs.cc\n- libtransmission/resume.cc\n- tests/libtransmission/bitfield-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3366,10 +5646,29 @@ def transmission_af4a953(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-3008a99",
     description="""
-    fix: Bitfield.getRaw() regression (#2023)
+Task: transmission-3008a99
+    Problem: fix: Bitfield.getRaw() regression (#2023)
+
+    Issue
+    GitHub Issue: fix: Bitfield.getRaw() regression (#2023)
+
+    Files to Modify
+    - libtransmission/bitfield.cc\n- libtransmission/bitfield.h\n- libtransmission/completion.cc\n- libtransmission/completion.h\n- libtransmission/peer-common.h\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/resume.cc\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/span.h\n- libtransmission/torrent.cc\n- libtransmission/webseed.cc\n- tests/libtransmission/bitfield-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3394,10 +5693,29 @@ def transmission_3008a99(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-94ee81f",
     description="""
-    fixup! refactor: add tr_peer_id_t (#2004) (#2016)
+Task: transmission-94ee81f
+    Problem: fixup! refactor: add tr_peer_id_t (#2004) (#2016)
+
+    Issue
+    GitHub Issue: fixup! refactor: add tr_peer_id_t (#2004) (#2016)
+
+    Files to Modify
+    - libtransmission/clients.cc\n- libtransmission/clients.h\n- libtransmission/handshake.cc\n- libtransmission/peer-mgr.cc\n- tests/libtransmission/clients-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3422,10 +5740,29 @@ def transmission_94ee81f(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-4aba9b6",
     description="""
-    fix: assertion failure in bitfield::bitfield(flags, n) (#1976)
+Task: transmission-4aba9b6
+    Problem: fix: assertion failure in bitfield::bitfield(flags, n) (#1976)
+
+    Issue
+    GitHub Issue: fix: assertion failure in bitfield::bitfield(flags, n) (#1976)
+
+    Files to Modify
+    - libtransmission/bitfield.cc\n- tests/libtransmission/bitfield-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3450,10 +5787,29 @@ def transmission_4aba9b6(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-953f073",
     description="""
-    Modernize bitfield.cc: Storage changes and refactor (#1927)
+Task: transmission-953f073
+    Problem: Modernize bitfield.cc: Storage changes and refactor (#1927)
+
+    Issue
+    GitHub Issue: Modernize bitfield.cc: Storage changes and refactor (#1927)
+
+    Files to Modify
+    - libtransmission/bitfield.cc\n- libtransmission/bitfield.h\n- libtransmission/completion.cc\n- libtransmission/completion.h\n- libtransmission/peer-msgs.cc\n- libtransmission/resume.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session.cc\n- libtransmission/span.h\n- libtransmission/torrent.h\n- libtransmission/tr-assert.h\n- libtransmission/transmission.h\n- libtransmission/utils.cc\n- libtransmission/webseed.cc\n- tests/libtransmission/bitfield-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3478,10 +5834,29 @@ def transmission_953f073(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-fb39c46",
     description="""
-    Fix/benc zero length dict key (#1964)
+Task: transmission-fb39c46
+    Problem: Fix/benc zero length dict key (#1964)
+
+    Issue
+    GitHub Issue: Fix/benc zero length dict key (#1964)
+
+    Files to Modify
+    - libtransmission/variant-benc.cc\n- tests/libtransmission/CMakeLists.txt\n- tests/libtransmission/assets/Android-x86 8.1 r6 iso.torrent\n- tests/libtransmission/metainfo-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3506,10 +5881,29 @@ def transmission_fb39c46(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-312d182",
     description="""
-    C++ modernize: Replace MIN/MAX with type safe std::min/std::max (#1806)
+Task: transmission-312d182
+    Problem: C++ modernize: Replace MIN/MAX with type safe std::min/std::max (#1806)
+
+    Issue
+    GitHub Issue: C++ modernize: Replace MIN/MAX with type safe std::min/std::max (#1806)
+
+    Files to Modify
+    - daemon/daemon-win32.c\n- libtransmission/announcer.cc\n- libtransmission/bandwidth.cc\n- libtransmission/bitfield.cc\n- libtransmission/fdlimit.cc\n- libtransmission/file-posix.cc\n- libtransmission/file.cc\n- libtransmission/inout.cc\n- libtransmission/makemeta.cc\n- libtransmission/peer-io.cc\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/port-forwarding.cc\n- libtransmission/ptrarray.cc\n- libtransmission/quark.cc\n- libtransmission/resume.cc\n- libtransmission/rpc-server.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session.cc\n- libtransmission/subprocess-win32.cc\n- libtransmission/torrent.cc\n- libtransmission/tr-dht.cc\n- libtransmission/tr-getopt.cc\n- libtransmission/tr-lpd.cc\n- libtransmission/tr-macros.h\n- libtransmission/utils.cc\n- libtransmission/verify.cc\n- libtransmission/web.cc\n- libtransmission/webseed.cc\n- tests/libtransmission/copy-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3534,10 +5928,29 @@ def transmission_312d182(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-43d1ece",
     description="""
-    C++ modernization: Replace NULLs with typesafe nullptrs (#1799)
+Task: transmission-43d1ece
+    Problem: C++ modernization: Replace NULLs with typesafe nullptrs (#1799)
+
+    Issue
+    GitHub Issue: C++ modernization: Replace NULLs with typesafe nullptrs (#1799)
+
+    Files to Modify
+    - libtransmission/announcer-http.cc\n- libtransmission/announcer-udp.cc\n- libtransmission/announcer.cc\n- libtransmission/bandwidth.cc\n- libtransmission/bandwidth.h\n- libtransmission/bitfield.cc\n- libtransmission/blocklist.cc\n- libtransmission/cache.cc\n- libtransmission/clients.cc\n- libtransmission/crypto-utils-cyassl.cc\n- libtransmission/crypto-utils-fallback.cc\n- libtransmission/crypto-utils-openssl.cc\n- libtransmission/crypto-utils-polarssl.cc\n- libtransmission/crypto-utils.cc\n- libtransmission/crypto.cc\n- libtransmission/error.cc\n- libtransmission/fdlimit.cc\n- libtransmission/file-posix.cc\n- libtransmission/file-win32.cc\n- libtransmission/file.cc\n- libtransmission/file.h\n- libtransmission/handshake.cc\n- libtransmission/inout.cc\n- libtransmission/jsonsl.h\n- libtransmission/list.cc\n- libtransmission/log.cc\n- libtransmission/magnet.cc\n- libtransmission/makemeta.cc\n- libtransmission/metainfo.cc\n- libtransmission/natpmp.cc\n- libtransmission/net.cc\n- libtransmission/net.h\n- libtransmission/peer-io.cc\n- libtransmission/peer-io.h\n- libtransmission/peer-mgr.cc\n- libtransmission/peer-msgs.cc\n- libtransmission/platform-quota.cc\n- libtransmission/platform.cc\n- libtransmission/port-forwarding.cc\n- libtransmission/ptrarray.cc\n- libtransmission/ptrarray.h\n- libtransmission/quark.cc\n- libtransmission/resume.cc\n- libtransmission/rpc-server.cc\n- libtransmission/rpcimpl.cc\n- libtransmission/session-id.cc\n- libtransmission/session.cc\n- libtransmission/session.h\n- libtransmission/stats.cc\n- libtransmission/subprocess-posix.cc\n- libtransmission/subprocess-win32.cc\n- libtransmission/torrent-ctor.cc\n- libtransmission/torrent-magnet.cc\n- libtransmission/torrent.cc\n- libtransmission/torrent.h\n- libtransmission/tr-dht.cc\n- libtransmission/tr-getopt.cc\n- libtransmission/tr-lpd.cc\n- libtransmission/tr-udp.cc\n- libtransmission/tr-utp.cc\n- libtransmission/trevent.cc\n- libtransmission/upnp.cc\n- libtransmission/utils.cc\n- libtransmission/variant-benc.cc\n- libtransmission/variant-json.cc\n- libtransmission/variant.cc\n- libtransmission/verify.cc\n- libtransmission/watchdir-generic.cc\n- libtransmission/watchdir-inotify.cc\n- libtransmission/watchdir-kqueue.cc\n- libtransmission/watchdir-win32.cc\n- libtransmission/watchdir.cc\n- libtransmission/web.cc\n- libtransmission/webseed.cc\n- tests/libtransmission/subprocess-test-program.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3562,10 +5975,29 @@ def transmission_43d1ece(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-a459e5e",
     description="""
-    Switch to a standalone ARC4 implementation (#1788)
+Task: transmission-a459e5e
+    Problem: Switch to a standalone ARC4 implementation (#1788)
+
+    Issue
+    GitHub Issue: Switch to a standalone ARC4 implementation (#1788)
+
+    Files to Modify
+    - .gitmodules\n- CMakeLists.txt\n- Transmission.xcodeproj/project.pbxproj\n- libtransmission/CMakeLists.txt\n- libtransmission/crypto-utils-cyassl.c\n- libtransmission/crypto-utils-openssl.c\n- libtransmission/crypto-utils-polarssl.c\n- libtransmission/crypto-utils.c\n- libtransmission/crypto-utils.h\n- libtransmission/crypto.c\n- libtransmission/crypto.h\n- tests/libtransmission/crypto-test-ref.h\n- third-party/arc4
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",
@@ -3590,10 +6022,29 @@ def transmission_a459e5e(state: EnvironmentState) -> Grade:
 @problem(
     id="transmission-0155252",
     description="""
-    Add in-kernel file copying for several platforms. (#1092)
+Task: transmission-0155252
+    Problem: Add in-kernel file copying for several platforms. (#1092)
+
+    Issue
+    GitHub Issue: Add in-kernel file copying for several platforms. (#1092)
+
+    Files to Modify
+    - CMakeLists.txt\n- libtransmission/file-posix.c\n- libtransmission/file-win32.c\n- libtransmission/file.h\n- libtransmission/utils.c\n- tests/libtransmission/CMakeLists.txt\n- tests/libtransmission/copy-test.cc
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
     
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
     """,
     hints=[],
     difficulty="hard",

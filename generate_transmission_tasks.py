@@ -14,14 +14,37 @@ for task in tasks:
     func_name = task['task_id'].replace("-", "_")
     safe_msg = task['message'].replace('"', "'")
     
+    files_list = "\\n".join([f"- {f}" for f in task.get('files', [])])
+    
+    description = f"""Task: {task['task_id']}
+    Problem: {safe_msg}
+
+    Issue
+    GitHub Issue: {safe_msg}
+
+    Files to Modify
+    {files_list}
+
+    Instructions
+    1. Build the project: cd /home/ubuntu/repo/build && ninja
+    2. Run tests to see what's failing: ctest --output-on-failure
+    3. Analyze the failing tests (look at assertions and test names).
+    4. Find relevant source files in /home/ubuntu/repo/libtransmission/
+    5. Implement the fix.
+    6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+
+    IMPORTANT: Evaluation Rules
+    - The tests define the expected behavior - use them as your specification
+    - Write your fix based on understanding the code and tests
+    - Do NOT search for solutions outside the codebase
+    - The repository is available at: /home/ubuntu/repo
+    """
+
     task_code = f"""
 @problem(
     id="{task['task_id']}",
     description=\"\"\"
-    {safe_msg}
-    
-    Fix the issue in Transmission. 
-    The environment is reset to the commit BEFORE this fix.
+{description}
     \"\"\",
     hints=[],
     difficulty="hard",
