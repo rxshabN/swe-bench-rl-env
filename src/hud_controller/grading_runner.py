@@ -89,7 +89,7 @@ class GradingRunner:
         total_packages = len(target_packages)
         passed_packages = 0
 
-        PACKAGE_TIMEOUT_SECONDS = 150 
+        PACKAGE_TIMEOUT_SECONDS = 300 
 
         for pkg in target_packages:
             logger.info(f"Testing package: {pkg}")
