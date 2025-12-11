@@ -1,10 +1,10 @@
 version: '1.2'
 images:
   local: swe-bench-rl-env:0.1.0
-  full: swe-bench-rl-env:0.1.0@sha256:c8619c01bdb83f5a4bb182e2d18768c618dca8d37034dd3d46b2c5d008f6156a
-  pushed: rishabn/swe-bench-rl-env:v23.0
+  full: swe-bench-rl-env:0.1.0@sha256:759609b758c827c0ff4d989460c88e3bf7b2be575baacf7d8fe5cc32b25d8075
+  pushed: rishabn/swe-bench-rl-env:v26.0
 build:
-  generatedAt: 2025-12-11T06:30:16.744645+00:00Z
+  generatedAt: 2025-12-11T15:13:18.960742+00:00Z
   hudVersion: 0.4.73
   directory: swe-bench-rl-env
   version: 0.1.0
@@ -15,7 +15,7 @@ build:
   - Dockerfile
   - pyproject.toml
 environment:
-  initializeMs: 2943
+  initializeMs: 3056
   toolCount: 4
   runtime:
     python: 3.12.3
@@ -117,6 +117,6 @@ tools:
     type: object
 push:
   source: swe-bench-rl-env:0.1.0
-  pushedAt: '2025-12-11T06:49:28.874427Z'
+  pushedAt: '2025-12-11T16:16:09.178117Z'
   registry: docker.io
-  image_with_tag: rishabn/swe-bench-rl-env:v23.0
+  image_with_tag: rishabn/swe-bench-rl-env:v26.0

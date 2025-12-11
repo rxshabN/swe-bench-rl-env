@@ -42,6 +42,9 @@ The following files need to be fixed:
 * **ONLY** modify the source files listed above.
 * **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.
 
+#### 5. NO SELF EVALUATION
+* **DO NOT** call grading or evaluation functions (e.g., `grade_problem`, `run_tests`).
+
 ### Repository Location
 `/home/ubuntu/repo/` (Tekton Pipeline)
 """

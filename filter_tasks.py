@@ -4,96 +4,101 @@ import os
 import subprocess
 import sys
 import time
+import re
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-def run_single_task(task_id, run_index):
+# Error patterns that indicate infrastructure failure, not agent failure
+INFRA_ERRORS = [
+    "Connection closed",
+    "McpError",
+    "400 Bad Request",
+    "500 Internal Server Error",
+    "timeout",
+    "timed out",
+    "ConnectionRefused",
+    "ClosedResourceError"
+]
+
+def evaluate_task_instance(task_id, run_index):
     """
-    Executes a single task using the OFFICIAL HUD CLI.
+    Executes a single instance of a task and determines if it was:
+    1. An Infrastructure Failure (crashed, timed out, network error)
+    2. An Agent Failure (ran successfully but Score was 0)
+    3. An Agent Success (ran successfully and Score > 0)
     """
     start_time = time.time()
+    
+    # We use 'hud eval' command line
+    cmd = [
+        "hud", "eval", "pipeline_benchmark.json",
+        "--task-ids", task_id,
+        "--agent", "claude",
+        "--yes",
+        "--verbose"
+    ]
+    
     try:
-        # We call 'hud eval' (the library), NOT 'hud_eval' (your local script)
-        # This allows HUD to handle the cloud connection defined in the JSON.
+        # Use shell=True on Windows, False on Linux/Mac
+        use_shell = (os.name == 'nt')
+        
         result = subprocess.run(
-            [
-                "hud", "eval", "pipeline_benchmark.json",  # Updated filename
-                "--task-ids", task_id,
-                "--agent", "claude",  # Explicitly set agent to avoid interactive prompt
-                "--yes",              # Skip confirmation prompts
-                "--verbose"           # Ensure logs are printed so we can capture the score
-            ],
+            cmd,
             capture_output=True,
             text=True,
-            check=False,
-            # We need shell=True on Windows sometimes for PATH resolution, 
-            # but usually False is safer. If 'hud' isn't found, try shell=True.
-            shell=(os.name == 'nt') 
+            check=False, # We handle errors manually
+            shell=use_shell
         )
+        
         duration = time.time() - start_time
-        
-        # 1. Check Infrastructure Health
-        # If hud eval returns non-zero, it likely crashed.
+        combined_logs = result.stdout + "\n" + result.stderr
+
+        # --- CHECK 1: Explicit Infrastructure Errors ---
+        # If the tool crashed or printed specific error codes
         if result.returncode != 0:
-            # Check for specific "Connection closed" errors which are infra failures
-            if "Connection closed" in result.stderr:
-                return task_id, False, False, duration
-            # Otherwise it might just be a task failure, but let's be conservative
-            return task_id, False, False, duration
+            return task_id, "INFRA_FAIL", duration
+            
+        for err in INFRA_ERRORS:
+            if err in combined_logs:
+                # Special case: "timeout" might be in the agent's test logs (which is fine).
+                # We care if it's in the MCP/System logs. 
+                # For safety in this filter script, we treat ANY string match as a drop signal
+                # to be ultra-conservative for RL training data.
+                return task_id, "INFRA_FAIL", duration
 
-        # 2. Check Test Results
-        # We parse the logs for the specific score log from your grading_runner.py
-        score = 0.0
-        # Combine stdout and stderr because different tools log to different pipes
-        logs = result.stderr + "\n" + result.stdout
+        # --- CHECK 2: Score Extraction ---
+        # We look for "Score: X.XXXX" or "Package Score: X.XX"
+        # The regex looks for "Score:" followed by whitespace and a float
+        score_match = re.search(r'(?:Score|Package Score):\s+([\d\.]+)', combined_logs)
         
-        if "Calculated Score:" in logs:
-            for line in logs.splitlines():
-                if "Calculated Score:" in line:
-                    try:
-                        # Format is usually "INFO: ... Calculated Score: 1.0"
-                        score_str = line.split("Calculated Score:")[-1].strip()
-                        score = float(score_str)
-                    except ValueError:
-                        pass
+        if not score_match:
+            # If the process finished but didn't print a score, the grading runner crashed silently.
+            return task_id, "INFRA_FAIL", duration
         
-        # We also check for the new log format from grading_runner.py
-        if "Score:" in logs:
-             for line in logs.splitlines():
-                if "Score:" in line and "INFO" in line: # e.g. INFO: ... Score: 0.1000
-                     try:
-                        score_str = line.split("Score:")[-1].strip()
-                        score = float(score_str)
-                     except ValueError:
-                        pass
+        try:
+            score = float(score_match.group(1))
+        except ValueError:
+             return task_id, "INFRA_FAIL", duration
 
-
-        # If Score > 0, the agent passed the test. 
-        # For a benchmark of BUGS, we want the agent to FAIL (initially), 
-        # but here we are validating the TASK.
-        # Wait - if we are running the *buggy* commit, the tests SHOULD fail (Score 0).
-        # But your setup runs the *Agent* to fix it. 
-        # So we want the Agent to SUCCEED (Score 1.0) to prove the task is solvable?
-        # NO. You said: "find issues where the AI fails consistently".
-        # So we want Score == 0.0 (Agent failed to fix it).
-        
-        agent_succeeded = score > 0.0
-        
-        return task_id, True, agent_succeeded, duration
+        # --- CHECK 3: Verdict ---
+        if score > 0.0:
+            return task_id, "AGENT_SUCCESS", duration
+        else:
+            return task_id, "AGENT_FAIL", duration
 
     except Exception as e:
-        print(f"Error running {task_id}: {e}")
-        return task_id, False, False, 0
+        # Python script level crashes
+        print(f"❌ Critical Executor Error on {task_id}: {e}")
+        return task_id, "INFRA_FAIL", 0
 
 def main():
     parser = argparse.ArgumentParser(description="Filter tasks for RL training.")
-    parser.add_argument("--repeats", type=int, default=10, help="Times to run each task")
-    parser.add_argument("--concurrency", type=int, default=20, help="Concurrent cloud jobs")
+    parser.add_argument("--repeats", type=int, default=5, help="Times to run each task")
+    parser.add_argument("--concurrency", type=int, default=10, help="Concurrent cloud jobs")
     parser.add_argument("--input", default="hud_tasks.json", help="Source raw tasks file")
     args = parser.parse_args()
 
-    import os
     if not os.path.exists("pipeline_benchmark.json"):
         print("❌ Error: pipeline_benchmark.json not found. Run generate_benchmark.py first.")
         sys.exit(1)
@@ -102,7 +107,7 @@ def main():
     with open(args.input, "r") as f:
         raw_tasks = json.load(f)
     
-    # Only verify tasks that are actually in the benchmark config
+    # Filter to only tasks defined in the benchmark
     with open("pipeline_benchmark.json", "r") as f:
         bench_tasks = json.load(f)
         valid_ids = set(t["id"] for t in bench_tasks)
@@ -111,32 +116,33 @@ def main():
 
     print(f"🚀 Starting Curation for {len(tasks_to_run)} tasks.")
     print(f"   Config: {args.repeats} repeats, {args.concurrency} concurrent.")
-    print("   Goal: Find 'Hard' tasks where Agent consistently FAILS (Score 0).")
+    print("   Goal: Find Stable environments where the Agent consistently FAILS.")
 
     # 2. Execute
     task_results = defaultdict(list)
     
-    # We use ThreadPoolExecutor because 'subprocess' releases the GIL, 
-    # allowing effective concurrency for IO-bound CLI calls.
     with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
         futures = []
         for task in tasks_to_run:
             t_id = task["task_id"]
             for i in range(args.repeats):
-                futures.append(executor.submit(run_single_task, t_id, i))
+                futures.append(executor.submit(evaluate_task_instance, t_id, i))
 
         completed = 0
         total = len(futures)
+        
         for future in as_completed(futures):
-            t_id, infra_ok, agent_success, dur = future.result()
-            task_results[t_id].append((infra_ok, agent_success))
+            t_id, status, dur = future.result()
+            task_results[t_id].append(status)
             completed += 1
             
-            # Progress bar style output
-            status_char = "✅" if agent_success else "❌" # Green if agent fixed it, Red if failed
-            if not infra_ok: status_char = "💥"
+            # Formatting output
+            icon = "❓"
+            if status == "AGENT_SUCCESS": icon = "✅" # Too easy
+            elif status == "AGENT_FAIL":  icon = "📉" # Good hard task
+            elif status == "INFRA_FAIL":  icon = "💥" # Bad env
             
-            print(f"[{completed}/{total}] {status_char} {t_id} ({dur:.1f}s)")
+            print(f"[{completed}/{total}] {icon} {t_id} ({dur:.1f}s) -> {status}")
 
     # 3. Filter and Save
     kept_tasks = []
@@ -144,28 +150,30 @@ def main():
     
     for task in tasks_to_run:
         t_id = task["task_id"]
-        runs = task_results[t_id]
+        results = task_results[t_id]
         
-        infra_failures = sum(1 for r in runs if not r[0])
-        agent_successes = sum(1 for r in runs if r[1])
-        total_runs = len(runs)
-        
+        total_runs = len(results)
         if total_runs == 0: continue
 
-        # Criteria 1: Infrastructure must be stable (0 crashes)
-        if infra_failures > 0:
-            print(f"DROP {t_id}: Infra unstable ({infra_failures}/{total_runs} crashed)")
+        infra_fails = results.count("INFRA_FAIL")
+        agent_successes = results.count("AGENT_SUCCESS")
+        agent_fails = results.count("AGENT_FAIL")
+
+        # Criteria 1: Zero Tolerance for Infrastructure Instability
+        if infra_fails > 0:
+            print(f"DROP {t_id}: Infra unstable ({infra_fails}/{total_runs} failed)")
             continue
             
-        # Criteria 2: Agent must FAIL consistently (Hard task)
-        # If agent fixed it even once (success > 0), it might be too easy or flaky.
+        # Criteria 2: Task must be "Hard" (Agent shouldn't solve it easily)
+        # If agent solved it even once, it might be too easy or flaky.
         if agent_successes > 0:
-            print(f"DROP {t_id}: Too easy/Flaky ({agent_successes}/{total_runs} agent successes)")
+            print(f"DROP {t_id}: Too easy ({agent_successes}/{total_runs} solved)")
             continue
             
-        # Criteria 3: Agent passed 0 times -> Perfect candidate for RL training
-        print(f"KEEP {t_id}: Stable Failure (Agent 0/{total_runs})")
-        kept_tasks.append(task)
+        # Criteria 3: Task must be consistently failing (Score 0)
+        if agent_fails == total_runs:
+            print(f"KEEP {t_id}: Stable Failure (0/{total_runs} solved)")
+            kept_tasks.append(task)
 
     output_file = "hud_tasks_final.json"
     with open(output_file, "w") as f:
