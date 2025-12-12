@@ -72,7 +72,7 @@ def setup_codebase(base: str, test: str, golden: str):
         subprocess_run(archive_cmd, shell=True)
         
         if golden:
-            logger.info(f"💉 Injecting tests from golden commit {golden[:8]}...")
+            logger.info(f"Injecting tests from golden commit {golden[:8]}...")
             test_archive_cmd = (
                 f"git --git-dir={secure_git} archive {golden} -- test/ 2>/dev/null | "
                 f"tar -x -C {repo_path} 2>/dev/null || true"

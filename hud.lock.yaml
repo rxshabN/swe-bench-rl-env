@@ -1,12 +1,12 @@
 version: '1.2'
 images:
-  local: swe-bench-rl-env:0.1.0
-  full: swe-bench-rl-env:0.1.0@sha256:759609b758c827c0ff4d989460c88e3bf7b2be575baacf7d8fe5cc32b25d8075
-  pushed: rishabn/swe-bench-rl-env:v26.0
+  local: pipeline-env:0.1.0
+  full: pipeline-env:0.1.0@sha256:1220b633b479d00eaaf75a6da584bfc335d66b2a9f2c42a344c1ed595eff7496
+  pushed: rishabn/pipeline-env:v27.0
 build:
-  generatedAt: 2025-12-11T15:13:18.960742+00:00Z
+  generatedAt: 2025-12-12T16:19:02.167092+00:00Z
   hudVersion: 0.4.73
-  directory: swe-bench-rl-env
+  directory: pipeline-env
   version: 0.1.0
   sourceHash: 9a3341ea4de47f6042395e4d5501df23601b8a734792b581d306736c482019c5
   baseImage: ubuntu:24.04
@@ -15,7 +15,7 @@ build:
   - Dockerfile
   - pyproject.toml
 environment:
-  initializeMs: 3056
+  initializeMs: 2277
   toolCount: 4
   runtime:
     python: 3.12.3
@@ -116,7 +116,7 @@ tools:
     title: grade_problemArguments
     type: object
 push:
-  source: swe-bench-rl-env:0.1.0
-  pushedAt: '2025-12-11T16:16:09.178117Z'
+  source: pipeline-env:0.1.0
+  pushedAt: '2025-12-12T17:00:02.996803Z'
   registry: docker.io
-  image_with_tag: rishabn/swe-bench-rl-env:v26.0
+  image_with_tag: rishabn/pipeline-env:v27.0

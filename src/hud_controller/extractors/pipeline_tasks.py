@@ -20,9 +20,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -63,9 +64,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -106,9 +108,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -149,9 +152,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -192,9 +196,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -235,9 +240,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -278,9 +284,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -321,9 +328,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -364,9 +372,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -407,9 +416,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -450,9 +460,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -493,9 +504,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -536,9 +548,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -579,9 +592,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -622,9 +636,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -665,9 +680,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -708,9 +724,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -751,9 +768,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -794,9 +812,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -837,9 +856,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -880,9 +900,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -923,9 +944,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -966,9 +988,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1009,9 +1032,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1052,9 +1076,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1095,9 +1120,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1138,9 +1164,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1181,9 +1208,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1224,9 +1252,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1267,9 +1296,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1310,9 +1340,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1353,9 +1384,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1396,9 +1428,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1439,9 +1472,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1482,9 +1516,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1525,9 +1560,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1568,9 +1604,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1611,9 +1648,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1654,9 +1692,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1697,9 +1736,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1740,9 +1780,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1783,9 +1824,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1826,9 +1868,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1869,9 +1912,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1912,9 +1956,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1955,9 +2000,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -1998,9 +2044,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2041,9 +2088,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2084,9 +2132,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2127,9 +2176,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2170,9 +2220,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2213,9 +2264,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2256,9 +2308,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2299,9 +2352,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2342,9 +2396,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2385,9 +2440,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2428,9 +2484,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2471,9 +2528,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2514,9 +2572,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2557,9 +2616,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2600,9 +2660,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2643,9 +2704,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2686,9 +2748,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2729,9 +2792,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2772,9 +2836,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2815,9 +2880,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2858,9 +2924,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2901,9 +2968,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2944,9 +3012,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -2987,9 +3056,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3030,9 +3100,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3073,9 +3144,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3116,9 +3188,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3159,9 +3232,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3202,9 +3276,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3245,9 +3320,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3288,9 +3364,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3331,9 +3408,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3374,9 +3452,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3417,9 +3496,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3460,9 +3540,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3503,9 +3584,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3546,9 +3628,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3589,9 +3672,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3632,9 +3716,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3675,9 +3760,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3718,9 +3804,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3761,9 +3848,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3804,9 +3892,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3847,9 +3936,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3890,9 +3980,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3933,9 +4024,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -3976,9 +4068,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4019,9 +4112,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4062,9 +4156,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4105,9 +4200,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4148,9 +4244,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4191,9 +4288,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4234,9 +4332,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4277,9 +4376,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4320,9 +4420,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4363,9 +4464,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4406,9 +4508,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4449,9 +4552,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4492,9 +4596,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4535,9 +4640,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4578,9 +4684,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4621,9 +4728,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4664,9 +4772,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4707,9 +4816,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4750,9 +4860,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4793,9 +4904,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4836,9 +4948,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4879,9 +4992,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4922,9 +5036,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -4965,9 +5080,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -5008,9 +5124,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -5051,9 +5168,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -5094,9 +5212,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -5137,9 +5256,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
@@ -5180,9 +5300,10 @@ Instructions:
 1. Examine the source files in /home/ubuntu/repo/
 2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once done, create a summary of the changes/fixes made.
+4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-CRITICAL RULES (Read Carefully):
+CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
 - NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
 - NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
