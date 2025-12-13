@@ -153,10 +153,10 @@ The following files need to be fixed:
 6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
 7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-### 🛑 CRITICAL RULES - READ CAREFULLY BEFORE BEGINNING 🛑
+### 🛑 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING 🛑
 
 #### 1. ONE SHOT SUBMISSION
-* **You can only call `evaluate_tool()` ONCE.**
+* **You can only call `evaluate()` ONCE at the end of your coding session.**
 * This is your final submission.
 * **Do not** use `grade_problem` to debug. Use local tools instead.
 
@@ -177,7 +177,7 @@ def main():
     parser.add_argument("--image", type=str, help="The HUD Cloud Image ID (from `hud push`).")
     args = parser.parse_args()
 
-    source_file = "hud_tasks.json" 
+    source_file = "hud_final_tasks.json" 
     
     if not os.path.exists(source_file):
         print(f"❌ Error: {source_file} not found.")

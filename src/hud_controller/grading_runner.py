@@ -286,6 +286,7 @@ class GradingRunner:
                 "-mod=vendor", 
                 "-short",
                 "-v",
+                "-timeout", "0",
                 pkg
             ]
             

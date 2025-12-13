@@ -112,7 +112,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-INPUT_FILE = "hud_tasks.json"
+INPUT_FILE = "hud_final_tasks.json"
 OUTPUT_FILE = "src/hud_controller/extractors/pipeline_tasks.py"
 
 def generate_tasks():
