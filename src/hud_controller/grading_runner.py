@@ -266,11 +266,34 @@ class GradingRunner:
     def _run_tests(self) -> tuple[str, float, float]:
         start_time = time.time()
         
+        logger.info("Ensuring dependencies are up to date...")
+        try:
+            subprocess.run(
+                ["go", "mod", "tidy"], 
+                cwd=str(self.repo_path), 
+                check=True, 
+                capture_output=True
+            )
+            subprocess.run(
+                ["go", "mod", "vendor"], 
+                cwd=str(self.repo_path), 
+                check=True, 
+                capture_output=True
+            )
+            logger.info("Dependencies updated successfully.")
+        except subprocess.CalledProcessError as e:
+            logger.warning(f"Dependency update warning: {e}")
+            if e.stderr:
+                logger.warning(f"go mod error details: {e.stderr.decode('utf-8', errors='replace')}")
+
         target_packages = self._get_target_packages()
         logger.info(f"Targeted Testing: {len(target_packages)} packages")
         
         merged_xml_parts = []
         
+        total_packages = 0 
+        passed_packages = 0
+
         for pkg in target_packages:
             logger.info(f"Testing package: {pkg}")
             
@@ -281,12 +304,14 @@ class GradingRunner:
             cmd = [
                 "gotestsum",
                 "--junitfile", pkg_xml_file,
-                "--format", "standard-verbose",
+                "--format", "standard-verbose", 
+                "--raw-command",                
                 "--",
+                "go", "test",
                 "-mod=vendor", 
                 "-short",
                 "-v",
-                "-timeout", "0",
+                "-json",                        
                 pkg
             ]
             
@@ -297,8 +322,17 @@ class GradingRunner:
                 text=True
             )
             
+            if result.stdout:
+                logger.info(f"--- Output for {pkg} ---")
+                logger.info(result.stdout)
+            if result.stderr:
+                logger.warning(f"--- Stderr for {pkg} ---")
+                logger.warning(result.stderr)
+
+            total_packages += 1
             if result.returncode == 0:
                 logger.info(f"Package {pkg} PASSED")
+                passed_packages += 1
             else:
                 logger.warning(f"Package {pkg} FAILED (exit {result.returncode})")
             
@@ -334,7 +368,10 @@ class GradingRunner:
             if total_tests > 0:
                 test_score = float(total_tests - total_failures) / float(total_tests)
             else:
-                test_score = 0.0
+                if total_packages > 0:
+                    test_score = float(passed_packages) / float(total_packages)
+                else:
+                    test_score = 0.0
                 
             logger.info(f"Test Results: {total_tests - total_failures} passed out of {total_tests} total tests.")
             logger.info(f"Calculated Score: {test_score:.4f}")

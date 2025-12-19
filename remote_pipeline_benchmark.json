@@ -6,7 +6,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -33,7 +33,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -60,7 +60,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -87,7 +87,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -114,7 +114,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -141,7 +141,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -168,7 +168,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -195,7 +195,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -222,7 +222,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -249,7 +249,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -276,7 +276,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -303,7 +303,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -330,7 +330,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -357,7 +357,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -384,7 +384,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -411,7 +411,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -438,7 +438,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -465,7 +465,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -492,7 +492,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -519,7 +519,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -546,7 +546,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -573,7 +573,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -600,7 +600,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -627,7 +627,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -654,7 +654,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -681,7 +681,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -708,7 +708,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -735,7 +735,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -762,7 +762,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -789,7 +789,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -816,7 +816,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -843,7 +843,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -870,7 +870,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -897,7 +897,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -924,7 +924,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -951,7 +951,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -978,7 +978,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -1005,7 +1005,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }
@@ -1032,7 +1032,7 @@
         "url": "https://mcp.hud.ai/v3/mcp",
         "headers": {
           "Authorization": "Bearer ${HUD_API_KEY}",
-          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Mcp-Image": "rishabn/pipeline-env:v1.0",
           "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
           "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
         }

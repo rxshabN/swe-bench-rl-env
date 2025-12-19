@@ -37,7 +37,7 @@ RUN git clone https://github.com/tektoncd/pipeline.git /home/ubuntu/repo
 
 WORKDIR /home/ubuntu/repo
 ENV GOFLAGS="-mod=vendor"
-RUN go build ./... || true
+RUN go build ./...
 
 RUN mkdir -p /evaluation/secure_git && \
     mv /home/ubuntu/repo/.git /evaluation/secure_git/repo.git && \
@@ -54,7 +54,7 @@ ENV SECURE_GIT_DIR=/evaluation/secure_git/repo.git
 ENV REPO_PATH=/home/ubuntu/repo
 ENV HOME=/home/ubuntu
 ENV MCP_TESTING_MODE=1
-ENV HUD_CLIENT_TIMEOUT=1200
+ENV HUD_CLIENT_TIMEOUT=3600
 
 WORKDIR /home/ubuntu
 CMD ["hud_eval"]

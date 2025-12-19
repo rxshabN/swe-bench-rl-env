@@ -79,7 +79,7 @@ def main():
     parser.add_argument("task_ids", nargs="*", help="Task IDs to filter by")
     parser.add_argument("--ids-file", "-f", help="File containing task IDs (one per line)")
     parser.add_argument("--id-field", "-i", default="id", help="Field name for task ID (default: id)")
-    parser.add_argument("--output", "-o", default="filtered_tasks.json", help="Output file (default: filtered_tasks.json)")
+    parser.add_argument("--output", "-o", default="tasks_for_testing.json", help="Output file (default: filtered_tasks.json)")
     parser.add_argument("--pretty", "-p", action="store_true", default=True, help="Pretty print JSON output (default: True)")
     parser.add_argument("--stdout", action="store_true", help="Print to stdout instead of file")
     
